@@ -17,3 +17,25 @@ li {
 	margin: 20px;
 	width: 100px;
 }
+
+/* Flex Conteiner => Parents */
+body {
+	display: flex;
+}
+
+section {
+	width: 20rem;
+	background-color: lightslategray;
+	padding: 1.5rem;
+	margin: 1rem;
+	color: white;
+}
+
+/* section h2,
+section p {
+} */
+
+div.content {
+	background-color: #20b2aa;
+	padding: 1rem;
+}
