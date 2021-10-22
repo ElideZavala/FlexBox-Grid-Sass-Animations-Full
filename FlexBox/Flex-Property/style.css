@@ -1,0 +1,54 @@
+/* Flex Container => Parent */
+ul {
+	background-color: lightslategray;
+	padding: 20px;
+	height: 300px; /* Le Agregamos para flex de column */  
+	
+ 	/* Flex Container Properties */
+	display: flex;
+
+	/* Row (Direction) Wrap (Wrap):________; */
+	/* flex-flow: row wrap; */
+	/* flex-flow: column wrap; */
+	flex-flow: column-reverse wrap ;
+
+
+
+}
+
+
+ /* flex Items => childre */
+li {
+	/* display: inline-block; */
+	list-style: none;
+	color: white;
+	background-color: #20b2aa;
+	padding: 10px;
+	margin: 20px;
+	width: 100px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Flex Conteiner => Parents */
+body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+	width: 20rem;
+	background-color: lightslategray;
+	padding: 1.5rem;
+	margin: 1rem;
+	color: white;
+}
+
+/* section h2,
+section p {
+} */
+
+div.content {
+	background-color: #20b2aa;
+	padding: 1rem;
+}
