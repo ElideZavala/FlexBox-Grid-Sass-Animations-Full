@@ -4,7 +4,18 @@ ul {
 	padding: 20px;
 	
 	/* Flex Container Properties */
-	display: flex;
+	/* display: flex; */
+
+	/**-**-**-**-**-**-*--------Flex Direccion-------*-**-**-**-**-**-**-**/
+	
+	/* 1.1 */
+	/* Row (Default) */
+	/* flex-direction: row-reverse; */
+	
+	/* Column */
+	flex-direction: column-reverse;
+
+
 }
 
  /* flex Items => childre */
@@ -16,27 +27,6 @@ li {
 	padding: 10px;
 	margin: 20px;
 	width: 100px;
-}
-
-/* Flex Conteiner => Parents */
-body {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-section {
-	width: 20rem;
-	background-color: lightslategray;
-	padding: 1.5rem;
-	margin: 1rem;
-	color: white;
-}
-
-/* section h2,
-section p {
-} */
-
-div.content {
-	background-color: #20b2aa;
-	padding: 1rem;
+	font-size: 20px;
+	text-align: center;
 }
