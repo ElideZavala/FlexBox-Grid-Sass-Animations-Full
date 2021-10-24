@@ -1,0 +1,25 @@
+/* Flex Container => Parent */
+ul {
+	background-color: lightslategray;
+	padding: 20px;
+	
+	/* Flex Container Properties */
+	display: flex;
+	height: 300px;
+	justify-content: center;
+
+	/*********--------- ALIGN-ITEMS --------********* */
+	align-items: flex-end;  
+}
+
+ /* flex Items => childre */
+li {
+	/* display: inline-block; */
+	list-style: none;
+	color: white;
+	background-color: #20b2aa;
+	padding: 10px;
+	margin: 20px;
+	width: 100px;
+	/* height: 100px; */
+}
