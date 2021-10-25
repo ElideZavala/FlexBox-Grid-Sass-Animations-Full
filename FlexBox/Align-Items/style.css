@@ -9,7 +9,8 @@ ul {
 	justify-content: center;
 
 	/*********--------- ALIGN-ITEMS --------********* */
-	align-items: flex-end;  
+	/* align-items: flex-end;   */
+	align-items: baseline;
 }
 
  /* flex Items => childre */
@@ -22,4 +23,10 @@ li {
 	margin: 20px;
 	width: 100px;
 	/* height: 100px; */
+	padding-top: 20px; /* para visualizar align items*/
+	padding-bottom: 20px; /* para visualizar align items*/
+}
+
+li:first-child {
+	padding: 5px;
 }
