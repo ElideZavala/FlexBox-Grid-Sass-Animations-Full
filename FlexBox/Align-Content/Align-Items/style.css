@@ -2,15 +2,17 @@
 ul {
 	background-color: lightslategray;
 	padding: 20px;
-	
+	text-align: center;
+	height: 600px;
 	/* Flex Container Properties */
 	display: flex;
-	height: 300px;
-	justify-content: center;
+	flex-wrap: wrap;
+	/* justify-content: center; */
 
-	/*********--------- ALIGN-ITEMS --------********* */
-	/* align-items: flex-end;   */
-	align-items: baseline;
+	/*********--------- ALIGN-CONTENT --------********* */
+	/* stretch (Default)*/
+	align-content: flex-start;
+	/* align-items: flex-start; */
 }
 
  /* flex Items => childre */
