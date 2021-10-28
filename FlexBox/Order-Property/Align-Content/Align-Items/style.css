@@ -1,0 +1,18 @@
+/* Flex Container => Parent */
+ul {
+	background-color: lightslategray;
+	padding: 20px;
+	text-align: center;
+	height: 300px;
+
+	/* Flex Container Properties */
+	display: flex;     
+}
+
+li {
+	list-style: none;
+	color: white;
+	background-color: #20b2aa;
+	margin: 10px;
+	padding: 10px;
+}

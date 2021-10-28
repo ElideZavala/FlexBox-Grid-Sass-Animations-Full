@@ -7,7 +7,13 @@ ul {
 	/* Flex Container Properties */
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: center; */
+	flex-direction: column;
+
+	justify-content: center;
+	/* justify-content: flex-end; */
+	/* justify-content: start; */
+	/* justify-content: space-evenly; */
+	/* align-items: center; */
 	/* align-items: flex-start; */
 	/* align-items: end; */
 
@@ -15,7 +21,7 @@ ul {
 	/* stretch (Default)*/
 	/* align-content: flex-start; */
 	/* align-content: space-around; */
-	align-content: space-evenly;
+	/* align-content: space-evenly; */
 }
 
  /* flex Items => childre */
@@ -25,13 +31,14 @@ li {
 	color: white;
 	background-color: #20b2aa;
 	padding: 10px;
-	margin: 20px;
+	margin: 10px;
 	width: 100px;
 	/* height: 100px; 
 	padding-top: 20px; /* para visualizar align items*/
 	padding-bottom: 20px; /* para visualizar align items*/
+	text-align: center;
 }
 
 li:first-child {
-	padding: 5px;
+	/* padding: 5px; */
 }
