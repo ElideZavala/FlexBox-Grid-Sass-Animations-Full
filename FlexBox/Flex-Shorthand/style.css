@@ -1,0 +1,66 @@
+/* Flex Container => Parent */
+ul {
+	background-color: lightslategray;
+	padding: 20px;
+	text-align: center;
+	height: 300px;
+
+	/* Flex Container Properties */
+	display: flex;     
+	align-items: flex-start;
+	/* flex-direction: column; */
+
+}
+
+li {
+	list-style: none;
+	color: white;
+	background-color: #20b2aa;
+	margin: 10px;
+	padding: 10px;
+}
+
+/* Valores positivos */
+/* li:nth-child(3) {
+	order: 1;
+}
+
+li:nth-child(1) {
+	order: 3;
+}
+
+li:nth-child(6) {
+	order: 2;
+}
+
+li:nth-child(5) {
+	order: 5;
+} */
+
+/* Valores Negativos */
+/* li:nth-child(8) {
+	order: -1;
+}
+
+li:nth-child(2) {
+	order: -2;
+} */
+
+/* ***** Flex Grow ***** */
+/* li:first-child {
+	flex-grow: 1;
+}
+
+li:nth-child(3) {
+	flex-grow: 3;
+} */
+
+/* ***** Flex Shrink ***** */
+/* li:first-child {
+	flex-shrink: 0;
+} */
+
+/* ***** Flex Shorthand ***** */
+li:first-child {
+	flex: 1 0 20rem;
+}
