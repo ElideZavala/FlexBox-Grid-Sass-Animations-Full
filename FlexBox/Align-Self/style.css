@@ -1,0 +1,47 @@
+/* Flex Container => Parent */
+ul {
+	background-color: lightslategray;
+	padding: 20px;
+	text-align: center;
+	height: 300px;
+
+	/* Flex Container Properties */
+	display: flex;     
+	align-items: flex-end;
+	/* flex-direction: column; */
+
+}
+
+li {
+	list-style: none;
+	color: white;
+	background-color: #20b2aa;
+	margin: 10px;
+	padding: 10px;
+}
+
+/* ********** ALIGN SELF ********** */
+/* li:first-child {
+	align-self: auto;
+} */
+
+/* Flex End */
+/* li:first-child {
+	align-self: flex-end;
+} */
+
+/* Center */
+/* li:first-child {
+	align-self: center;
+} */
+
+/* Stretch */
+/* li:first-child {
+	align-self: stretch;
+} */
+
+/* Baseline */
+li:first-child {
+	align-self: baseline;
+	padding: 5px;
+}
