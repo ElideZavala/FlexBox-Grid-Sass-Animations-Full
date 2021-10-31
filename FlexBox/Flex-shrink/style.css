@@ -47,11 +47,16 @@ li:nth-child(2) {
 } */
 
 /* ***** Flex Grow ***** */
-li:first-child {
+/* li:first-child {
 	flex-grow: 1;
 }
 
 li:nth-child(3) {
 	flex-grow: 3;
+} */
+
+/* ***** Flex Shrink ***** */
+li:first-child {
+	flex-shrink: 0;
 }
 
