@@ -1,0 +1,40 @@
+/*  Reset => Universal Selector */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sport */
+#sports {
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+.sport {
+	width: 320px;
+	background: rgb(26,36,0);
+	background: linear-gradient(90deg, rgba(71, 211, 204, 0.856) 50%, rgb(0, 174, 255) 100%);
+}
+
+#sports {
+	padding: 35px;
+}
+
+.basketball {
+	padding: 27px;
+}
+
+.basketball h2 {
+	margin-bottom: 10px;
+}
+
+.basketball p {
+	line-height: 1;      ;
+}
