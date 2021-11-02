@@ -18,7 +18,8 @@ body {
 /* Shared Styles for Sections */
 .section {
   width: 400px;
-
+  /* margin: 0 auto; */
+  margin: 0 1rem    ;
   background-color: rgb(166, 248, 159);
 }
 
@@ -31,12 +32,23 @@ img {
 
 /* Date */
 .section .content p:first-of-type {
-  text-align: center;
+  text-align: left;
 }
 
 /* headline */
 .section .content h3 {
-  text-align: right;
+  text-align: center;
 }
 
 /* Improvements */
+.section .content p:first-of-type,
+.section .content h3,
+.content p:last-of-type {
+  text-align: right;
+  margin: 15px 25px 0 0;
+}
+
+.section .content p:last-of-type {
+margin: 0 0 20px 20px;
+line-height: 1.6;
+}
