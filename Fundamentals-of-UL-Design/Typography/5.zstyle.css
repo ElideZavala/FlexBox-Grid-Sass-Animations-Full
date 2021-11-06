@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* shared styles for sections */
+main {
+  background-color: rgb(216, 230, 218);
+  padding: 30px;
+}
+
+main .all-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .all-content .section {
+  width: 250px;
+  background-color: rgb(83, 95, 107);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+p:not(:first-of-type) {
+  text-align: left;
+  font-family: "Liu Jian Mao Cao", cursive;
+}
+
+p {
+  font-family: "Spicy Rice", cursive;
+}
+
+/* Improvements */
+main > h1,
+main  p {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 5px;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+p:not(:first-child),
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
