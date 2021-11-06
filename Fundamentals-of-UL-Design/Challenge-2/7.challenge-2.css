@@ -1,0 +1,79 @@
+:root {
+  --color1: #ffd0ed;
+  --color2: #ffc7e9;
+  --color3: #febcff;
+  --color4: #dcbcff;
+  --color5: #b9cfff;
+}
+
+body {
+  background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  margin-top: 3rem;
+  border-left: 0.7rem solid gray;
+  padding: 0 3rem;
+  width: 60%;
+  background-color: var(--color5);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: rgb(54, 51, 51);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+p {
+  color: #9d9d9d;
+  margin: 0.5rem 0 2rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+input[type="text"],
+textarea {
+  margin-bottom: 1.5rem;
+  display: block;
+  padding: 0.5rem;
+  width: 80%;
+  background: var(--color4);
+  border: none;
+  border-radius: 1rem;
+  border-bottom: 1px solid lightgray;
+  outline: 0;
+  color: black;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 1px solid white;
+}
+
+input[type="submit"] {
+  background: var(--color4);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+}
+
+/* Improvements */
