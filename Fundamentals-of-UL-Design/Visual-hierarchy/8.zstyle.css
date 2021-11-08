@@ -15,7 +15,7 @@ section {
   border-radius: 50%;
   background-color: lightyellow;
   margin: 30px 50px;
-} */
+} */ */
 
 /* Scenario 1 => Alignment */
 /* section:first-child {
@@ -54,7 +54,7 @@ section:nth-child(5) {
 section:nth-child(2) {
   transform: scale(1.5);
   background-color: #feed00;
-} */
+}
 
 /********************************************************* Example *************************************************/
 body {
@@ -111,4 +111,4 @@ input[type="submit"] {
   background-color: #ffed8c;
   color: #5801cb;
   font-weight: bold;
-}
+} 
