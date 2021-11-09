@@ -1,0 +1,7 @@
+div {
+	background-image: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+	height: 300px; 
+	/* width: 600px; */
+
+	/* max-width: 600px; */
+}
