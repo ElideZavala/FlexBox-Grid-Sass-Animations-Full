@@ -3,5 +3,9 @@ div {
 	height: 300px; 
 	/* width: 600px; */
 
+	/* Max-With*/
 	/* max-width: 600px; */
+
+	/* Min-Math */
+	min-width: 600px;
 }
