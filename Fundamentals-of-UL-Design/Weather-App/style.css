@@ -69,3 +69,9 @@ div.weather__info {
 	align-items: center;
 	margin: 5rem 0;
 }
+
+/* Weathee Temp Container */
+div.weather__temp {
+	display: flex;
+	justify-content: space-evenly;
+}

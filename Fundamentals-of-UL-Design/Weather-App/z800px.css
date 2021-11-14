@@ -1,0 +1,11 @@
+/* Weather Temp Container */
+div.weather__temp {
+	flex-direction: column;
+}
+
+/* Day Container */
+div.weather__temp > div {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+}
