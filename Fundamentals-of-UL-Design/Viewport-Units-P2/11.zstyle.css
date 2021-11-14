@@ -1,0 +1,50 @@
+/* 
+
+16       10
+100       X
+-------------
+100*10/16 => 62.5%
+
+*/
+
+:root {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+header {
+  background-color: lightsteelblue;
+  height: 7.5rem;
+}
+
+section {
+  background-color: lightskyblue;
+  height: 30rem; /* comment out for the second solution to be visualized */
+}
+
+footer {
+  background-color: lightseagreen;
+  height: 8.5rem;
+}
+
+header,
+section,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* First Solution */
+section {
+  height: calc(100vh - 7.5rem - 8.5rem);
+}
+
+/* Optional */
+* {
+  padding: 0;
+  margin: 0;
+}
