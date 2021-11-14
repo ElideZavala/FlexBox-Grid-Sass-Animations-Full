@@ -1,0 +1,14 @@
+/* :root => html => replace px with rem */
+:root {
+  font-size: 10px;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* font-size: 3vw; */
+
+  font-size: calc(1.4px + 2vw);
+}
