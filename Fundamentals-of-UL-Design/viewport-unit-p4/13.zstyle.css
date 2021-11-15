@@ -1,0 +1,21 @@
+body {
+  background-color: #000;
+}
+
+header {
+  background-color: lightskyblue;
+  padding: 5vh 5vw;
+
+  /* top border */
+  /* border-top: 5px solid yellow; */
+  /* border-top: 0.333vw solid yellow; */
+  /* Hacer el border responsive => vw*/
+
+  border-top: calc(2px + 0.186vw) solid yellow;
+}
+
+a { 
+  text-decoration: none;
+  color: #444;
+  margin: 0 2vw;
+}
