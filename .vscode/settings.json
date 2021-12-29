@@ -1,7 +1,7 @@
 {
 	"workbench.colorCustomizations": {
-		"activityBarBadge.background": "#AB47BC",
-		"activityBar.activeBorder": "#AB47BC",
+		"activityBarBadge.background": "#6b5b14",
+		"activityBar.activeBorder": "#6b5b14",
 		"list.activeSelectionForeground": "#AB47BC",
 		"list.inactiveSelectionForeground": "#AB47BC",
 		"list.highlightForeground": "#AB47BC",
@@ -10,7 +10,6 @@
 		"textLink.foreground": "#AB47BC",
 		"progressBar.background": "#AB47BC",
 		"pickerGroup.foreground": "#AB47BC",
-		"tab.activeBorder": "#AB47BC",
 		"notificationLink.foreground": "#AB47BC",
 		"editorWidget.resizeBorder": "#AB47BC",
 		"editorWidget.border": "#AB47BC",
@@ -22,9 +21,21 @@
 		"menubar.selectionForeground": "#AB47BC",
 		"editor.findMatchBorder": "#AB47BC",
 		"selection.background": "#AB47BC40",
-		"statusBarItem.remoteBackground": "#AB47BC",
-		"activityBar.background": "#4D115A",
-		"titleBar.activeBackground": "#6C177D",
-		"titleBar.activeForeground": "#FEFBFE"
-	}
+		"statusBarItem.remoteBackground": "#28092f",
+		"activityBar.background": "#4c115a",
+		"titleBar.activeBackground": "#28092f",
+		"titleBar.activeForeground": "#e7e7e7",
+		"activityBar.activeBackground": "#4c115a",
+		"activityBar.foreground": "#e7e7e7",
+		"activityBar.inactiveForeground": "#e7e7e799",
+		"activityBarBadge.foreground": "#e7e7e7",
+		"sash.hoverBorder": "#4c115a",
+		"statusBar.background": "#28092f",
+		"statusBar.foreground": "#e7e7e7",
+		"statusBarItem.hoverBackground": "#4c115a",
+		"statusBarItem.remoteForeground": "#e7e7e7",
+		"titleBar.inactiveBackground": "#28092f99",
+		"titleBar.inactiveForeground": "#e7e7e799"
+	},
+	"peacock.color": "#28092f"
 }

@@ -1,0 +1,21 @@
+/* The Grip Container */
+
+
+body {
+	background-color: #000;
+}
+
+.grid-container {
+	
+	/* initiating a grid layout */
+	display: grid;
+	
+	/* -**-**-**-** Grid Template Rows Property 	*-**-**-**-* 
+	<track-size> (lenghts, percentages, viewport units or fractions) */
+	
+	/*  Property Values can be:  */
+}
+
+.item {
+	background-color: #ff7052;
+}
