@@ -11,11 +11,24 @@ body {
 	display: grid;
 	
 	/* -**-**-**-** Grid Template Rows Property 	*-**-**-**-* 
-	<track-size> (lenghts, percentages, viewport units or fractions) */
+	<track-size> (lenghts, percentages, viewport units or fractions) 
+	<line-name>
+	*/
 	
 	/*  Property Values can be:  */
+
+	grid-template-rows: 150px 150px 250px 10rem;
+
+	/* -**-**-**-** Grid Template Columns Property 	*-**-**-**-* 
+	<track-size> (lenghts, percentages, viewport units or fractions) 
+	<line-name>
+	*/
+
+	grid-template-columns: 150px 150px ;
+
 }
 
 .item {
 	background-color: #ff7052;
+	border:dotted 0.005rem red;
 }
