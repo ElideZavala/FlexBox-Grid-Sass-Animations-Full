@@ -89,9 +89,16 @@ body {
 }
 .item-4 {
 	background-color: olivedrab;
+
+	/* Changing The Horizontal/Vertical Position*/
 }
 .item-5 {
 	background-color: darkorchid;
+
+	/* Changing The Horizontal Position */
+	/* SH */
+	grid-row: 3 / 4;
+	grid-column: 2 / 3 ;
 }
 .item-6 {
 	background-color: darkseagreen;
