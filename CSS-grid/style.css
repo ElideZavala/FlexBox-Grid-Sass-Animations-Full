@@ -9,6 +9,8 @@ body {
 	
 	/* initiating a grid layout */
 	display: grid;
+	background-color: #ff7052;
+	/* justify-content: center; */
 	
 	/* -**-**-**-** Grid Template Rows Property 	*-**-**-**-* 
 	<track-size> (lenghts, percentages, viewport units or fractions) 
@@ -17,18 +19,73 @@ body {
 	
 	/*  Property Values can be:  */
 
-	grid-template-rows: 150px 150px 250px 10rem;
+	
+	/*  Grid Column Gap Property:  */
+	
+	/* Property Values can be: (lenghts, percentages, viewport units)*/
 
-	/* -**-**-**-** Grid Template Columns Property 	*-**-**-**-* 
-	<track-size> (lenghts, percentages, viewport units or fractions) 
-	<line-name>
-	*/
+		/* Vieja sintaxis */
+		/* grid-column-gap: 10px; */
 
-	grid-template-columns: 150px 150px ;
+		/* Standard Syntax */
+		/* column-gap: 10px; */
+		/* column-gap: 1.5rem; */
+		/* column-gap: 7vw; */
+		/* column-gap: 10px;
+		row-gap: 7vh; */
+		/* column-gap: 10px; */
+		/* column-gap: 10px; */
+		/* column-gap: 10px; */
+		
+		/* grid-template-columns: 150px 150px 150px 150px; */
+		/* grid-template-rows: 150px 150px 150px; */
+
+		/* Property Value can be:
+								repeat(#rows/cols, track-size)	
+		*/
+
+		grid-gap: 15px;
+
+		/* grid-template-columns: repeat(4, 150px); */
+		/* grid-template-rows: repeat(3, 150px ); */
+
+		/* -**-**-**-** The fr unit (Fractional unit) *-**-**-**-* */
+
+		/* Property Value can be
+						fr */
+
+		height: 600px;
+		grid-template-columns: repeat(3, 150px) 1fr;
+		grid-template-rows: repeat(2, 100px) 0.5fr;
+
 
 }
 
 .item {
-	background-color: #ff7052;
-	border:dotted 0.005rem red;
+	/* font-size: 4rem;
+	text-align: center;
+	line-height: 200px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 3px; */
+	background-color: #fff;
+}
+
+.item-1 {
+	background-color: chartreuse;
+}
+
+.item-2 {
+	background-color: chocolate;
+}
+
+.item-3 {
+	background-color: cornflowerblue;
+}
+
+.item-1 {
+	background-color: chartreuse;
+}
+
+.item-1 {
+	background-color: chartreuse;
 }
