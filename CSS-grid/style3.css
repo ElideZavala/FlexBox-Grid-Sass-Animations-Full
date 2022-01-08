@@ -1,3 +1,7 @@
+body {
+	background-color:#000;
+}
+
 .grid-container {
 	background-color: #ff7052;
 
@@ -5,8 +9,11 @@
 
 	grid-gap: 25px;
 
-	grid-template-areas: 'header header header header header header'
-					 ' ';
+	grid-template-areas: "nav header header header header header header"
+					 "nav sec-1 sec-1 sec-2 sec-2 sec-3 sec-3"
+					 "nav . sec-4 sec-4 sec-4 sec-4 ."
+					 "nav sec-5 sec-5 sec-5 sec-6 sec-6 sec-6"
+					 "footer footer footer footer footer footer footer";
 }
 
 /* The Grid Items */
@@ -26,32 +33,49 @@ footer {
 
 .header {
 	background-color: chartreuse;
+
+	/* Assigning the name */
+	grid-area: header;
+
+}
+
+.nav {
+	background: #225;
+	grid-area: nav;
+	color: #fff;
 }
 
 .section-1 {
 	background-color: darkseagreen;
+	grid-area: sec-1;
 }
 
 .section-2 {
 	background-color: chocolate;
+	grid-area: sec-2;
 }
 
 .section-3 {
 	background-color: cornflowerblue;
+	grid-area: sec-3;
 }
 
 .section-4 {
 	background-color: olivedrab;
+	grid-area: sec-4;
 }
 
 .section-5 {
 	background-color: darkkhaki;
+	grid-area: sec-5;
 }
 
 .section-6 {
 	background-color: dimgray;
+	grid-area: sec-6;
 }
 
 .footer {
 	background-color: darkorchid;
+	grid-area: footer;
 }
