@@ -1,0 +1,75 @@
+body {
+	background-color: #000;
+}
+
+.grid-container {
+	background-color: #ff7052;
+
+	display: grid;
+
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 250px);
+
+	grid-gap: 25px;
+
+	/* +++++++++++++++++++++++++ Justify Items Property +++++++++++++++++++++++++ */
+	/* Property Values can be: 
+						stretch (default) */
+	/* justify-items: stretch; */
+	/* justify-items: start; */
+	/* justify-items: end; */
+	/* justify-items: center; */
+
+	/* +++++++++++++++++++++++++ Align Items Property +++++++++++++++++++++++++ */
+	/* align-items: stretch; */
+	/* align-items: start; */
+	/* align-items: end; */
+	/* align-items: center; */
+
+	/* +++++++++++++++++++++++++ Place Items Property +++++++++++++++++++++++++ */
+	/* place-items: start end; */
+	/* place-items: start center; */
+	/* place-items: center; */
+	/* place-items: center start; */
+	/* place-items: center end; */
+	/* place-items: end start; */
+	/* place-items: end center; */
+	place-items: end;
+
+}
+
+.item {
+	background-color: #fcc006;
+	font-size: 20px;
+	text-align: center;
+	/* line-height: 15px; */
+	font-family: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 3px;
+}
+
+
+.item-1 {
+	background-color: chartreuse;
+}
+.item-2 {
+	background-color: chocolate;
+}
+.item-3 {
+	background-color: cornflowerblue;
+}
+.item-4 {
+	background-color: olivedrab;
+}
+.item-5 {
+	background-color: darkorchid;
+}
+.item-6 {
+	background-color: darkseagreen;
+}
+.item-7 {
+	background-color: dimgray;
+}
+.item-8 {
+	background-color: lightgoldenrodyellow;	
+}
