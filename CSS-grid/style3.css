@@ -1,0 +1,57 @@
+.grid-container {
+	background-color: #ff7052;
+
+	display: grid;
+
+	grid-gap: 25px;
+
+	grid-template-areas: 'header header header header header header'
+					 ' ';
+}
+
+/* The Grid Items */
+section,
+header,
+footer {
+	background-color: #fcc006;
+	font-size: 20px;
+	text-align: center;
+	line-height: 150px;
+	font-family: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 3px;
+}
+
+/*+++++++++++++++ "The Grid Items Properties" ++++++++++++++*/
+
+.header {
+	background-color: chartreuse;
+}
+
+.section-1 {
+	background-color: darkseagreen;
+}
+
+.section-2 {
+	background-color: chocolate;
+}
+
+.section-3 {
+	background-color: cornflowerblue;
+}
+
+.section-4 {
+	background-color: olivedrab;
+}
+
+.section-5 {
+	background-color: darkkhaki;
+}
+
+.section-6 {
+	background-color: dimgray;
+}
+
+.footer {
+	background-color: darkorchid;
+}
