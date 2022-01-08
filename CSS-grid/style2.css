@@ -1,0 +1,45 @@
+.grid-container {
+	background-color: #ff7052;
+	
+	display: grid;
+	grid-gap: 25px;
+
+	/* No Repeat Function is Involved */
+	grid-template-columns: [col-start-1] 150px [col-end-1 col-start-2] 200px [col-end-2 col-start-3] 250px [col-end-3 col-start-4] 300px [col-end-4 grid-end];
+	grid-template-rows: 200px 250px;
+}
+
+/* The Grid Items */
+.item {
+	font-size: 30px;
+
+}
+
+.item-1 {
+	background-color: chartreuse;
+
+	/* Change the position */
+	grid-column: col-start-4/ col-end-4 ;
+}
+
+.item-2 {
+	background-color: chocolate;
+}
+.item-3 {
+	background-color: cornflowerblue;
+}
+.item-4 {
+	background-color: olivedrab;
+}
+.item-5 {
+
+}
+.item-6 {
+
+}
+.item-7 {
+	
+}
+.item-8 {
+	
+}
