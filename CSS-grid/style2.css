@@ -5,13 +5,21 @@
 	grid-gap: 25px;
 
 	/* No Repeat Function is Involved */
-	grid-template-columns: [col-start-1] 150px [col-end-1 col-start-2] 200px [col-end-2 col-start-3] 250px [col-end-3 col-start-4] 300px [col-end-4 grid-end];
-	grid-template-rows: 200px 250px;
+	/* grid-template-columns: [col-start-1] 150px [col-end-1 col-start-2] 200px [col-end-2 col-start-3] 250px [col-end-3 col-start-4] 300px [col-end-4 grid-end];
+
+	grid-template-rows: [row-start-1] 200px [row-end-1 row-start-2] 250px [row-end-2]; */
+
+	/* Repeat Funtion is Involved */
+	
+	grid-template-columns: repeat(4,[col-start] 150px [col-end]);
+	grid-template-rows: repeat(2, [row-start] 200px [row-end]);
 }
 
 /* The Grid Items */
 .item {
 	font-size: 30px;
+	text-align: center;
+	letter-spacing: 3px;
 
 }
 
@@ -19,27 +27,40 @@
 	background-color: chartreuse;
 
 	/* Change the position */
-	grid-column: col-start-4/ col-end-4 ;
+	/* grid-column: col-start-4/ col-end-4 ; */
+	/* grid-column: col-start-4/ -1; */
+	/* grid-row: row-start-2 / row-end-2; */
 }
 
 .item-2 {
 	background-color: chocolate;
+
+	/* Spam the item */
+	/* grid-column: col-start-1 grid-end; */
 }
+
 .item-3 {
 	background-color: cornflowerblue;
+
+	/* Change the position */
+	/* grid-column: col-start 4 / col-end 4;
+	grid-row: row-start 2 / row-end 2; */
 }
 .item-4 {
 	background-color: olivedrab;
 }
 .item-5 {
-
+	background-color: darkorchid;
 }
 .item-6 {
-
+	background-color: darkseagreen;
 }
 .item-7 {
-	
+	background-color: dimgray;
+
+	grid-column: col-start 2 / col-end 4;
+	grid-row: row-start 2 / row-end 2;
 }
 .item-8 {
-	
+	background-color: lightgoldenrodyellow;	
 }
