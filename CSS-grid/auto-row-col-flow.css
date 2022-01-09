@@ -1,0 +1,73 @@
+body {
+	background-color: #000;
+}
+
+.grid-container {
+	background-color: #ff7052;
+	
+	display: grid;
+	grid-gap: 25px;
+
+	grid-template-columns: repeat(4, 150px);
+	grid-template-rows: repeat(2, 100px);
+
+
+	/* -=-=-=-=-=-=-=-=-=-The Grid Container Properties =-=-=-=-=-=-=-=- */
+
+	/* -=-=-=-=-=-=-=-=-=-Grid Auto Property =-=-=-=-=-=-=-=- */
+
+	/* Property Values can be: 
+						 row (default) | column */
+	/* grid-auto-rows: 100px; */
+	/* grid-auto-columns: 50px; */
+	/* grid-auto-flow: row; */
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+}
+
+.item {
+	font-size: 30px;
+	text-align: center;
+	/* line-height: 15px; */
+	font-family: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 3px;
+}
+
+
+.item-1 {
+	background-color: chartreuse;
+}
+.item-2 {
+	background-color: chocolate;
+}
+.item-3 {
+	background-color: cornflowerblue;
+}
+.item-4 {
+	background-color: olivedrab;
+}
+.item-5 {
+	background-color: darkorchid;
+}
+.item-6 {
+	background-color: darkseagreen;
+}
+.item-7 {
+	background-color: dimgray;
+}
+.item-8 {
+	background-color: lightgoldenrodyellow;	
+}
+.item-9 {
+	background-color: lightgreen;	
+}
+.item-10 {
+	background-color: darkorange;
+}
+.item-11 {
+	background-color: lightskyblue;	
+}
+.item-12 {
+	background-color: darkolivegreen;	
+}
