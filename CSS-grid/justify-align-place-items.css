@@ -6,11 +6,12 @@ body {
 	background-color: #ff7052;
 
 	display: grid;
+	height: 700px;
 
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 250px);
+	grid-template-columns: repeat(4, 150px);
+	grid-template-rows: repeat(2, 150px);
 
-	grid-gap: 25px;
+	/* grid-gap: 25px; */
 
 	/* +++++++++++++++++++++++++ Justify Items Property +++++++++++++++++++++++++ */
 	/* Property Values can be: 
@@ -34,13 +35,57 @@ body {
 	/* place-items: center end; */
 	/* place-items: end start; */
 	/* place-items: end center; */
-	place-items: end;
+	/* place-items: end; */
 
+	/* +++++++++++++++++++++++ Justify Content Property +++++++++++++++++++++++ */
+
+	/* Property Values can be 
+					start | end | center | stretch(default) | space-sround | space-between | space-evenly 		
+	*/
+
+	/* justify-content: stretch; */
+	/* justify-content: start; */
+	/* justify-content: end; */
+	/* justify-content: center; */
+	/* justify-content: space-around; */
+	/* justify-content: space-between; */
+	/* justify-content: space-evenly; */
+
+	/* +++++++++++++++++++++++ Align Content Property +++++++++++++++++++++++ */
+
+	/* Property Values can be 
+					start | end | center | stretch(default) | space-sround | space-between | space-evenly 		
+	*/
+	
+	/* align-content: stretch; */
+	/* align-content: start; */
+	/* align-content: end; */
+	/* align-content: center; */
+	/* align-content: space-around */
+	/* align-content: space-between; */
+	/* align-content: space-evenly; */
+
+	/* +++++++++++++++++++++++ Place Content Property +++++++++++++++++++++++ */
+
+	/* Property Values can be 
+					start | end | center | stretch(default) | space-sround | space-between | space-evenly 		
+	*/
+	
+	/* place-content: stretch; */
+	/* place-content: start; */
+	/* place-content: start center; */
+	/* place-content: start end; */
+	/* place-content: end; */
+	/* place-content: center; */
+	/* place-content: space-around */
+	/* place-content: space-between; */
+	/* place-content: space-evenly; */
+
+						 
 }
 
 .item {
-	background-color: #fcc006;
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
 	/* line-height: 15px; */
 	font-family: 150px;
