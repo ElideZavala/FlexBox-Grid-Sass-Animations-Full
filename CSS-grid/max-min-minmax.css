@@ -64,16 +64,4 @@ body {
 }
 .item-8 {
 	background-color: lightgoldenrodyellow;
-	/* Place self Property (shorthand Property for align-self & justify-self property ) */
-
-	/* Property Values can be::
-							   stretch (default) | start | end | center */
-
-	/* place-self: stretch; */
-	/* place-self: start; */
-	/* place-self: center; */
-	place-self: center start;
-
-	place-self: center end;	
-	/* place-self: end;	 */
 }
