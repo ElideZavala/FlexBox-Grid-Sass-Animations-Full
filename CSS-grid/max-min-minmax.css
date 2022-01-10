@@ -1,51 +1,40 @@
 body {
 	background-color: #000;
-	color: darkolivegreen;
+	color: dark;
 }
 
 .grid-container {
+	background-color: #12535d;
 	display: grid;
 	grid-gap: 25px;
-
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(4, 150px);
+	height: 100vh;
+	
+	/* grid-template-columns: repeat(4, 150px); */
+	/* grid-template-columns: 1fr 1fr max-content 1fr; */
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+	grid-template-columns: 1fr 1fr min-content 1fr;
+	
+	/* grid-template-rows: repeat(4, 150px); */
+	/* grid-template-rows: repeat(4, min-content); */
+	/* grid-template-rows: repeat(2, max-content); */
+	grid-template-rows: repeat(2, minmax(100px, 300px));
 }
 
 .item {
 	font-size: 30px;
 	text-align: center;
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	letter-spacing: 3px;
-	line-height: 80px;
+	/* line-height: 80px; */
 	font-weight: 700;
+	text-shadow: 0 0 10px orangered;
 	
 }
 
 .item-1 {
 	background-color: chartreuse;
-
-	/* Justify Self Property */
-
-	/* Property Values can be:border:
-							   stretch (default) | start | end | center */
-
-	/* justify-self: stretch; */
-	/* justify-self: start; */
-	/* justify-self: center; */
-	/* justify-self: end; */
 }
 .item-2 {
 	background-color: chocolate;
-
-	/* Align self Property*/
-
-	/* Property Values can be:border:
-							   stretch (default) | start | end | center */
-
-	/* justify-self: stretch; */
-	/* justify-self: start; */
-	/* justify-self: center; */
-	/* justify-self: end; */
 }
 .item-3 {
 	background-color: cornflowerblue;
@@ -53,7 +42,7 @@ body {
 .item-4 {
 	background-color: olivedrab;
 }
-.item-5 {
+.item-5 { 
 	background-color: darkorchid;
 }
 .item-6 {
