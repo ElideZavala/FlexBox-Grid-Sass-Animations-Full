@@ -1,0 +1,67 @@
+body {
+	background-color: #000;
+	color: darkolivegreen;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 25px;
+
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 150px);
+}
+
+.item {
+	font-size: 30px;
+	text-align: center;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	letter-spacing: 3px;
+	line-height: 80px;
+	font-weight: 700;
+	
+}
+
+.item-1 {
+	background-color: chartreuse;
+
+	/* Justify Self Property */
+
+	/* Property Values can be:border:
+							   stretch (default) | start | end | center */
+
+	/* justify-self: stretch; */
+	/* justify-self: start; */
+	/* justify-self: center; */
+	/* justify-self: end; */
+}
+.item-2 {
+	background-color: chocolate;
+
+	/* Align */
+
+	/* Property Values can be:border:
+							   stretch (default) | start | end | center */
+
+	/* justify-self: stretch; */
+	/* justify-self: start; */
+	/* justify-self: center; */
+	/* justify-self: end; */
+}
+.item-3 {
+	background-color: cornflowerblue;
+}
+.item-4 {
+	background-color: olivedrab;
+}
+.item-5 {
+	background-color: darkorchid;
+}
+.item-6 {
+	background-color: darkseagreen;
+}
+.item-7 {
+	background-color: dimgray;
+}
+.item-8 {
+	background-color: lightgoldenrodyellow;	
+}
