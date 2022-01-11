@@ -1,0 +1,63 @@
+body {
+	background-color: #1a0e0e;
+	color: dark;
+}
+
+.grid-container {
+	background-color: #12535d;
+	display: grid;
+	/* grid-template-rows: repeat(2, minmax(150px, min-content)) ; */
+
+	/* *+*+*+*+*+*+*+*+*+*+*+ Auto Fill Property Values +*+*+*+*+*+*+*+*+*++*+* */
+
+	/* width: 1500px; */
+	/* grid-template-columns: repeat(auto-fill, 150px); */
+
+	/* *+*+*+*+*+*+*+*+*+*+*+ Auto Fill Property Values +*+*+*+*+*+*+*+*+*++*+* */
+	
+	/* grid-template-columns: repeat(Auto-Fit, 150px); */
+
+	/* Do not set the width of colums to the fr unit when working with auto-fit */
+	/* grid-template-columns: repeat(Auto-Fit, 1fr); */
+
+
+	/* Use the minmax function */
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+	/* implicit Grid Row Track */
+	grid-auto-rows: minmax(150px, min-content);
+}
+
+.item {
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-shadow: 0 0 10px orangered;
+	
+}
+
+.item-1 {
+	background-color: chartreuse;
+}
+.item-2 {
+	background-color: chocolate;
+}
+.item-3 {
+	background-color: cornflowerblue;
+}
+.item-4 {
+	background-color: olivedrab;
+}
+.item-5 { 
+	background-color: darkorchid;
+}
+.item-6 {
+	background-color: darkseagreen;
+}
+.item-7 {
+	background-color: dimgray;
+}
+.item-8 {
+	background-color: lightgoldenrodyellow;
+}
