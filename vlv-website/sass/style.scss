@@ -1,6 +1,4 @@
-body {
-	background-color: #000;
-}
+
 
 // root
 // $size: (
@@ -26,8 +24,8 @@ $colors: (
 	"color-quaternary-m-dark": rgba(164, 49, 67, 0.883),
 );
 
-/*  */
-$property: (
+/* Propiedades */
+$propertys: (
 	/* Font-Size */
 	"font-size": 62.5%,	
 
@@ -39,4 +37,11 @@ $property: (
 
 	/* Section Padding */
 	 "padding-section": 8vh 3vh,
-)
+);
+
+
+/* Importaciones */
+@import "functions";
+@import "reset";
+@import "googleFonts";
+@import "utilityComponets";

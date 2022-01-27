@@ -1,14 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
-body {
-  background-color: #000;
-}
-
-h2 {
-  color: aliceblue;
-  font-family: 'Titillium Web', sans-serif;
-}
-
+/* Colors */
+/* Propiedades */
+/* Importaciones */
 /* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -18,8 +12,14 @@ h2 {
           box-sizing: border-box;
 }
 
-:root {
-  font-size: 62.5%;
+body {
+  background-color: #3143A4;
+  color: aliceblue;
+}
+
+h2 {
+  color: aliceblue;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /* ******************* Utlity Components ******************* */
