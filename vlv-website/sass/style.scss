@@ -1,3 +1,42 @@
 body {
 	background-color: #000;
 }
+
+// root
+// $size: (
+// 	"font-size": 62.5%
+// );
+
+/* Colors */
+$colors: (
+	"color-primary": #3143A4,
+	"color-primary-m-light": rgba(49, 66, 164, 0.513),
+	"color-primary-m-dark": rgba(49, 66, 164, 0.883),
+	
+	"color-secondary": rgb(148, 49, 165),
+	"color-secondary-m-light": rgba(148, 49, 165, 0.513),
+	"color-secondary-m-dark": rgba(148, 49, 165, 0.883),
+	
+	"color-tertiary": rgb(67, 164, 49),
+	"color-tertiary-m-light": rgba(67, 164, 49, 0.513),
+	"color-tertiary-m-dark": rgba(67, 164, 49, 0.883),
+
+	"color-quaternary": rgb(164, 49, 67),
+	"color-quaternary-m-light": rgba(164, 49, 67, 0.513),
+	"color-quaternary-m-dark": rgba(164, 49, 67, 0.883),
+);
+
+/*  */
+$property: (
+	/* Font-Size */
+	"font-size": 62.5%,	
+
+	/* Transtion Duration */
+	"transition-duration": 0.3,
+
+	/* Section Title Font Size */
+	"font-size-title": calc(2rem + 2vw),
+
+	/* Section Padding */
+	 "padding-section": 8vh 3vh,
+)

@@ -1,4 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
 body {
   background-color: #000;
 }
+
+h2 {
+  color: aliceblue;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+/* ******************* Utlity Components ******************* */
 /*# sourceMappingURL=style.css.map */
