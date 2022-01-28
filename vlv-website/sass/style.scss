@@ -99,5 +99,40 @@ section {
 		grid-column: col-start 10 / center-end;
 		height: $height;
 	}
+
+	/* Gallery Text Section */
+	&#gallery-text {
+		background-color: color(color-secondary);
+		grid-column: center-start / center-end 1;
+		height: $height;
+	}
+
+	/* Gallery Carousel Section */
+	&#gallery-carrousel {
+		background-color: color(color-tertiary);
+		grid-column: col-start 2 / container-end;
+		height: $height;
+	}
+
+	/* Features Section */
+	&#feactures-content {
+		background-color: color(color-primary);
+		grid-column: container-start / col-end 9;
+		height: $height;
+	}
+
+	/* Features text Section */
+	&#feactures-text {
+		background-color: color(color-secondary);
+		grid-column: col-start 10 / center-end;
+		height: $height;
+	}
+
+	/* Testimonials Section */ // a word not award 
+	&#testimonials {
+		background-color: color(color-tertiary);
+		grid-column: center-start / center-end;
+		height: $height;
+	}
 }
 

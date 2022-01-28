@@ -55,6 +55,11 @@ section {
   /* Motto Section */
   /* Events Section */
   /* Events text Section */
+  /* Gallery Text Section */
+  /* Gallery Carousel Section */
+  /* Features Section */
+  /* Features text Section */
+  /* Testimonials Section */
 }
 
 section#booking-content {
@@ -90,6 +95,36 @@ section#events-content {
 section#events-text {
   background-color: #3143a4;
   grid-column: col-start 10 / center-end;
+  height: 400px;
+}
+
+section#gallery-text {
+  background-color: #9431a5;
+  grid-column: center-start / center-end 1;
+  height: 400px;
+}
+
+section#gallery-carrousel {
+  background-color: #43a431;
+  grid-column: col-start 2 / container-end;
+  height: 400px;
+}
+
+section#feactures-content {
+  background-color: #3143a4;
+  grid-column: container-start / col-end 9;
+  height: 400px;
+}
+
+section#feactures-text {
+  background-color: #9431a5;
+  grid-column: col-start 10 / center-end;
+  height: 400px;
+}
+
+section#testimonials {
+  background-color: #43a431;
+  grid-column: center-start / center-end;
   height: 400px;
 }
 /*# sourceMappingURL=style.css.map */
