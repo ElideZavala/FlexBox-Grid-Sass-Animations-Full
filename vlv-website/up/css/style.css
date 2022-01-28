@@ -12,7 +12,6 @@
 }
 
 body {
-  background-color: #3143a4;
   color: aliceblue;
 }
 
@@ -33,10 +32,34 @@ body {
   -ms-grid-columns: [container-start] 1fr [center-start] ([col-start] minmax(min-content, 11rem) [col-end])[10] [center-end] 1fr [container-end];
       grid-template-columns: [container-start] 1fr [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 11rem) [col-end]) [center-end] 1fr [container-end];
       grid-template-columns: [container-start] 1fr [center-start] repeat(10, [col-start] minmax(min-content, 11rem) [col-end]) [center-end] 1fr [container-end];
-  -ms-grid-rows: 100vh (min-content)[8] 1vh;
-      grid-template-rows: 100vh repeat(8, -webkit-min-content) 1vh;
-      grid-template-rows: 100vh repeat(8, min-content) 1vh;
+  -ms-grid-rows: 100vh (min-content)[8];
+      grid-template-rows: 100vh repeat(8, -webkit-min-content);
+      grid-template-rows: 100vh repeat(8, min-content);
+}
+
+.container > * {
+  font-size: 5rem;
 }
 
 /* Main Styling */
+header#header {
+  background-color: #3143a4;
+  grid-column: container-start / container-end;
+}
+
+/* Section */
+section {
+  /* Booking Content Section */
+  /* Booking Date Section */
+}
+
+section#booking-content {
+  background-color: #9431a5;
+  grid-column: center-start / col-end 6;
+}
+
+section#booking-date {
+  background-color: #43a431;
+  grid-column: col-start 7 / center-end;
+}
 /*# sourceMappingURL=style.css.map */

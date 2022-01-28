@@ -41,7 +41,31 @@ body {
       [col-start] minmax(min-content, 11rem) [col-end]
     )
     [center-end] 1fr [container-end];
-  grid-template-rows: 100vh repeat(8, min-content) 1vh;
+  grid-template-rows: 100vh repeat(8, min-content);
+	// Aplicamos a todos los hijos de container
+ 	 & > * {  
+		font-size: 5rem; 
+	}
 }
 
 /* Main Styling */
+header#header {
+	background-color: color(color-primary);
+	grid-column: container-start / container-end;
+} 
+
+/* Section */
+section {
+	/* Booking Content Section */
+	&#booking-content {
+		background-color: color(color-secondary);
+		grid-column: center-start / col-end 6;
+	}
+	
+	/* Booking Date Section */
+	&#booking-date {
+		background-color: color(color-tertiary);
+		grid-column: col-start 7 / center-end;
+	}
+}
+
