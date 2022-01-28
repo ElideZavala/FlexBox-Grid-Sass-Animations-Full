@@ -1,4 +1,3 @@
-/* Colors */
 /* Propiedades */
 /* Importaciones */
 /* Reset */
@@ -13,7 +12,7 @@
 }
 
 body {
-  background-color: #3143A4;
+  background-color: #3143a4;
   color: aliceblue;
 }
 
@@ -23,4 +22,21 @@ h2 {
 }
 
 /* ******************* Utlity Components ******************* */
+body {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [container-start] 1fr [center-start] ([col-start] minmax(min-content, 11rem) [col-end])[10] [center-end] 1fr [container-end];
+      grid-template-columns: [container-start] 1fr [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 11rem) [col-end]) [center-end] 1fr [container-end];
+      grid-template-columns: [container-start] 1fr [center-start] repeat(10, [col-start] minmax(min-content, 11rem) [col-end]) [center-end] 1fr [container-end];
+  -ms-grid-rows: 100vh (min-content)[8] 1vh;
+      grid-template-rows: 100vh repeat(8, -webkit-min-content) 1vh;
+      grid-template-rows: 100vh repeat(8, min-content) 1vh;
+}
+
+/* Main Styling */
 /*# sourceMappingURL=style.css.map */

@@ -1,47 +1,47 @@
-
-
-// root
-// $size: (
-// 	"font-size": 62.5%
-// );
-
-/* Colors */
 $colors: (
-	"color-primary": #3143A4,
-	"color-primary-m-light": rgba(49, 66, 164, 0.513),
-	"color-primary-m-dark": rgba(49, 66, 164, 0.883),
-	
-	"color-secondary": rgb(148, 49, 165),
-	"color-secondary-m-light": rgba(148, 49, 165, 0.513),
-	"color-secondary-m-dark": rgba(148, 49, 165, 0.883),
-	
-	"color-tertiary": rgb(67, 164, 49),
-	"color-tertiary-m-light": rgba(67, 164, 49, 0.513),
-	"color-tertiary-m-dark": rgba(67, 164, 49, 0.883),
-
-	"color-quaternary": rgb(164, 49, 67),
-	"color-quaternary-m-light": rgba(164, 49, 67, 0.513),
-	"color-quaternary-m-dark": rgba(164, 49, 67, 0.883),
+  "color-primary": #3143a4,
+  "color-primary-m-light": rgba(49, 66, 164, 0.513),
+  "color-primary-m-dark": rgba(49, 66, 164, 0.883),
+  "color-secondary": rgb(148, 49, 165),
+  "color-secondary-m-light": rgba(148, 49, 165, 0.513),
+  "color-secondary-m-dark": rgba(148, 49, 165, 0.883),
+  "color-tertiary": rgb(67, 164, 49),
+  "color-tertiary-m-light": rgba(67, 164, 49, 0.513),
+  "color-tertiary-m-dark": rgba(67, 164, 49, 0.883),
+  "color-quaternary": rgb(164, 49, 67),
+  "color-quaternary-m-light": rgba(164, 49, 67, 0.513),
+  "color-quaternary-m-dark": rgba(164, 49, 67, 0.883),
 );
 
 /* Propiedades */
 $propertys: (
-	/* Font-Size */
-	"font-size": 62.5%,	
-
-	/* Transtion Duration */
-	"transition-duration": 0.3,
-
-	/* Section Title Font Size */
-	"font-size-title": calc(2rem + 2vw),
-
-	/* Section Padding */
-	 "padding-section": 8vh 3vh,
+  /* Font-Size */ "font-size": 62.5%,
+  /* Transtion Duration */ "transition-duration": 0.3,
+  /* Section Title Font Size */ "font-size-title": calc(2rem + 2vw),
+  /* Section Padding */ "padding-section": 8vh 3vh
 );
-
 
 /* Importaciones */
 @import "functions";
 @import "reset";
 @import "googleFonts";
 @import "utilityComponets";
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.7;
+  // background-color: color(color-quaternary);
+}
+
+.container {
+  display: grid;
+  grid-template-columns:
+    [container-start] 1fr [center-start] repeat(
+      10,
+      [col-start] minmax(min-content, 11rem) [col-end]
+    )
+    [center-end] 1fr [container-end];
+  grid-template-rows: 100vh repeat(8, min-content) 1vh;
+}
+
+/* Main Styling */
