@@ -38,7 +38,7 @@ body {
 }
 
 .container > * {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 /* Main Styling */
@@ -51,15 +51,45 @@ header#header {
 section {
   /* Booking Content Section */
   /* Booking Date Section */
+  /* Villas Section */
+  /* Motto Section */
+  /* Events Section */
+  /* Events text Section */
 }
 
 section#booking-content {
   background-color: #9431a5;
   grid-column: center-start / col-end 6;
+  height: 400px;
 }
 
 section#booking-date {
   background-color: #43a431;
   grid-column: col-start 7 / center-end;
+  height: 400px;
+}
+
+section#villas {
+  background-color: #3143a4;
+  grid-column: container-start / container-end;
+  height: 400px;
+}
+
+section#motto {
+  background-color: #9431a5;
+  grid-column: container-start / container-end;
+  height: 400px;
+}
+
+section#events-content {
+  background-color: #43a431;
+  grid-column: container-start / col-end 9;
+  height: 400px;
+}
+
+section#events-text {
+  background-color: #3143a4;
+  grid-column: col-start 10 / center-end;
+  height: 400px;
 }
 /*# sourceMappingURL=style.css.map */
