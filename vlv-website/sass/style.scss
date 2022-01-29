@@ -15,10 +15,14 @@ $colors: (
 
 /* Propiedades */
 $propertys: (
-  /* Font-Size */ "font-size": 62.5%,
-  /* Transtion Duration */ "transition-duration": 0.3,
-  /* Section Title Font Size */ "font-size-title": calc(2rem + 2vw),
-  /* Section Padding */ "padding-section": 8vh 3vh
+  /* Font-Size */ 
+  "font-size": 62.5%,
+  /* Transtion Duration */ 
+  "transition-duration": 0.3,
+  /* Section Title Font Size */ 
+  "font-size-title": calc(2rem + 2vw),
+  /* Section Padding */ 
+  "padding-section": 8vh 3vh
 );
 
 /* Importaciones */
@@ -44,9 +48,30 @@ body {
 	[center-end] 1fr [container-end];
 	grid-template-rows: 100vh repeat(8, min-content);
 
-	// Aplicamos a todos los hijos de container
- 	 & > * {  
-		font-size: 2rem; 
+	/* Anchor tags */
+	a:link,
+	a:visited { 
+		color: color(color-quaternary);
+		text-decoration: none;
+		font-size: calc(0.5rem + 1vw);
+		padding: 1rem 2rem;
+		border-radius: 0.3rem;
+		position: relative;
+		transition: all property(transition-duration) cubic-bezier(1, 0, 0, 1);
+		z-index: 1;
+	}
+
+	/* Paragraphs */
+	p {
+		color: white;
+		font-size: calc(1rem + 1vw);
+		font-weight: 300;
+		// font-size: 1rem;
+	}
+
+	/* List Item */
+	li {
+		
 	}
 }
 

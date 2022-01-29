@@ -35,10 +35,28 @@ body {
   -ms-grid-rows: 100vh (min-content)[8];
       grid-template-rows: 100vh repeat(8, -webkit-min-content);
       grid-template-rows: 100vh repeat(8, min-content);
+  /* Anchor tags */
+  /* Paragraphs */
+  /* List Item */
 }
 
-.container > * {
-  font-size: 2rem;
+.container a:link,
+.container a:visited {
+  color: #a43143;
+  text-decoration: none;
+  font-size: calc(0.5rem + 1vw);
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  position: relative;
+  -webkit-transition: all 0.3 cubic-bezier(1, 0, 0, 1);
+  transition: all 0.3 cubic-bezier(1, 0, 0, 1);
+  z-index: 1;
+}
+
+.container p {
+  color: white;
+  font-size: calc(1rem + 1vw);
+  font-weight: 300;
 }
 
 /* Main Styling */
