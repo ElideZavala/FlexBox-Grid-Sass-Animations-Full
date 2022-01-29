@@ -60,6 +60,7 @@ section {
   /* Features Section */
   /* Features text Section */
   /* Testimonials Section */
+  /* Footer Section */
 }
 
 section#booking-content {
@@ -125,6 +126,12 @@ section#feactures-text {
 section#testimonials {
   background-color: #43a431;
   grid-column: center-start / center-end;
+  height: 400px;
+}
+
+section#footer {
+  background-color: #3143a4;
+  grid-column: container-start / container-end;
   height: 400px;
 }
 /*# sourceMappingURL=style.css.map */

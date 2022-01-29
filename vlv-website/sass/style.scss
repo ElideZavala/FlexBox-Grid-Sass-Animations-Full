@@ -134,5 +134,12 @@ section {
 		grid-column: center-start / center-end;
 		height: $height;
 	}
+
+	/* Footer Section */  
+	&#footer {
+		background-color: color(color-primary);
+		grid-column: container-start / container-end;
+		height: $height;
+	}
 }
 
