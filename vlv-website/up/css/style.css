@@ -49,8 +49,8 @@ body {
   padding: 1rem 2rem;
   border-radius: 0.3rem;
   position: relative;
-  -webkit-transition: all 0.3 cubic-bezier(1, 0, 0, 1);
-  transition: all 0.3 cubic-bezier(1, 0, 0, 1);
+  -webkit-transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.3s cubic-bezier(1, 0, 0, 1);
   z-index: 1;
 }
 
@@ -99,11 +99,29 @@ header#header {
   cursor: pointer;
   z-index: 3;
   /* Rotating the menu */
+  /* Links Menu */
 }
 
 .header__main-nav input[type="checkbox"]:checked + .header__main-nav--hamburger > div {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+.header__main-nav input[type="checkbox"]:checked + .header__main-nav--hamburger > div::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.header__main-nav input[type="checkbox"]:checked + .header__main-nav--hamburger > div::after {
+  opacity: 0;
+}
+
+.header__main-nav input[type="checkbox"]:checked:hover + .header__main-nav--hamburger > div {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
 }
 
 /* Hamburger */
@@ -131,8 +149,8 @@ header#header {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  -webkit-transition: all propertys(transition-duration) ease-in-out;
-  transition: all propertys(transition-duration) ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header__main-nav--hamburger > div::before,

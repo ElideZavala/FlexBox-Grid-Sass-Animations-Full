@@ -16,7 +16,7 @@ $colors: (
 /* Propiedades */
 $propertys: (
   /* Font-Size */ "font-size": 62.5%,
-  /* Transtion Duration */ "transition-duration": 0.3,
+  /* Transtion Duration */ "transition-duration": 0.3s,
   /* Section Title Font Size */ "font-size-title": calc(2rem + 2vw),
   /* Section Padding */ "padding-section": 8vh 3vh
 );
@@ -103,9 +103,29 @@ header#header {
     z-index: 3;
 
     /* Rotating the menu */
-    &:checked + .header__main-nav--hamburger > div {
-      transform: rotate(135deg);
-    }
+	&:checked {
+		& + .header__main-nav--hamburger > div {
+			transform: rotate(135deg);
+		}
+
+		& + .header__main-nav--hamburger > div::before {
+			top: 0;
+			left: 0; 
+			width: 100%;
+			transform: rotate(270deg);
+		}
+	
+		& + .header__main-nav--hamburger > div::after {
+			opacity: 0;
+		}
+
+		&:hover + .header__main-nav--hamburger > div {
+			transform: rotate(405deg);
+		}
+	}
+
+	/* Links Menu */
+	&
   }
 }
 
@@ -129,7 +149,7 @@ header#header {
 
     display: grid;
     place-items: center;
-    transition: all propertys(transition-duration) ease-in-out;
+    transition: all property(transition-duration) ease-in-out;
   }
 
   /* Hamburger Top and Bottom lines */
