@@ -3,6 +3,13 @@ $height: 400px;
 @mixin background {
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;	
 	background-repeat: no-repeat;
+	background-position: center;	
 } 
+
+@mixin nav {
+	top: 3rem;
+	left: 3rem;
+	height: 5rem;
+	width: 5rem;
+}

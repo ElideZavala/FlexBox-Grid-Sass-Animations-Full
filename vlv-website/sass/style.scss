@@ -89,6 +89,31 @@ header#header {
 	@include background;
 }
 
+/* Nav */
+.header__main-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.header__main-nav input[type=checkbox] {
+	position: absolute;
+	@include nav;
+	// opacity: 0;
+	cursor: pointer;
+	z-index: 3;
+}
+
+/* Hamburger */
+.header__main-nav--hamburger {
+	position: absolute;
+	@include nav;
+	padding: 1rem;
+	background-color: color(color-secondary);
+	z-index: 2;
+}
+
 /* Section */
 section {
 	/* Booking Content Section */

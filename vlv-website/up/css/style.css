@@ -77,8 +77,38 @@ header#header {
   background: linear-gradient(rgba(49, 66, 164, 0.513), rgba(49, 66, 164, 0.513)), url("../img/hero3.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Nav */
+.header__main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header__main-nav input[type=checkbox] {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Hamburger */
+.header__main-nav--hamburger {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+  background-color: #9431a5;
+  z-index: 2;
 }
 
 /* Section */
