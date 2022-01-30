@@ -15,14 +15,10 @@ $colors: (
 
 /* Propiedades */
 $propertys: (
-  /* Font-Size */ 
-  "font-size": 62.5%,
-  /* Transtion Duration */ 
-  "transition-duration": 0.3,
-  /* Section Title Font Size */ 
-  "font-size-title": calc(2rem + 2vw),
-  /* Section Padding */ 
-  "padding-section": 8vh 3vh
+  /* Font-Size */ "font-size": 62.5%,
+  /* Transtion Duration */ "transition-duration": 0.3,
+  /* Section Title Font Size */ "font-size-title": calc(2rem + 2vw),
+  /* Section Padding */ "padding-section": 8vh 3vh
 );
 
 /* Importaciones */
@@ -38,193 +34,209 @@ body {
 }
 
 .container {
-	display: grid;
-	grid-template-columns:
-	[container-start] 1fr [center-start] repeat(
-		10,
-		[col-start] minmax(min-content, 11rem) [col-end]
-	)
-	[center-end] 1fr [container-end];
-	grid-template-rows: 100vh repeat(8, min-content);
+  display: grid;
+  grid-template-columns:
+    [container-start] 1fr [center-start] repeat(
+      10,
+      [col-start] minmax(min-content, 11rem) [col-end]
+    )
+    [center-end] 1fr [container-end];
+  grid-template-rows: 100vh repeat(8, min-content);
 
-	/* Anchor tags */
-	a:link,
-	a:visited { 
-		color: color(color-quaternary);
-		text-decoration: none;
-		font-size: calc(0.5rem + 1vw);
-		padding: 1rem 2rem;
-		border-radius: 0.3rem;
-		position: relative;
-		transition: all property(transition-duration) cubic-bezier(1, 0, 0, 1);
-		z-index: 1;
-	}
+  /* Anchor tags */
+  a:link,
+  a:visited {
+    color: color(color-quaternary);
+    text-decoration: none;
+    font-size: calc(0.5rem + 1vw);
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    position: relative;
+    transition: all property(transition-duration) cubic-bezier(1, 0, 0, 1);
+    z-index: 1;
+  }
 
-	/* Paragraphs */
-	p {
-		color: white;
-		font-size: calc(1rem + 1vw);
-		font-weight: 300;
-	}
+  /* Paragraphs */
+  p {
+    color: white;
+    font-size: calc(1rem + 1vw);
+    font-weight: 300;
+  }
 
-	/* List Item */
-	li {
-		list-style: none;
-		margin-bottom: 4rem;
-	}
+  /* List Item */
+  li {
+    list-style: none;
+    margin-bottom: 4rem;
+  }
 
-	/* Icons */
-	i {
-		font-size: property(font-size-title);
-		color: color(color-secondary);
-	}
-
+  /* Icons */
+  i {
+    font-size: property(font-size-title);
+    color: color(color-secondary);
+  }
 }
 
-/* Main Styling */	
+/* Main Styling */
 header#header {
-	// background-color: color(color-primary);
-	grid-column: container-start / container-end; 
-	background: linear-gradient(color(color-primary-m-light), color(color-primary-m-light)), url('../img/hero3.jpg'); 
-	@include background;
+  // background-color: color(color-primary);
+  grid-column: container-start / container-end;
+  background: linear-gradient(
+      color(color-primary-m-light),
+      color(color-primary-m-light)
+    ),
+    url("../img/hero3.jpg");
+  @include background;
 }
 
 /* Nav */
 .header__main-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 2;
-}
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 
-.header__main-nav input[type=checkbox] {
-	position: absolute;
-	@include nav;
-	// opacity: 0;
-	cursor: pointer;
-	z-index: 3;
+  & input[type="checkbox"] {
+    position: absolute;
+    @include nav;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+
+    /* Rotating the menu */
+    &:checked + .header__main-nav--hamburger > div {
+      transform: rotate(135deg);
+    }
+  }
 }
 
 /* Hamburger */
 .header__main-nav--hamburger {
-	position: absolute;
-	@include nav;
-	padding: 1rem;
-	background-color: color(color-secondary);
-	z-index: 2;
-	
-	display: grid;
-	place-items: center;
-	
-	/* Hamburger lines */
-	 & > div {
-		position: relative;
-		height: 0.3rem;
-		width: 100%;
-		background-color: color(color-quaternary);
+  position: absolute;
+  @include nav;
+  padding: 1rem;
+  background-color: color(color-secondary);
+  z-index: 2;
 
-		display: grid;
-		place-items: center;
-		transition: all propertys(transition-duration) ease-in-out;
-	}
-	
-	/* Hamburger Top and Bottom lines */
-	& > div::before,
-	& > div::after {
-		content: '';
-		position: absolute;
-		top: -1rem;
-		width: 60%;
-		height: inherit;
-		background-color: inherit;
-		z-index: 2;
-	}
+  display: grid;
+  place-items: center;
+
+  /* Hamburger lines */
+  & > div {
+    position: relative;
+    height: 0.3rem;
+    width: 100%;
+    background-color: color(color-tertiary);
+
+    display: grid;
+    place-items: center;
+    transition: all propertys(transition-duration) ease-in-out;
+  }
+
+  /* Hamburger Top and Bottom lines */
+  & > div::before,
+  & > div::after {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    width: 60%;
+    height: inherit;
+    background-color: inherit;
+    z-index: 2;
+  }
+
+  & > div::before {
+    left: 0;
+  }
+
+  & > div::after {
+    top: 1rem;
+    right: 0;
+  }
 }
-
 
 /* Section */
 section {
-	/* Booking Content Section */
-	&#booking-content {
-		background-color: color(color-secondary);
-		grid-column: center-start / col-end 6;
-		height: $height;
-	}
-	
-	/* Booking Date Section */
-	&#booking-date {
-		background-color: color(color-tertiary);
-		grid-column: col-start 7 / center-end;
-		height: $height;
-	}
+  /* Booking Content Section */
+  &#booking-content {
+    background-color: color(color-secondary);
+    grid-column: center-start / col-end 6;
+    height: $height;
+  }
 
-	/* Villas Section */
-	&#villas {
-		background-color: color(color-primary);
-		grid-column: container-start / container-end;
-		height: $height;
-	}
+  /* Booking Date Section */
+  &#booking-date {
+    background-color: color(color-tertiary);
+    grid-column: col-start 7 / center-end;
+    height: $height;
+  }
 
-	/* Motto Section */
-	&#motto {
-		background-color: color(color-secondary);
-		grid-column: container-start / container-end;
-		height: $height;
-	}
+  /* Villas Section */
+  &#villas {
+    background-color: color(color-primary);
+    grid-column: container-start / container-end;
+    height: $height;
+  }
 
-	/* Events Section */
-	&#events-content {
-		background-color: color(color-tertiary);
-		grid-column: container-start / col-end 9;
-		height: $height;
-	}
+  /* Motto Section */
+  &#motto {
+    background-color: color(color-secondary);
+    grid-column: container-start / container-end;
+    height: $height;
+  }
 
-	/* Events text Section */
-	&#events-text {
-		background-color: color(color-primary);
-		grid-column: col-start 10 / center-end;
-		height: $height;
-	}
+  /* Events Section */
+  &#events-content {
+    background-color: color(color-tertiary);
+    grid-column: container-start / col-end 9;
+    height: $height;
+  }
 
-	/* Gallery Text Section */
-	&#gallery-text {
-		background-color: color(color-secondary);
-		grid-column: center-start / center-end 1;
-		height: $height;
-	}
+  /* Events text Section */
+  &#events-text {
+    background-color: color(color-primary);
+    grid-column: col-start 10 / center-end;
+    height: $height;
+  }
 
-	/* Gallery Carousel Section */
-	&#gallery-carrousel {
-		background-color: color(color-tertiary);
-		grid-column: col-start 2 / container-end;
-		height: $height;
-	}
+  /* Gallery Text Section */
+  &#gallery-text {
+    background-color: color(color-secondary);
+    grid-column: center-start / center-end 1;
+    height: $height;
+  }
 
-	/* Features Section */
-	&#feactures-content {
-		background-color: color(color-primary);
-		grid-column: container-start / col-end 9;
-		height: $height;
-	}
+  /* Gallery Carousel Section */
+  &#gallery-carrousel {
+    background-color: color(color-tertiary);
+    grid-column: col-start 2 / container-end;
+    height: $height;
+  }
 
-	/* Features text Section */
-	&#feactures-text {
-		background-color: color(color-secondary);
-		grid-column: col-start 10 / center-end;
-		height: $height;
-	}
+  /* Features Section */
+  &#feactures-content {
+    background-color: color(color-primary);
+    grid-column: container-start / col-end 9;
+    height: $height;
+  }
 
-	/* Testimonials Section */ // a word not award 
-	&#testimonials {
-		background-color: color(color-tertiary);
-		grid-column: center-start / center-end;
-		height: $height;
-	}
+  /* Features text Section */
+  &#feactures-text {
+    background-color: color(color-secondary);
+    grid-column: col-start 10 / center-end;
+    height: $height;
+  }
 
-	/* Footer Section */  
-	&#footer {
-		background-color: color(color-primary);
-		grid-column: container-start / container-end;
-		height: $height;
-	}
+  /* Testimonials Section */ // a word not award
+  &#testimonials {
+    background-color: color(color-tertiary);
+    grid-column: center-start / center-end;
+    height: $height;
+  }
+
+  /* Footer Section */
+  &#footer {
+    background-color: color(color-primary);
+    grid-column: container-start / container-end;
+    height: $height;
+  }
 }

@@ -89,14 +89,21 @@ header#header {
   z-index: 2;
 }
 
-.header__main-nav input[type=checkbox] {
+.header__main-nav input[type="checkbox"] {
   position: absolute;
   top: 3rem;
   left: 3rem;
   height: 5rem;
   width: 5rem;
+  opacity: 0;
   cursor: pointer;
   z-index: 3;
+  /* Rotating the menu */
+}
+
+.header__main-nav input[type="checkbox"]:checked + .header__main-nav--hamburger > div {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 /* Hamburger */
@@ -120,7 +127,7 @@ header#header {
   position: relative;
   height: 0.3rem;
   width: 100%;
-  background-color: #a43143;
+  background-color: #43a431;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -130,13 +137,22 @@ header#header {
 
 .header__main-nav--hamburger > div::before,
 .header__main-nav--hamburger > div::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -1rem;
   width: 60%;
   height: inherit;
   background-color: inherit;
   z-index: 2;
+}
+
+.header__main-nav--hamburger > div::before {
+  left: 0;
+}
+
+.header__main-nav--hamburger > div::after {
+  top: 1rem;
+  right: 0;
 }
 
 /* Section */
