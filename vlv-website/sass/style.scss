@@ -103,29 +103,45 @@ header#header {
     z-index: 3;
 
     /* Rotating the menu */
-	&:checked {
-		& + .header__main-nav--hamburger > div {
-			transform: rotate(135deg);
-		}
+    &:checked {
+      & + .header__main-nav--hamburger > div {
+        transform: rotate(135deg);
+      }
 
-		& + .header__main-nav--hamburger > div::before {
-			top: 0;
-			left: 0; 
-			width: 100%;
-			transform: rotate(270deg);
-		}
-	
-		& + .header__main-nav--hamburger > div::after {
-			opacity: 0;
-		}
+      & + .header__main-nav--hamburger > div::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: rotate(270deg);
+      }
 
-		&:hover + .header__main-nav--hamburger > div {
-			transform: rotate(405deg);
-		}
-	}
+      & + .header__main-nav--hamburger > div::after {
+        opacity: 0;
+      }
 
-	/* Links Menu */
-	&
+      &:hover + .header__main-nav--hamburger > div {
+        transform: rotate(405deg);
+      }
+    }
+  }
+
+  /* Links Menu */
+  &--menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // visibility: hidden;
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+
+    & > div {
+	    
+    }
+
   }
 }
 
