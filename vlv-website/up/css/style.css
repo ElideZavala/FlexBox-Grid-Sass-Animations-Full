@@ -38,6 +38,7 @@ body {
   /* Anchor tags */
   /* Paragraphs */
   /* List Item */
+  /* Icons */
 }
 
 .container a:link,
@@ -59,10 +60,25 @@ body {
   font-weight: 300;
 }
 
+.container li {
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+.container i {
+  font-size: calc(2rem + 2vw);
+  color: #9431a5;
+}
+
 /* Main Styling */
 header#header {
-  background-color: #3143a4;
   grid-column: container-start / container-end;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 66, 164, 0.513)), to(rgba(49, 66, 164, 0.513))), url("../img/hero3.jpg");
+  background: linear-gradient(rgba(49, 66, 164, 0.513), rgba(49, 66, 164, 0.513)), url("../img/hero3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Section */

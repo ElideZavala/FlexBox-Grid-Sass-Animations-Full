@@ -35,7 +35,6 @@ $propertys: (
 body {
   font-family: "Titillium Web", sans-serif;
   line-height: 1.7;
-  // background-color: color(color-quaternary);
 }
 
 .container {
@@ -66,19 +65,28 @@ body {
 		color: white;
 		font-size: calc(1rem + 1vw);
 		font-weight: 300;
-		// font-size: 1rem;
 	}
 
 	/* List Item */
 	li {
-		
+		list-style: none;
+		margin-bottom: 4rem;
 	}
+
+	/* Icons */
+	i {
+		font-size: property(font-size-title);
+		color: color(color-secondary);
+	}
+
 }
 
 /* Main Styling */	
 header#header {
-	background-color: color(color-primary);
+	// background-color: color(color-primary);
 	grid-column: container-start / container-end; 
+	background: linear-gradient(color(color-primary-m-light), color(color-primary-m-light)), url('../img/hero3.jpg'); 
+	@include background;
 }
 
 /* Section */
