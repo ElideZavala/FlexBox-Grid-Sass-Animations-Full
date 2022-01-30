@@ -112,7 +112,35 @@ header#header {
 	padding: 1rem;
 	background-color: color(color-secondary);
 	z-index: 2;
+	
+	display: grid;
+	place-items: center;
+	
+	/* Hamburger lines */
+	 & > div {
+		position: relative;
+		height: 0.3rem;
+		width: 100%;
+		background-color: color(color-quaternary);
+
+		display: grid;
+		place-items: center;
+		transition: all propertys(transition-duration) ease-in-out;
+	}
+	
+	/* Hamburger Top and Bottom lines */
+	& > div::before,
+	& > div::after {
+		content: '';
+		position: absolute;
+		top: -1rem;
+		width: 60%;
+		height: inherit;
+		background-color: inherit;
+		z-index: 2;
+	}
 }
+
 
 /* Section */
 section {
@@ -200,4 +228,3 @@ section {
 		height: $height;
 	}
 }
-

@@ -109,6 +109,34 @@ header#header {
   padding: 1rem;
   background-color: #9431a5;
   z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  /* Hamburger lines */
+  /* Hamburger Top and Bottom lines */
+}
+
+.header__main-nav--hamburger > div {
+  position: relative;
+  height: 0.3rem;
+  width: 100%;
+  background-color: #a43143;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: all propertys(transition-duration) ease-in-out;
+  transition: all propertys(transition-duration) ease-in-out;
+}
+
+.header__main-nav--hamburger > div::before,
+.header__main-nav--hamburger > div::after {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  width: 60%;
+  height: inherit;
+  background-color: inherit;
+  z-index: 2;
 }
 
 /* Section */
