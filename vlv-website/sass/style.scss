@@ -85,7 +85,7 @@ header#header {
       color(color-primary-m-light),
       color(color-primary-m-light)
     ),
-    url("../img/hero3.jpg");
+    url("../img/hero2.jpg");
   @include background;
 }
 
@@ -223,8 +223,7 @@ header#header {
 	  }
 
 	  100% {
-		  transform: translateX(0) rotate(0
-		  );
+		  transform: translateX(0) rotate(0);
 		  opacity: 1;
 	  }
   }

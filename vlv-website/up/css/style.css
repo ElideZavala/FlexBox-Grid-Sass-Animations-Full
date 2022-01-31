@@ -74,8 +74,8 @@ body {
 /* Main Styling */
 header#header {
   grid-column: container-start / container-end;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0075a283), to(#0075a283)), url("../img/hero3.jpg");
-  background: linear-gradient(#0075a283, #0075a283), url("../img/hero3.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#0075a283), to(#0075a283)), url("../img/hero2.jpg");
+  background: linear-gradient(#0075a283, #0075a283), url("../img/hero2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
