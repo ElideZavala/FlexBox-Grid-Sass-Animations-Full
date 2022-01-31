@@ -136,6 +136,31 @@ header#header {
 				 opacity: 1;
 			 }
 		 }
+
+		 & ul li a:link,
+		 & ul li a:visited {
+			 z-index: 5;
+			 font-size: calc(1.5rem + 0.5vw);
+			 position: relative;
+			 
+			 &::before {
+				 content: '';
+				 position: absolute;
+				 top: 0;
+				 left: 0;
+				 height: 100%;
+				 width: 100%;
+				 z-index: -1;
+				 transform: scaleY(0);
+				 background-color: color(color-primary-m-dark);
+				 transition: transform .5s ease-in-out;
+
+			}
+			&:hover::before,
+			&:active::before {
+				transform: scaleY(1);
+			}
+		 }
 	 }
     }
   }

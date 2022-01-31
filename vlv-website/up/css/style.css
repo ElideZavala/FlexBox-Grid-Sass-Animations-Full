@@ -145,6 +145,38 @@ header#header {
   opacity: 1;
 }
 
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu ul li a:link,
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu ul li a:visited {
+  z-index: 5;
+  font-size: calc(1.5rem + 0.5vw);
+  position: relative;
+}
+
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu ul li a:link::before,
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu ul li a:visited::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  background-color: #0075a2e1;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu ul li a:link:hover::before, .header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu ul li a:link:active::before,
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu ul li a:visited:hover::before,
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu ul li a:visited:active::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
 .header__main-nav--menu {
   position: fixed;
   top: 0;
