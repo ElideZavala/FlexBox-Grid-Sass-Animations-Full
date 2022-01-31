@@ -103,6 +103,11 @@ header#header {
   /* Rotating the menu */
 }
 
+.header__main-nav input[type="checkbox"]:checked {
+  /* Displaying the Menu when the checkbox is checked */
+  /* Cuando seleccionamos checkbox se seleccionara igualmente el menu */
+}
+
 .header__main-nav input[type="checkbox"]:checked + .header__main-nav--hamburger > div {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
@@ -125,12 +130,28 @@ header#header {
           transform: rotate(405deg);
 }
 
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu {
+  visibility: visible;
+}
+
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu > div {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu > div > div {
+  opacity: 1;
+}
+
 .header__main-nav--menu {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  visibility: hidden;
   overflow: hidden;
   display: -ms-grid;
   display: grid;
@@ -144,16 +165,19 @@ header#header {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  -webkit-transform: all 0.3s ease-in-out;
-          transform: all 0.3s ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .header__main-nav--menu > div > div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
-  background-color: #fff;
   opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 /* Hamburger */
