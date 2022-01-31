@@ -1,19 +1,20 @@
+/* COLORES */
 $colors: (
-  "color-primary": #3143a4,
-  "color-primary-m-light": rgba(49, 66, 164, 0.513),
-  "color-primary-m-dark": rgba(49, 66, 164, 0.883),
-  "color-secondary": rgb(148, 49, 165),
-  "color-secondary-m-light": rgba(148, 49, 165, 0.513),
-  "color-secondary-m-dark": rgba(148, 49, 165, 0.883),
-  "color-tertiary": rgb(67, 164, 49),
-  "color-tertiary-m-light": rgba(67, 164, 49, 0.513),
-  "color-tertiary-m-dark": rgba(67, 164, 49, 0.883),
-  "color-quaternary": rgb(164, 49, 67),
-  "color-quaternary-m-light": rgba(164, 49, 67, 0.513),
-  "color-quaternary-m-dark": rgba(164, 49, 67, 0.883),
-);
+  "color-primary": #0075a2,
+  "color-primary-m-light": #0075a283,
+  "color-primary-m-dark": #0075a2e1,
+  "color-secondary": #d55672,
+  "color-secondary-m-light": #d5567283,
+  "color-secondary-m-dark": #d55672e1,
+  "color-tertiary": #1dd380,
+  "color-tertiary-m-light": #1dd38083,
+  "color-tertiary-m-dark": #1dd380e1,
+  "color-quaternary": #adf5ff,
+  "color-quaternary-m-light": #adf5ff83,
+   "color-quaternary-m-dark": #adf5ffe1,
+ );
 
-/* Propiedades */
+/* PROPIEDADES */
 $propertys: (
   /* Font-Size */ "font-size": 62.5%,
   /* Transtion Duration */ "transition-duration": 0.3s,
@@ -139,9 +140,26 @@ header#header {
     place-items: center;
 
     & > div {
-	    
+	    background-color: color(color-secondary-m-dark);
+	    height: 200%;
+	    width: 200%;
+
+	    display: grid;
+	    place-items: center;
+
+		// transform: scaleX(0);
+	    transform: all property(transition-duration) ease-in-out;
+
+	    & > div {
+			text-align: center;
+			max-width: 90vw;
+			max-height: 100vh;
+			background-color: #fff;
+			opacity: 0;
+	    }
     }
 
+    
   }
 }
 

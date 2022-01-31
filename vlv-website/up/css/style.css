@@ -1,4 +1,5 @@
-/* Propiedades */
+/* COLORES */
+/* PROPIEDADES */
 /* Importaciones */
 /* Reset */
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
@@ -43,7 +44,7 @@ body {
 
 .container a:link,
 .container a:visited {
-  color: #a43143;
+  color: #adf5ff;
   text-decoration: none;
   font-size: calc(0.5rem + 1vw);
   padding: 1rem 2rem;
@@ -67,14 +68,14 @@ body {
 
 .container i {
   font-size: calc(2rem + 2vw);
-  color: #9431a5;
+  color: #d55672;
 }
 
 /* Main Styling */
 header#header {
   grid-column: container-start / container-end;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 66, 164, 0.513)), to(rgba(49, 66, 164, 0.513))), url("../img/hero3.jpg");
-  background: linear-gradient(rgba(49, 66, 164, 0.513), rgba(49, 66, 164, 0.513)), url("../img/hero3.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#0075a283), to(#0075a283)), url("../img/hero3.jpg");
+  background: linear-gradient(#0075a283, #0075a283), url("../img/hero3.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -136,6 +137,25 @@ header#header {
   place-items: center;
 }
 
+.header__main-nav--menu > div {
+  background-color: #d55672e1;
+  height: 200%;
+  width: 200%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transform: all 0.3s ease-in-out;
+          transform: all 0.3s ease-in-out;
+}
+
+.header__main-nav--menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  background-color: #fff;
+  opacity: 0;
+}
+
 /* Hamburger */
 .header__main-nav--hamburger {
   position: absolute;
@@ -144,7 +164,7 @@ header#header {
   height: 5rem;
   width: 5rem;
   padding: 1rem;
-  background-color: #9431a5;
+  background-color: #d55672;
   z-index: 2;
   display: -ms-grid;
   display: grid;
@@ -157,7 +177,7 @@ header#header {
   position: relative;
   height: 0.3rem;
   width: 100%;
-  background-color: #43a431;
+  background-color: #1dd380;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -202,73 +222,73 @@ section {
 }
 
 section#booking-content {
-  background-color: #9431a5;
+  background-color: #d55672;
   grid-column: center-start / col-end 6;
   height: 400px;
 }
 
 section#booking-date {
-  background-color: #43a431;
+  background-color: #1dd380;
   grid-column: col-start 7 / center-end;
   height: 400px;
 }
 
 section#villas {
-  background-color: #3143a4;
+  background-color: #0075a2;
   grid-column: container-start / container-end;
   height: 400px;
 }
 
 section#motto {
-  background-color: #9431a5;
+  background-color: #d55672;
   grid-column: container-start / container-end;
   height: 400px;
 }
 
 section#events-content {
-  background-color: #43a431;
+  background-color: #1dd380;
   grid-column: container-start / col-end 9;
   height: 400px;
 }
 
 section#events-text {
-  background-color: #3143a4;
+  background-color: #0075a2;
   grid-column: col-start 10 / center-end;
   height: 400px;
 }
 
 section#gallery-text {
-  background-color: #9431a5;
+  background-color: #d55672;
   grid-column: center-start / center-end 1;
   height: 400px;
 }
 
 section#gallery-carrousel {
-  background-color: #43a431;
+  background-color: #1dd380;
   grid-column: col-start 2 / container-end;
   height: 400px;
 }
 
 section#feactures-content {
-  background-color: #3143a4;
+  background-color: #0075a2;
   grid-column: container-start / col-end 9;
   height: 400px;
 }
 
 section#feactures-text {
-  background-color: #9431a5;
+  background-color: #d55672;
   grid-column: col-start 10 / center-end;
   height: 400px;
 }
 
 section#testimonials {
-  background-color: #43a431;
+  background-color: #1dd380;
   grid-column: center-start / center-end;
   height: 400px;
 }
 
 section#footer {
-  background-color: #3143a4;
+  background-color: #0075a2;
   grid-column: container-start / container-end;
   height: 400px;
 }
