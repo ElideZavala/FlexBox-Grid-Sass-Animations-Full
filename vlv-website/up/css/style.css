@@ -225,8 +225,36 @@ header#header {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  -webkit-animation: main-nav 2s;
+          animation: main-nav 2s;
   /* Hamburger lines */
   /* Hamburger Top and Bottom lines */
+}
+
+@-webkit-keyframes main-nav {
+  0% {
+    -webkit-transform: translateX(150rem) rotate(1800deg);
+            transform: translateX(150rem) rotate(1800deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes main-nav {
+  0% {
+    -webkit-transform: translateX(150rem) rotate(1800deg);
+            transform: translateX(150rem) rotate(1800deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
 }
 
 .header__main-nav--hamburger > div {

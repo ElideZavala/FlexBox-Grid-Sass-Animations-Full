@@ -214,6 +214,21 @@ header#header {
   display: grid;
   place-items: center;
 
+  animation: main-nav 2s;
+
+  @keyframes main-nav {
+	  0% {
+		  transform: translateX(150rem) rotate(1800deg);
+		  opacity: 0;
+	  }
+
+	  100% {
+		  transform: translateX(0) rotate(0
+		  );
+		  opacity: 1;
+	  }
+  }
+
   /* Hamburger lines */
   & > div {
     position: relative;
