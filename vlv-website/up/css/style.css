@@ -328,14 +328,49 @@ header#header {
 .header__logo__content--content {
   grid-column: 1 / -1;
   text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .header__logo__content--content__title {
   font-size: calc(4rem + 4vw);
   font-weight: 300;
-  color: white;
   text-transform: uppercase;
   padding: 0 2rem 0 calc(2rem + 2vw);
+}
+
+.header__logo__content--content__para {
+  font-size: calc(1rem + 2vw);
+  font-weight: 500;
+  padding: 2vh 2rem 6vh calc(2rem + 2vw);
+}
+
+.header__logo__content--content__link:link, .header__logo__content--content__link:visited {
+  margin-left: calc(2rem + 2vw);
+  border: 0.2rem solid #1dd380;
+}
+
+.header__logo__content--content__link:link::before, .header__logo__content--content__link:visited::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1dd380;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(1, 0, 0, 1);
+  transition: -webkit-transform 0.45s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.45s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.45s cubic-bezier(1, 0, 0, 1), -webkit-transform 0.45s cubic-bezier(1, 0, 0, 1);
+  z-index: -1;
+}
+
+.header__logo__content--content__link:link:hover::before, .header__logo__content--content__link:visited:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 /* Section */

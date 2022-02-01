@@ -290,17 +290,45 @@ header#header {
 	&--content {  	
 		grid-column: 1 / -1;
 		text-align: center;
+    align-self: center;
     
     &__title {
       font-size: calc(4rem + 4vw);
       font-weight: 300;
-      color: white;
       text-transform: uppercase;
       padding: 0 2rem 0 property(font-size-title);
     }
-	}
-  
 
+    &__para {
+      font-size: calc(1rem + 2vw);
+      font-weight: 500;
+      padding: 2vh 2rem 6vh property(font-size-title);
+    }
+
+    &__link:link, 
+    &__link:visited {
+      margin-left: property(font-size-title);
+      border: 0.2rem solid color(color-tertiary);
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: color(color-tertiary);
+        transform: scaleX(0);
+        transition: transform 0.45s cubic-bezier(1, 0, 0, 1);
+        z-index: -1;
+        
+      }
+      
+      &:hover::before {
+        transform: scaleX(1);
+      }
+    }
+	}
 }
 
 /* Section */
