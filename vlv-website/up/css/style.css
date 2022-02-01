@@ -2,7 +2,7 @@
 /* PROPIEDADES */
 /* Importaciones */
 /* Reset */
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Titillium+Web:wght@200;300;400;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -19,6 +19,10 @@ body {
 h2 {
   color: aliceblue;
   font-family: 'Titillium Web', sans-serif;
+}
+
+.header__logo__content--logo span {
+  font-family: 'Cinzel', serif;
 }
 
 /* ******************* Utlity Components ******************* */
@@ -287,6 +291,35 @@ header#header {
 .header__main-nav--hamburger > div::after {
   top: 1rem;
   right: 0;
+}
+
+/* The rest of the header section  */
+.header__logo__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr minmax(30rem, 1fr) 1fr;
+      grid-template-columns: 1fr minmax(30rem, 1fr) 1fr;
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
+  height: 90%;
+  justify-items: center;
+}
+
+.header__logo__content--logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  letter-spacing: 0.2rem;
+}
+
+.header__logo__content--logo span {
+  color: #d55672;
+  font-size: 3rem;
+}
+
+.header__logo__content--content {
+  grid-column: 1 / -1;
 }
 
 /* Section */

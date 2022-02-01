@@ -262,6 +262,29 @@ header#header {
   }
 }
 
+/* The rest of the header section  */
+.header__logo__content {
+	display: grid;
+	grid-template-columns: 1fr minmax(30rem, 1fr) 1fr;
+	grid-template-rows: min-content;
+	height: 90%;
+	justify-items: center;
+
+	&--logo {
+		grid-column: 2 / 3;
+		letter-spacing: 0.2rem;
+
+		& span {
+			color: color(color-secondary);
+			font-size: 3rem;
+		}
+	}
+
+	&--content { 
+		grid-column: 1 / -1;
+	}
+}
+
 /* Section */
 section {
   /* Booking Content Section */
