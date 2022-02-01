@@ -316,10 +316,26 @@ header#header {
 .header__logo__content--logo span {
   color: #d55672;
   font-size: 3rem;
+  text-align: center;
+  line-height: .8;
+}
+
+.header__logo__content--logo span p {
+  color: #13ff95;
+  font-size: 1.5rem;
 }
 
 .header__logo__content--content {
   grid-column: 1 / -1;
+  text-align: center;
+}
+
+.header__logo__content--content__title {
+  font-size: calc(4rem + 4vw);
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 2rem 0 calc(2rem + 2vw);
 }
 
 /* Section */

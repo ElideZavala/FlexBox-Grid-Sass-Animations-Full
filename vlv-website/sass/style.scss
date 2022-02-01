@@ -277,12 +277,30 @@ header#header {
 		& span {
 			color: color(color-secondary);
 			font-size: 3rem;
+      text-align: center;
+      line-height: .8;
+
+      & p {
+        color: #13ff95;
+        font-size: 1.5rem;
+      }
 		}
 	}
 
-	&--content { 
+	&--content {  	
 		grid-column: 1 / -1;
+		text-align: center;
+    
+    &__title {
+      font-size: calc(4rem + 4vw);
+      font-weight: 300;
+      color: white;
+      text-transform: uppercase;
+      padding: 0 2rem 0 property(font-size-title);
+    }
 	}
+  
+
 }
 
 /* Section */
