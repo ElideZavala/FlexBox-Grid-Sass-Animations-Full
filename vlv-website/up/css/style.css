@@ -26,6 +26,14 @@ h2 {
 }
 
 /* ******************* Utlity Components ******************* */
+@media (max-width: 1000px) {
+  /* all Links */
+  a:link,
+  a:visited {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
 body {
   font-family: "Titillium Web", sans-serif;
   line-height: 1.7;
@@ -327,7 +335,6 @@ header#header {
 
 .header__logo__content--content {
   grid-column: 1 / -1;
-  text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -347,8 +354,8 @@ header#header {
 }
 
 .header__logo__content--content__link:link, .header__logo__content--content__link:visited {
-  margin-left: calc(2rem + 2vw);
   border: 0.2rem solid #1dd380;
+  margin-left: calc(2rem + 2vw);
 }
 
 .header__logo__content--content__link:link::before, .header__logo__content--content__link:visited::before {
@@ -460,4 +467,6 @@ section#footer {
   grid-column: container-start / container-end;
   height: 400px;
 }
+
+/* *********************** 1000px Mark ************************* */
 /*# sourceMappingURL=style.css.map */

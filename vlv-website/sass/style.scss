@@ -19,7 +19,7 @@ $propertys: (
   /* Font-Size */ "font-size": 62.5%,
   /* Transtion Duration */ "transition-duration": 0.3s,
   /* Section Title Font Size */ "font-size-title": calc(2rem + 2vw),
-  /* Section Padding */ "padding-section": 8vh 3vh
+  /* Section Padding */ "padding-section": 8vh 3vw,
 );
 
 /* Importaciones */
@@ -28,6 +28,7 @@ $propertys: (
 @import "googleFonts";
 @import "utilityComponets";
 @import "variables";
+@import "breakpoints";
 
 body {
   font-family: "Titillium Web", sans-serif;
@@ -289,7 +290,6 @@ header#header {
 
 	&--content {  	
 		grid-column: 1 / -1;
-		text-align: center;
     align-self: center;
     
     &__title {
@@ -307,8 +307,8 @@ header#header {
 
     &__link:link, 
     &__link:visited {
-      margin-left: property(font-size-title);
       border: 0.2rem solid color(color-tertiary);
+      margin-left: property(font-size-title);
       
       &::before {
         content: '';
@@ -417,3 +417,5 @@ section {
     height: $height;
   }
 }
+
+/* *********************** 1000px Mark ************************* */

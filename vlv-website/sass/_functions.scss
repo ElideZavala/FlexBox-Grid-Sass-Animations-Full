@@ -5,3 +5,7 @@
 @function property($property-name) {
 	@return map-get($propertys, $property-name);
 }
+
+@function mediascreen($breakpoint-name) {
+	@return map-get($breakpoints, $breakpoint-name);
+}
