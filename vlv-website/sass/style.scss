@@ -343,7 +343,7 @@ section {
     grid-template-rows: repeat(3, max-content);
     grid-gap: 2vh;
   }
-  
+
   .booking-content{ 
     &__title {
       font-size: property(font-size-title);
@@ -368,8 +368,16 @@ section {
 
     &__icons {
       margin-left: 2rem;
+
       display: grid;
       grid-template-columns: repeat(2, 1fr); // Repetir dos columnas de 1fr.
+
+      &--weather, &--time {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 10vh;
+        place-items: center;
+      }
     } 
   } 
   /* Booking Date Section */

@@ -357,6 +357,12 @@ section .booking-content__icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+section .booking-content__icons--weather, section .booking-content__icons--time {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 10vh;
+  place-items: center;
+}
 section#booking-date {
   background-color: #1dd380;
   grid-column: col-start 7/center-end;
