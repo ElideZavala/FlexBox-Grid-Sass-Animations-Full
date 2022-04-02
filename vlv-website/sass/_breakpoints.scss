@@ -1,14 +1,22 @@
 $breakpoints: ( 
 	"phone": 360px,
-	"tablet": 768px,
+	"tablet": 600px,
 	"desktop": 1000px,
 ) !default; 	
 
-
+/************************ 1000 px ************************/
 @media (max-width: mediascreen(desktop)) {
 	/* all Links */
 	a:link, 
 	a:visited {
 		font-size: calc(1rem + 1vw);
+	}
+}
+
+/************************ 1000 px ************************/
+@media (max-width: mediascreen(tablet)) {
+	/*@@@###$%%%#$%*** Header Section  ***@@@###$%%%#$%*/
+	.header__logo__content--content__para {
+		font-size: 2rem;
 	}
 }

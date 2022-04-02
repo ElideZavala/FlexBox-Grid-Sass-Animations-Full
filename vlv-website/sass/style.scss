@@ -80,13 +80,13 @@ body {
 
 /* Main Styling */
 header#header {
-  // background-color: color(color-primary);
+  background-color: color(color-primary);
   grid-column: container-start / container-end;
-  background: linear-gradient(
+  background: 
+  linear-gradient(
       color(color-primary-m-light),
       color(color-primary-m-light)
-    ),
-    url("../img/hero2.jpg");
+      ), url("../up/img/hero2.jpg");
   @include background;
 }
 
@@ -263,7 +263,7 @@ header#header {
   }
 }
 
-/* The rest of the header section  */
+/********** The rest of the header section  **********/
 .header__logo__content {
 	display: grid;  
 	grid-template-columns: 1fr minmax(30rem, 1fr) 1fr;
@@ -277,7 +277,7 @@ header#header {
 
 		& span {
 			color: color(color-secondary);
-			font-size: 3rem;
+			font-size: 3rem;  
       text-align: center;
       line-height: .8;
 
@@ -334,37 +334,44 @@ header#header {
 /* Section */
 section {
   /* Booking Content Section */
-  &#booking-content {
-    grid-column: center-start / col-end 6;
+  &#booking-content{
+    grid-column: center-start / col-end 6; 
     padding: property(padding-section);
+    background-color: #eee; 
 
     display: grid;
     grid-template-rows: repeat(3, max-content);
     grid-gap: 2vh;
-      &__title {
-        font-size: property(font-size-title);
-        padding: 0 2rem 1rem;
-        font-weight: 300;
-        position: relative;
-        
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 15%;
-          height: 0.2rem;
-          width: 30%;
-          background-color: color(color-secondary);
-        }
+  }
+  
+  .booking-content{ 
+    &__title {
+      font-size: property(font-size-title);
+      padding: 0 2rem 1rem;
+      font-weight: 300;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        height: 0.2rem;
+        width: 30%;
+        background-color: color(color-secondary);
       }
-      &__para {
-        padding: 2rem;
-      }
-      &p {
-        color: color(color-primary);
-      } 
-  } 
+    }
+    &__para {
+      padding: 2rem;
+      color: color(color-primary);
+    }
 
+    &__icons {
+      margin-left: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // Repetir dos columnas de 1fr.
+    } 
+  } 
   /* Booking Date Section */
   &#booking-date {
     background-color: color(color-tertiary);
@@ -440,7 +447,7 @@ section {
     background-color: color(color-primary);
     grid-column: container-start / container-end;
     height: $height;
-  }
+  } 
 }
 
 /* *********************** 1000px Mark ************************* */
