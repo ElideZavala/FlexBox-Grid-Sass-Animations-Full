@@ -11,12 +11,7 @@
   box-sizing: border-box;
 }
 
-body {
-  color: aliceblue;
-}
-
 h2 {
-  color: aliceblue;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -68,7 +63,6 @@ body {
   z-index: 1;
 }
 .container p {
-  color: white;
   font-size: calc(1rem + 1vw);
   font-weight: 300;
 }
@@ -364,9 +358,33 @@ section .booking-content__icons--weather, section .booking-content__icons--time 
   place-items: center;
 }
 section#booking-date {
-  background-color: #1dd380;
+  background-color: rgba(29, 211, 128, 0.5137254902);
   grid-column: col-start 7/center-end;
-  height: 400px;
+  padding: 8vh 3vw;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+section .booking-date__schedule {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2vw;
+  place-items: center;
+}
+section .booking-date__schedule--arrival, section .booking-date__schedule--departure, section .booking-date__schedule--guests {
+  display: grid;
+  grid-row-gap: 3vh;
+}
+section .booking-date__schedule--arrival h5, section .booking-date__schedule--departure h5, section .booking-date__schedule--guests h5 {
+  font-size: calc(1rem + 1vh);
+  text-align: center;
+}
+section .booking-date__schedule--arrival > div, section .booking-date__schedule--departure > div, section .booking-date__schedule--guests > div {
+  background-color: #d55672;
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  position: relative;
 }
 section#villas {
   background-color: #0075a2;

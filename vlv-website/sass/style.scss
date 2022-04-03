@@ -60,7 +60,6 @@ body {
 
   /* Paragraphs */
   p {
-    color: white;
     font-size: calc(1rem + 1vw);
     font-weight: 300;
   }
@@ -382,11 +381,46 @@ section {
   } 
   /* Booking Date Section */
   &#booking-date {
-    background-color: color(color-tertiary);
+    background-color: color(color-tertiary-m-light);
     grid-column: col-start 7 / center-end;
-    height: $height;
+    padding: property(padding-section);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
   }
+  
+  .booking-date {
+    &__schedule {
+      display: grid;
+      // grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 2vw;
+      place-items: center;
+      // text-align: center;
 
+      &--arrival,
+      &--departure,
+      &--guests {
+        display: grid;
+        grid-row-gap: 3vh;
+
+        h5 {
+          font-size: calc(1rem + 1vh);
+          text-align: center;
+        }
+
+        > div {
+          background-color: color(color-secondary);
+          padding: 2rem 4rem;
+
+          display: grid;
+          grid-template-rows: repeat(3, 1fr);
+          place-items: center;
+          position: relative;
+        }
+      }
+    }
+
+  }
   /* Villas Section */
   &#villas {
     background-color: color(color-primary);
