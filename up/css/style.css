@@ -53,7 +53,6 @@ body {
 }
 .container a:link,
 .container a:visited {
-  color: #adf5ff;
   text-decoration: none;
   font-size: calc(0.5rem + 1vw);
   padding: 1rem 2rem;
@@ -61,6 +60,7 @@ body {
   position: relative;
   transition: all 0.3s cubic-bezier(1, 0, 0, 1);
   z-index: 1;
+  color: #adf5ff;
 }
 .container p {
   font-size: calc(1rem + 1vw);
@@ -399,6 +399,29 @@ section .booking-date__schedule--arrival > div::before, section .booking-date__s
 section .booking-date__schedule--arrival > div p:nth-of-type(2), section .booking-date__schedule--departure > div p:nth-of-type(2), section .booking-date__schedule--guests > div p:nth-of-type(2) {
   font-size: 3rem;
   font-weight: 700;
+}
+section .booking-date__contact {
+  align-self: flex-end;
+}
+section .booking-date__contact p {
+  font-size: 2rem;
+  color: rgba(0, 117, 162, 0.8823529412);
+  font-weight: 500;
+}
+section .booking-date__contact p:first-of-type {
+  margin-top: 4rem;
+}
+section .booking-date__contact p:nth-of-type(2) {
+  font-weight: 600;
+}
+section .booking-date__contact--link:link, section .booking-date__contact--link:visited {
+  background-color: rgba(0, 117, 162, 0.8823529412);
+  transition: all 0.3s ease-in-out;
+}
+section .booking-date__contact--link:hover, section .booking-date__contact--link:active {
+  color: #000;
+  background-color: rgba(29, 211, 128, 0.5137254902);
+  border: 0.1rem rgba(0, 117, 162, 0.8823529412) solid;
 }
 section#villas {
   background-color: #0075a2;

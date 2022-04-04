@@ -48,7 +48,6 @@ body {
   /* Anchor tags */
   a:link,
   a:visited {
-    color: color(color-quaternary);
     text-decoration: none;
     font-size: calc(0.5rem + 1vw);
     padding: 1rem 2rem;
@@ -56,6 +55,7 @@ body {
     position: relative;
     transition: all property(transition-duration) cubic-bezier(1, 0, 0, 1);
     z-index: 1;
+    color: color(color-quaternary);
   }
 
   /* Paragraphs */
@@ -402,21 +402,21 @@ section {
       &--guests {
         display: grid;
         grid-row-gap: 3vh;
-
+        
         h5 {
           font-size: calc(1rem + 1vh);
           text-align: center;
         }
-
+        
         > div {
           background-color: color(color-secondary);
           padding: 2rem 4rem;
-
+          
           display: grid;
           grid-template-rows: repeat(3, 1fr);
           place-items: center;
           position: relative;
-
+          
           &::before {
             content: '';
             position: absolute;
@@ -427,7 +427,7 @@ section {
             border-style: solid;
             border-color:  transparent transparent color(color-secondary);
           }
-
+          
           // Seleccionamos el segundo parrado de los 3 de este div.
           p:nth-of-type(2){
             font-size: 3rem;
@@ -437,12 +437,41 @@ section {
         
       }
     }
+    
+    &__contact {
+      align-self: flex-end;
 
-  }
-  /* Villas Section */
-  &#villas {
-    background-color: color(color-primary);
-    grid-column: container-start / container-end;
+      & p {
+        font-size: 2rem;
+        color: color(color-primary-m-dark);
+        font-weight: 500;
+        
+        &:first-of-type {
+          margin-top: 4rem;
+        }
+
+        &:nth-of-type(2) {
+          font-weight: 600;
+        } 
+      }
+      
+      &--link {
+        &:link, &:visited {
+          background-color: color(color-primary-m-dark);
+          transition: all property(transition-duration) ease-in-out;
+        }
+        &:hover, &:active {
+          color: #000;
+          background-color: color(color-tertiary-m-light);
+          border: 0.1rem color(color-primary-m-dark) solid;
+        }
+      }
+    }
+}
+/* Villas Section */
+&#villas {
+  background-color: color(color-primary);
+  grid-column: container-start / container-end;
     height: $height;
   }
 
