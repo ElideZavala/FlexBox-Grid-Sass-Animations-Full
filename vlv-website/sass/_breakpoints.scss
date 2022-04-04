@@ -1,11 +1,12 @@
-$breakpoints: ( 
-	"phone": 360px,
-	"tablet": 600px,
-	"desktop": 1000px,
-) !default; 	
 
+$phone : 360px;
+$tablet : 600px;
+$tablet-samsung : 800px;
+$desktop : 1000px;
+
+ 
 /************************ 1000 px ************************/
-@media (max-width: mediascreen(desktop)) {
+@media (max-width: $desktop) {
 	/* all Links */
 	a:link, 
 	a:visited {
@@ -13,10 +14,77 @@ $breakpoints: (
 	}
 }
 
-/************************ 1000 px ************************/
-@media (max-width: mediascreen(tablet)) {
+/************************ 800 px ************************/
+@media (max-width: $tablet-samsung) {
+	section {
+		/*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+		&#booking-content {
+			grid-column: col-start/center-end;
+			padding: 4vh 3vw;
+		}
+		
+		.booking-content {
+			&__title {
+				text-align: center;
+
+				&::after {
+					width: 20%;
+					left: 40%;
+				}
+			}
+		}
+
+		/*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/     
+		&#booking-date {
+			padding: 4vh 3vw;
+			grid-column: center-start/center-end;
+			grid-row-gap: 7vh;
+		}
+
+		.booking-date {
+			&__schedule {
+				&--arrival,
+				&--departure,
+				&--guests  {
+					> div { 
+						padding: 4rem;
+						grid-template-columns: min-content;	
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+/************************ 600 px ************************/
+@media (max-width: $tablet) {
 	/*@@@###$%%%#$%*** Header Section  ***@@@###$%%%#$%*/
 	.header__logo__content--content__para {
 		font-size: 2rem;
+	}
+
+	/*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/ 
+	.booking-date {
+		&__schedule {
+			&--arrival,
+			&--departure,
+			&--guests  {
+				> div { 
+					padding: 2rem;
+					grid-template-columns: repeat(3, 1fr);
+					grid-template-rows: min-content;	
+					grid-column-gap: 2vw;
+					place-items: center;
+				}
+			}
+		}
+	}
+
+	/*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/ 
+	.booking-content {
+		&__para {
+			font-size: 1.5rem;
+		}
 	}
 }

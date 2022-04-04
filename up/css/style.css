@@ -20,21 +20,6 @@ h2 {
 }
 
 /* ******************* Utlity Components ******************* */
-/************************ 1000 px ************************/
-@media (max-width: 1000px) {
-  /* all Links */
-  a:link,
-a:visited {
-    font-size: calc(1rem + 1vw);
-  }
-}
-/************************ 1000 px ************************/
-@media (max-width: 600px) {
-  /*@@@###$%%%#$%*** Header Section  ***@@@###$%%%#$%*/
-  .header__logo__content--content__para {
-    font-size: 2rem;
-  }
-}
 body {
   font-family: "Titillium Web", sans-serif;
   line-height: 1.7;
@@ -332,6 +317,8 @@ section .booking-content__title {
   padding: 0 2rem 1rem;
   font-weight: 300;
   position: relative;
+  color: #d55672;
+  font-weight: 500;
 }
 section .booking-content__title::after {
   content: "";
@@ -358,7 +345,7 @@ section .booking-content__icons--weather, section .booking-content__icons--time 
   place-items: center;
 }
 section#booking-date {
-  background-color: rgba(29, 211, 128, 0.5137254902);
+  background-color: #eee;
   grid-column: col-start 7/center-end;
   padding: 8vh 3vw;
   display: grid;
@@ -474,4 +461,61 @@ section#footer {
   height: 400px;
 }
 
-/* *********************** 1000px Mark ************************* *//*# sourceMappingURL=style.css.map */
+/************************ 1000 px ************************/
+@media (max-width: 1000px) {
+  /* all Links */
+  a:link,
+a:visited {
+    font-size: calc(1rem + 1vw);
+  }
+}
+/************************ 800 px ************************/
+@media (max-width: 800px) {
+  section {
+    /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+  }
+  section#booking-content {
+    grid-column: col-start/center-end;
+    padding: 4vh 3vw;
+  }
+  section .booking-content__title {
+    text-align: center;
+  }
+  section .booking-content__title::after {
+    width: 20%;
+    left: 40%;
+  }
+  section#booking-date {
+    padding: 4vh 3vw;
+    grid-column: center-start/center-end;
+    grid-row-gap: 7vh;
+  }
+  section .booking-date__schedule--arrival > div, section .booking-date__schedule--departure > div, section .booking-date__schedule--guests > div {
+    padding: 4rem;
+    grid-template-columns: -webkit-min-content;
+    grid-template-columns: min-content;
+  }
+}
+/************************ 600 px ************************/
+@media (max-width: 600px) {
+  /*@@@###$%%%#$%*** Header Section  ***@@@###$%%%#$%*/
+  .header__logo__content--content__para {
+    font-size: 2rem;
+  }
+
+  /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+  .booking-date__schedule--arrival > div, .booking-date__schedule--departure > div, .booking-date__schedule--guests > div {
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
+    grid-column-gap: 2vw;
+    place-items: center;
+  }
+
+  /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+  .booking-content__para {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

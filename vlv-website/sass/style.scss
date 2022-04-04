@@ -28,7 +28,7 @@ $propertys: (
 @import "googleFonts";
 @import "utilityComponets";
 @import "variables";
-@import "breakpoints";
+
 
 body {
   font-family: "Titillium Web", sans-serif;
@@ -349,6 +349,8 @@ section {
       padding: 0 2rem 1rem;
       font-weight: 300;
       position: relative;
+      color: color(color-secondary);
+      font-weight: 500;
       
       &::after {
         content: '';
@@ -381,7 +383,7 @@ section {
   } 
   /* Booking Date Section */
   &#booking-date {
-    background-color: color(color-tertiary-m-light);
+    background-color: #eee; 
     grid-column: col-start 7 / center-end;
     padding: property(padding-section);
     display: grid;
@@ -539,4 +541,4 @@ section {
   } 
 }
 
-/* *********************** 1000px Mark ************************* */
+@import "breakpoints";
