@@ -386,6 +386,20 @@ section .booking-date__schedule--arrival > div, section .booking-date__schedule-
   place-items: center;
   position: relative;
 }
+section .booking-date__schedule--arrival > div::before, section .booking-date__schedule--departure > div::before, section .booking-date__schedule--guests > div::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-width: 1.5rem;
+  margin-left: -1.5rem;
+  border-style: solid;
+  border-color: transparent transparent #d55672;
+}
+section .booking-date__schedule--arrival > div p:nth-of-type(2), section .booking-date__schedule--departure > div p:nth-of-type(2), section .booking-date__schedule--guests > div p:nth-of-type(2) {
+  font-size: 3rem;
+  font-weight: 700;
+}
 section#villas {
   background-color: #0075a2;
   grid-column: container-start/container-end;
