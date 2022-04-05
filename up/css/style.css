@@ -492,9 +492,12 @@ a:visited {
     grid-row-gap: 7vh;
   }
   section .booking-date__schedule--arrival > div, section .booking-date__schedule--departure > div, section .booking-date__schedule--guests > div {
-    padding: 4rem;
-    grid-template-columns: -webkit-min-content;
-    grid-template-columns: min-content;
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
+    grid-column-gap: 2vw;
+    place-items: center;
   }
 }
 /************************ 600 px ************************/
@@ -504,18 +507,20 @@ a:visited {
     font-size: 2rem;
   }
 
-  /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
-  .booking-date__schedule--arrival > div, .booking-date__schedule--departure > div, .booking-date__schedule--guests > div {
-    padding: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: -webkit-min-content;
-    grid-template-rows: min-content;
-    grid-column-gap: 2vw;
-    place-items: center;
+  section {
+    /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
   }
-
-  /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
-  .booking-content__para {
+  section#booking-date {
+    grid-template-rows: repeat(2, -webkit-max-content);
+    grid-template-rows: repeat(2, max-content);
+  }
+  section .booking-date__schedule--arrival > div, section .booking-date__schedule--departure > div, section .booking-date__schedule--guests > div {
+    grid-template-columns: -webkit-min-content;
+    grid-template-columns: min-content;
+  }
+  section .booking-content__para {
     font-size: 1.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/************************ 400 px ************************//*# sourceMappingURL=style.css.map */
