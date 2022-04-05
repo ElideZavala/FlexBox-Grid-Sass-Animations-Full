@@ -523,4 +523,16 @@ a:visited {
     font-size: 1.5rem;
   }
 }
-/************************ 400 px ************************//*# sourceMappingURL=style.css.map */
+/************************ 400 px ************************/
+@media screen and (max-width: 400px) {
+  /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+  section .booking-date__schedule {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto;
+    grid-row-gap: 4vh;
+  }
+  section .booking-date__contact {
+    justify-self: center;
+    padding: 0 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-$phone: 360px;
+$phone: 400px;
 $tablet: 600px;
 $tablet-samsung: 800px;
 $desktop: 1000px;
@@ -93,3 +93,19 @@ $desktop: 1000px;
 }
 
 /************************ 400 px ************************/
+@media screen and (max-width: $phone) {
+	/*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+	section {
+		.booking-date {
+			&__schedule {
+				grid-template-rows: repeat(3, 1fr);
+				grid-template-columns: auto; // Automatico a la caja.
+				grid-row-gap: 4vh;
+			}
+			&__contact {
+				justify-self: center;
+				padding: 0 2rem;
+			}
+		}
+	}
+}
