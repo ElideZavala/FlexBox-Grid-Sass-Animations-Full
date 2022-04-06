@@ -417,21 +417,147 @@ section#villas {
 }
 section#villas .villas__villa-1 {
   padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+section#villas .villas__villa-1:hover, section#villas .villas__villa-1:active {
+  transform: scale(1.05);
+}
+section#villas .villas__villa-1 h2[class^=villas] {
+  font-size: calc(2rem + 2vw);
+  padding: 0 2rem 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section#villas .villas__villa-1 p[class^=villas] {
+  font-size: 2rem;
+  margin: 1.5rem 0 4rem 0;
+  font-weight: 500;
+}
+section#villas .villas__villa-1 a[class^=villas]:link, section#villas .villas__villa-1 a[class^=villas]:visited {
+  display: inline-block;
+  margin-bottom: 2rem;
+  background-color: rgba(29, 211, 128, 0.5137254902);
+  color: #0075a2;
 }
 section#villas .villas__villa-2 {
   padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+section#villas .villas__villa-2:hover, section#villas .villas__villa-2:active {
+  transform: scale(1.05);
+}
+section#villas .villas__villa-2 h2[class^=villas] {
+  font-size: calc(2rem + 2vw);
+  padding: 0 2rem 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section#villas .villas__villa-2 p[class^=villas] {
+  font-size: 2rem;
+  margin: 1.5rem 0 4rem 0;
+  font-weight: 500;
+}
+section#villas .villas__villa-2 a[class^=villas]:link, section#villas .villas__villa-2 a[class^=villas]:visited {
+  display: inline-block;
+  margin-bottom: 2rem;
+  background-color: rgba(29, 211, 128, 0.5137254902);
+  color: #0075a2;
 }
 section#villas .villas__villa-3 {
   padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+section#villas .villas__villa-3:hover, section#villas .villas__villa-3:active {
+  transform: scale(1.05);
+}
+section#villas .villas__villa-3 h2[class^=villas] {
+  font-size: calc(2rem + 2vw);
+  padding: 0 2rem 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section#villas .villas__villa-3 p[class^=villas] {
+  font-size: 2rem;
+  margin: 1.5rem 0 4rem 0;
+  font-weight: 500;
+}
+section#villas .villas__villa-3 a[class^=villas]:link, section#villas .villas__villa-3 a[class^=villas]:visited {
+  display: inline-block;
+  margin-bottom: 2rem;
+  background-color: rgba(29, 211, 128, 0.5137254902);
+  color: #0075a2;
 }
 section#villas .villas__villa-4 {
   padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+section#villas .villas__villa-4:hover, section#villas .villas__villa-4:active {
+  transform: scale(1.05);
+}
+section#villas .villas__villa-4 h2[class^=villas] {
+  font-size: calc(2rem + 2vw);
+  padding: 0 2rem 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section#villas .villas__villa-4 p[class^=villas] {
+  font-size: 2rem;
+  margin: 1.5rem 0 4rem 0;
+  font-weight: 500;
+}
+section#villas .villas__villa-4 a[class^=villas]:link, section#villas .villas__villa-4 a[class^=villas]:visited {
+  display: inline-block;
+  margin-bottom: 2rem;
+  background-color: rgba(29, 211, 128, 0.5137254902);
+  color: #0075a2;
 }
 section#villas .villas__villa-5 {
   padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+section#villas .villas__villa-5:hover, section#villas .villas__villa-5:active {
+  transform: scale(1.05);
+}
+section#villas .villas__villa-5 h2[class^=villas] {
+  font-size: calc(2rem + 2vw);
+  padding: 0 2rem 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section#villas .villas__villa-5 p[class^=villas] {
+  font-size: 2rem;
+  margin: 1.5rem 0 4rem 0;
+  font-weight: 500;
+}
+section#villas .villas__villa-5 a[class^=villas]:link, section#villas .villas__villa-5 a[class^=villas]:visited {
+  display: inline-block;
+  margin-bottom: 2rem;
+  background-color: rgba(29, 211, 128, 0.5137254902);
+  color: #0075a2;
 }
 section#villas .villas__villa-6 {
   padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+section#villas .villas__villa-6:hover, section#villas .villas__villa-6:active {
+  transform: scale(1.05);
+}
+section#villas .villas__villa-6 h2[class^=villas] {
+  font-size: calc(2rem + 2vw);
+  padding: 0 2rem 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section#villas .villas__villa-6 p[class^=villas] {
+  font-size: 2rem;
+  margin: 1.5rem 0 4rem 0;
+  font-weight: 500;
+}
+section#villas .villas__villa-6 a[class^=villas]:link, section#villas .villas__villa-6 a[class^=villas]:visited {
+  display: inline-block;
+  margin-bottom: 2rem;
+  background-color: rgba(29, 211, 128, 0.5137254902);
+  color: #0075a2;
 }
 section#motto {
   background-color: #d55672;

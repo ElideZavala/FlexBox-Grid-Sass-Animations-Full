@@ -481,13 +481,41 @@ section {
       @for $i from 1 through 6 {
         &__villa-#{0 + $i}  {
           padding: 2rem;
+          // @include background;
+          transition: transform property(transition-duration) ease-in-out;
+
+          &:hover,
+          &:active {
+            transform: scale(1.05);
+          }
+
+          h2[class^=villas] {
+            font-size: property(font-size-title);
+            padding: 0 2rem 1rem;
+            font-weight: 400;
+            // color: white;
+            text-transform: uppercase;
+          }
+
+          p[class^=villas] {
+            font-size: 2rem;
+            margin: 1.5rem 0 4rem 0;
+            // color: white;
+            font-weight: 500;
+          }
+
+          a[class^=villas] {
+            &:link,
+            &:visited {
+              display: inline-block;
+              margin-bottom: 2rem;
+              background-color: color(color-tertiary-m-light);
+              color: color(color-primary);
+            }
+          }
         }
       }
     }  
-  }
-
-  div[class^=villas] {
-
   }
 
   /* Motto Section */
