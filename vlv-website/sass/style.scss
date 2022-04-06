@@ -470,10 +470,24 @@ section {
     }
 }
 /* Villas Section */
-&#villas {
-  background-color: color(color-primary);
-  grid-column: container-start / container-end;
-    height: $height;
+  &#villas {
+    grid-column: container-start / container-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    // grid-gap: 2rem;
+  
+  .villas {
+      @for $i from 1 through 6 {
+        &__villa-#{0 + $i}  {
+          padding: 2rem;
+        }
+      }
+    }  
+  }
+
+  div[class^=villas] {
+
   }
 
   /* Motto Section */

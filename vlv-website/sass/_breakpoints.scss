@@ -4,7 +4,7 @@ $tablet-samsung: 800px;
 $desktop: 1000px;
 
 /************************ 1000 px ************************/
-@media (max-width: $desktop) {
+@media screen and (max-width: $desktop) {
   /* all Links */
   a:link,
   a:visited {
@@ -13,7 +13,7 @@ $desktop: 1000px;
 }
 
 /************************ 800 px ************************/
-@media (max-width: $tablet-samsung) {
+@media screen and (max-width: $tablet-samsung) {
   section {
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
     &#booking-content {
@@ -58,7 +58,7 @@ $desktop: 1000px;
 }
 
 /************************ 600 px ************************/
-@media (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
   /*@@@###$%%%#$%*** Header Section  ***@@@###$%%%#$%*/
   .header__logo__content--content__para {
     font-size: 2rem;
