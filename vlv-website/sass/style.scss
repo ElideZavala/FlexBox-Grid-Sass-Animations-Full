@@ -22,12 +22,7 @@ $propertys: (
   /* Section Padding */ "padding-section": 8vh 3vw
 );
 
-/* Importaciones */
-@import "functions";
-@import "reset";
-@import "googleFonts";
-@import "utilityComponets";
-@import "variables";
+
 
 body {
   font-family: "Titillium Web", sans-serif;
@@ -656,4 +651,10 @@ section {
   }
 }
 
+/* Importaciones */
+@import "functions";
+@import "reset";
+@import "googleFonts";
+@import "utilityComponets";
+@import "variables";
 @import "breakpoints";

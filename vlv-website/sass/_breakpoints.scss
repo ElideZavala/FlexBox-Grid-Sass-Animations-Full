@@ -61,8 +61,6 @@ $desktop: 1000px;
       grid-gap: 0;
     }
   }
-
-
 }
 
 /************************ 600 px ************************/
@@ -84,7 +82,7 @@ $desktop: 1000px;
         &--departure,
         &--guests {
           & > div {
-          //   padding: 4rem;
+            //   padding: 4rem;
             grid-template-columns: min-content;
           }
         }
@@ -96,16 +94,14 @@ $desktop: 1000px;
       .villas {
         @for $i from 1 through 6 {
           &__villa-#{0 + $i} {
-  
-            p[class^=villas] {
-              font-size: 2rem;
-              margin: 1.5rem 0 4rem 0;
+            p[class^="villas"] {
+              font-size: 1.5rem;
+              margin: 1rem 0 2rem 0;
             }
-          } 
+          }
         }
       }
     }
-    
 
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
     .booking-content {
@@ -118,18 +114,30 @@ $desktop: 1000px;
 
 /************************ 400 px ************************/
 @media screen and (max-width: $phone) {
-	/*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
-	section {
-		.booking-date {
-			&__schedule {
-				grid-template-rows: repeat(3, 1fr);
-				grid-template-columns: auto; // Automatico a la caja.
-				grid-row-gap: 4vh;
-			}
-			&__contact {
-				justify-self: center;
-				padding: 0 2rem;
-			}
-		}
-	}
+  /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+  section {
+    .booking-date {
+      &__schedule {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: auto; // Automatico a la caja.
+        grid-row-gap: 4vh;
+      }
+      &__contact {
+        justify-self: center;
+        padding: 0 2rem;
+      }
+    }
+
+    /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+
+    .villas {
+      @for $i from 1 through 6 {
+        &__villa-#{0 + $i} {
+          grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+          padding: .5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }

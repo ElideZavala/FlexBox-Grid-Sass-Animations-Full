@@ -874,28 +874,28 @@ a:visited {
     grid-template-columns: min-content;
   }
   section#villas .villas__villa-1 p[class^=villas] {
-    font-size: 2rem;
-    margin: 1.5rem 0 4rem 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-2 p[class^=villas] {
-    font-size: 2rem;
-    margin: 1.5rem 0 4rem 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-3 p[class^=villas] {
-    font-size: 2rem;
-    margin: 1.5rem 0 4rem 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-4 p[class^=villas] {
-    font-size: 2rem;
-    margin: 1.5rem 0 4rem 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-5 p[class^=villas] {
-    font-size: 2rem;
-    margin: 1.5rem 0 4rem 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-6 p[class^=villas] {
-    font-size: 2rem;
-    margin: 1.5rem 0 4rem 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
   }
   section .booking-content__para {
     font-size: 1.5rem;
@@ -904,6 +904,9 @@ a:visited {
 /************************ 400 px ************************/
 @media screen and (max-width: 400px) {
   /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+  section {
+    /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+  }
   section .booking-date__schedule {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: auto;
@@ -912,5 +915,35 @@ a:visited {
   section .booking-date__contact {
     justify-self: center;
     padding: 0 2rem;
+  }
+  section#villas .villas__villa-1 {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  section#villas .villas__villa-2 {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  section#villas .villas__villa-3 {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  section#villas .villas__villa-4 {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  section#villas .villas__villa-5 {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  section#villas .villas__villa-6 {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 1rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
