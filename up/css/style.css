@@ -76,7 +76,7 @@ header#header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 6;
   /* Links Menu */
 }
 .header__main-nav input[type=checkbox] {
@@ -419,6 +419,10 @@ section#villas {
 }
 section#villas .villas__villa-1 {
   padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.3s ease-in-out;
 }
 section#villas .villas__villa-1:hover, section#villas .villas__villa-1:active {
@@ -444,8 +448,8 @@ section#villas .villas__villa-1 :nth-child(2n)::before, a[class^=villas] section
 section#villas .villas__villa-1 a[class^=villas]:link, section#villas .villas__villa-1 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
-  background-color: rgba(29, 211, 128, 0.5137254902);
-  color: #0075a2;
+  background-color: rgba(213, 86, 114, 0.8823529412);
+  color: rgba(173, 245, 255, 0.8823529412);
   z-index: 2;
   overflow: hidden;
 }
@@ -457,7 +461,7 @@ section#villas .villas__villa-1 a[class^=villas]:link::before, section#villas .v
   width: 100%;
   height: 0;
   z-index: -1;
-  background-color: #d55672;
+  background-color: #0075a2;
   transition: height 0.3s ease-in-out;
 }
 section#villas .villas__villa-1 a[class^=villas]:link:hover, section#villas .villas__villa-1 a[class^=villas]:link:active, section#villas .villas__villa-1 a[class^=villas]:visited:hover, section#villas .villas__villa-1 a[class^=villas]:visited:active {
@@ -468,6 +472,10 @@ section#villas .villas__villa-1 a[class^=villas]:link:hover::before, section#vil
 }
 section#villas .villas__villa-2 {
   padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.3s ease-in-out;
 }
 section#villas .villas__villa-2:hover, section#villas .villas__villa-2:active {
@@ -493,8 +501,8 @@ section#villas .villas__villa-2 :nth-child(2n)::before, a[class^=villas] section
 section#villas .villas__villa-2 a[class^=villas]:link, section#villas .villas__villa-2 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
-  background-color: rgba(29, 211, 128, 0.5137254902);
-  color: #0075a2;
+  background-color: rgba(213, 86, 114, 0.8823529412);
+  color: rgba(173, 245, 255, 0.8823529412);
   z-index: 2;
   overflow: hidden;
 }
@@ -506,7 +514,7 @@ section#villas .villas__villa-2 a[class^=villas]:link::before, section#villas .v
   width: 100%;
   height: 0;
   z-index: -1;
-  background-color: #d55672;
+  background-color: #0075a2;
   transition: height 0.3s ease-in-out;
 }
 section#villas .villas__villa-2 a[class^=villas]:link:hover, section#villas .villas__villa-2 a[class^=villas]:link:active, section#villas .villas__villa-2 a[class^=villas]:visited:hover, section#villas .villas__villa-2 a[class^=villas]:visited:active {
@@ -517,6 +525,10 @@ section#villas .villas__villa-2 a[class^=villas]:link:hover::before, section#vil
 }
 section#villas .villas__villa-3 {
   padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.3s ease-in-out;
 }
 section#villas .villas__villa-3:hover, section#villas .villas__villa-3:active {
@@ -542,8 +554,8 @@ section#villas .villas__villa-3 :nth-child(2n)::before, a[class^=villas] section
 section#villas .villas__villa-3 a[class^=villas]:link, section#villas .villas__villa-3 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
-  background-color: rgba(29, 211, 128, 0.5137254902);
-  color: #0075a2;
+  background-color: rgba(213, 86, 114, 0.8823529412);
+  color: rgba(173, 245, 255, 0.8823529412);
   z-index: 2;
   overflow: hidden;
 }
@@ -555,7 +567,7 @@ section#villas .villas__villa-3 a[class^=villas]:link::before, section#villas .v
   width: 100%;
   height: 0;
   z-index: -1;
-  background-color: #d55672;
+  background-color: #0075a2;
   transition: height 0.3s ease-in-out;
 }
 section#villas .villas__villa-3 a[class^=villas]:link:hover, section#villas .villas__villa-3 a[class^=villas]:link:active, section#villas .villas__villa-3 a[class^=villas]:visited:hover, section#villas .villas__villa-3 a[class^=villas]:visited:active {
@@ -566,6 +578,10 @@ section#villas .villas__villa-3 a[class^=villas]:link:hover::before, section#vil
 }
 section#villas .villas__villa-4 {
   padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.3s ease-in-out;
 }
 section#villas .villas__villa-4:hover, section#villas .villas__villa-4:active {
@@ -591,8 +607,8 @@ section#villas .villas__villa-4 :nth-child(2n)::before, a[class^=villas] section
 section#villas .villas__villa-4 a[class^=villas]:link, section#villas .villas__villa-4 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
-  background-color: rgba(29, 211, 128, 0.5137254902);
-  color: #0075a2;
+  background-color: rgba(213, 86, 114, 0.8823529412);
+  color: rgba(173, 245, 255, 0.8823529412);
   z-index: 2;
   overflow: hidden;
 }
@@ -604,7 +620,7 @@ section#villas .villas__villa-4 a[class^=villas]:link::before, section#villas .v
   width: 100%;
   height: 0;
   z-index: -1;
-  background-color: #d55672;
+  background-color: #0075a2;
   transition: height 0.3s ease-in-out;
 }
 section#villas .villas__villa-4 a[class^=villas]:link:hover, section#villas .villas__villa-4 a[class^=villas]:link:active, section#villas .villas__villa-4 a[class^=villas]:visited:hover, section#villas .villas__villa-4 a[class^=villas]:visited:active {
@@ -615,6 +631,10 @@ section#villas .villas__villa-4 a[class^=villas]:link:hover::before, section#vil
 }
 section#villas .villas__villa-5 {
   padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.3s ease-in-out;
 }
 section#villas .villas__villa-5:hover, section#villas .villas__villa-5:active {
@@ -640,8 +660,8 @@ section#villas .villas__villa-5 :nth-child(2n)::before, a[class^=villas] section
 section#villas .villas__villa-5 a[class^=villas]:link, section#villas .villas__villa-5 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
-  background-color: rgba(29, 211, 128, 0.5137254902);
-  color: #0075a2;
+  background-color: rgba(213, 86, 114, 0.8823529412);
+  color: rgba(173, 245, 255, 0.8823529412);
   z-index: 2;
   overflow: hidden;
 }
@@ -653,7 +673,7 @@ section#villas .villas__villa-5 a[class^=villas]:link::before, section#villas .v
   width: 100%;
   height: 0;
   z-index: -1;
-  background-color: #d55672;
+  background-color: #0075a2;
   transition: height 0.3s ease-in-out;
 }
 section#villas .villas__villa-5 a[class^=villas]:link:hover, section#villas .villas__villa-5 a[class^=villas]:link:active, section#villas .villas__villa-5 a[class^=villas]:visited:hover, section#villas .villas__villa-5 a[class^=villas]:visited:active {
@@ -664,6 +684,10 @@ section#villas .villas__villa-5 a[class^=villas]:link:hover::before, section#vil
 }
 section#villas .villas__villa-6 {
   padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.3s ease-in-out;
 }
 section#villas .villas__villa-6:hover, section#villas .villas__villa-6:active {
@@ -689,8 +713,8 @@ section#villas .villas__villa-6 :nth-child(2n)::before, a[class^=villas] section
 section#villas .villas__villa-6 a[class^=villas]:link, section#villas .villas__villa-6 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
-  background-color: rgba(29, 211, 128, 0.5137254902);
-  color: #0075a2;
+  background-color: rgba(213, 86, 114, 0.8823529412);
+  color: rgba(173, 245, 255, 0.8823529412);
   z-index: 2;
   overflow: hidden;
 }
@@ -702,7 +726,7 @@ section#villas .villas__villa-6 a[class^=villas]:link::before, section#villas .v
   width: 100%;
   height: 0;
   z-index: -1;
-  background-color: #d55672;
+  background-color: #0075a2;
   transition: height 0.3s ease-in-out;
 }
 section#villas .villas__villa-6 a[class^=villas]:link:hover, section#villas .villas__villa-6 a[class^=villas]:link:active, section#villas .villas__villa-6 a[class^=villas]:visited:hover, section#villas .villas__villa-6 a[class^=villas]:visited:active {
@@ -710,6 +734,24 @@ section#villas .villas__villa-6 a[class^=villas]:link:hover, section#villas .vil
 }
 section#villas .villas__villa-6 a[class^=villas]:link:hover::before, section#villas .villas__villa-6 a[class^=villas]:link:active::before, section#villas .villas__villa-6 a[class^=villas]:visited:hover::before, section#villas .villas__villa-6 a[class^=villas]:visited:active::before {
   height: 400%;
+}
+section#villas .villas__villa-1 {
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+}
+section#villas .villas__villa-2 {
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+}
+section#villas .villas__villa-3 {
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+}
+section#villas .villas__villa-4 {
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+}
+section#villas .villas__villa-5 {
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+}
+section#villas .villas__villa-6 {
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
 }
 section#motto {
   background-color: #d55672;
