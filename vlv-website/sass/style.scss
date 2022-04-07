@@ -84,7 +84,7 @@ header#header {
       color(color-primary-m-light),
       color(color-primary-m-light)
     ),
-    url("../up/img/hero2.jpg");
+    url("/vlv-website/up/img/hero2.jpg");
   @include background;
 }
 
@@ -472,8 +472,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     background: color(color-quaternary-m-light);
-    place-items: end;
-    // grid-gap: 2rem;
+    grid-gap: 2rem;
 
     .villas {
       @for $i from 1 through 6 {
@@ -558,31 +557,37 @@ section {
       &__villa-1 {
         background: $backgroundVillas,
           url("/vlv-website/up/img/Villas/villa-1.jpg");
+          @include background;
       }
 
       &__villa-2 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-1.jpg");
+          url("/vlv-website/up/img/Villas/villa-2.jpg");
+          @include background;
       }
 
       &__villa-3 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-1.jpg");
+          url("/vlv-website/up/img/Villas/villa-3.jpg");
+          @include background;
       }
 
       &__villa-4 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-1.jpg");
+          url("/vlv-website/up/img/Villas/villa-4.jpg");
+          @include background;
       }
 
       &__villa-5 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-1.jpg");
+          url("/vlv-website/up/img/Villas/villa-5.jpg");
+          @include background;
       }
 
       &__villa-6 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-1.jpg");
+          url("/vlv-website/up/img/Villas/villa-6.jpg");
+          @include background;
       }
     }
   }

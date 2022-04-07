@@ -64,9 +64,8 @@ body {
 header#header {
   background-color: #0075a2;
   grid-column: container-start/container-end;
-  background: linear-gradient(rgba(0, 117, 162, 0.5137254902), rgba(0, 117, 162, 0.5137254902)), url("../up/img/hero2.jpg");
+  background: linear-gradient(rgba(0, 117, 162, 0.5137254902), rgba(0, 117, 162, 0.5137254902)), url("/vlv-website/up/img/hero2.jpg");
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -415,12 +414,11 @@ section#villas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   background: rgba(173, 245, 255, 0.5137254902);
-  place-items: end;
+  grid-gap: 2rem;
 }
 section#villas .villas__villa-1 {
   padding: 2rem;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
@@ -473,7 +471,6 @@ section#villas .villas__villa-1 a[class^=villas]:link:hover::before, section#vil
 section#villas .villas__villa-2 {
   padding: 2rem;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
@@ -526,7 +523,6 @@ section#villas .villas__villa-2 a[class^=villas]:link:hover::before, section#vil
 section#villas .villas__villa-3 {
   padding: 2rem;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
@@ -579,7 +575,6 @@ section#villas .villas__villa-3 a[class^=villas]:link:hover::before, section#vil
 section#villas .villas__villa-4 {
   padding: 2rem;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
@@ -632,7 +627,6 @@ section#villas .villas__villa-4 a[class^=villas]:link:hover::before, section#vil
 section#villas .villas__villa-5 {
   padding: 2rem;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
@@ -685,7 +679,6 @@ section#villas .villas__villa-5 a[class^=villas]:link:hover::before, section#vil
 section#villas .villas__villa-6 {
   padding: 2rem;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
@@ -737,21 +730,39 @@ section#villas .villas__villa-6 a[class^=villas]:link:hover::before, section#vil
 }
 section#villas .villas__villa-1 {
   background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section#villas .villas__villa-2 {
-  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section#villas .villas__villa-3 {
-  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section#villas .villas__villa-4 {
-  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section#villas .villas__villa-5 {
-  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section#villas .villas__villa-6 {
-  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-1.jpg");
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Villas/villa-6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section#motto {
   background-color: #d55672;
@@ -812,6 +823,7 @@ a:visited {
   section {
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
     /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Villas Section  ***@@@###$%%%#$%*/
   }
   section#booking-content {
     grid-column: col-start/center-end;
@@ -837,6 +849,9 @@ a:visited {
     grid-column-gap: 2vw;
     place-items: center;
   }
+  section#villas {
+    grid-gap: 0;
+  }
 }
 /************************ 600 px ************************/
 @media screen and (max-width: 600px) {
@@ -848,6 +863,7 @@ a:visited {
   section {
     /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
   }
   section#booking-date {
     grid-template-rows: repeat(2, -webkit-max-content);
@@ -856,6 +872,30 @@ a:visited {
   section .booking-date__schedule--arrival > div, section .booking-date__schedule--departure > div, section .booking-date__schedule--guests > div {
     grid-template-columns: -webkit-min-content;
     grid-template-columns: min-content;
+  }
+  section#villas .villas__villa-1 p[class^=villas] {
+    font-size: 2rem;
+    margin: 1.5rem 0 4rem 0;
+  }
+  section#villas .villas__villa-2 p[class^=villas] {
+    font-size: 2rem;
+    margin: 1.5rem 0 4rem 0;
+  }
+  section#villas .villas__villa-3 p[class^=villas] {
+    font-size: 2rem;
+    margin: 1.5rem 0 4rem 0;
+  }
+  section#villas .villas__villa-4 p[class^=villas] {
+    font-size: 2rem;
+    margin: 1.5rem 0 4rem 0;
+  }
+  section#villas .villas__villa-5 p[class^=villas] {
+    font-size: 2rem;
+    margin: 1.5rem 0 4rem 0;
+  }
+  section#villas .villas__villa-6 p[class^=villas] {
+    font-size: 2rem;
+    margin: 1.5rem 0 4rem 0;
   }
   section .booking-content__para {
     font-size: 1.5rem;

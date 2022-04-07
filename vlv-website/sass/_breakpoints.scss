@@ -54,7 +54,15 @@ $desktop: 1000px;
         }
       }
     }
+
+    /*@@@###$%%%#$%*** Villas Section  ***@@@###$%%%#$%*/
+
+    &#villas {
+      grid-gap: 0;
+    }
   }
+
+
 }
 
 /************************ 600 px ************************/
@@ -82,6 +90,22 @@ $desktop: 1000px;
         }
       }
     }
+
+    /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+    &#villas {
+      .villas {
+        @for $i from 1 through 6 {
+          &__villa-#{0 + $i} {
+  
+            p[class^=villas] {
+              font-size: 2rem;
+              margin: 1.5rem 0 4rem 0;
+            }
+          } 
+        }
+      }
+    }
+    
 
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
     .booking-content {
