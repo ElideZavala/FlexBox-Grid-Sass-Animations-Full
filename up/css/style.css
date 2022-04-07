@@ -413,7 +413,9 @@ section .booking-date__contact--link:hover, section .booking-date__contact--link
 section#villas {
   grid-column: container-start/container-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  background: rgba(173, 245, 255, 0.5137254902);
+  place-items: end;
 }
 section#villas .villas__villa-1 {
   padding: 2rem;
@@ -433,11 +435,36 @@ section#villas .villas__villa-1 p[class^=villas] {
   margin: 1.5rem 0 4rem 0;
   font-weight: 500;
 }
+section#villas .villas__villa-1 :nth-child(n)::before, a[class^=villas] section#villas .villas__villa-1:link::before, section#villas .villas__villa-1:visited::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+section#villas .villas__villa-1 :nth-child(2n)::before, a[class^=villas] section#villas .villas__villa-1:link::before, section#villas .villas__villa-1:visited::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 section#villas .villas__villa-1 a[class^=villas]:link, section#villas .villas__villa-1 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
   background-color: rgba(29, 211, 128, 0.5137254902);
   color: #0075a2;
+  z-index: 2;
+  overflow: hidden;
+}
+section#villas .villas__villa-1 a[class^=villas]:link::before, section#villas .villas__villa-1 a[class^=villas]:visited::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background-color: #d55672;
+  transition: height 0.3s ease-in-out;
+}
+section#villas .villas__villa-1 a[class^=villas]:link:hover, section#villas .villas__villa-1 a[class^=villas]:link:active, section#villas .villas__villa-1 a[class^=villas]:visited:hover, section#villas .villas__villa-1 a[class^=villas]:visited:active {
+  color: white;
+}
+section#villas .villas__villa-1 a[class^=villas]:link:hover::before, section#villas .villas__villa-1 a[class^=villas]:link:active::before, section#villas .villas__villa-1 a[class^=villas]:visited:hover::before, section#villas .villas__villa-1 a[class^=villas]:visited:active::before {
+  height: 400%;
 }
 section#villas .villas__villa-2 {
   padding: 2rem;
@@ -457,11 +484,36 @@ section#villas .villas__villa-2 p[class^=villas] {
   margin: 1.5rem 0 4rem 0;
   font-weight: 500;
 }
+section#villas .villas__villa-2 :nth-child(n)::before, a[class^=villas] section#villas .villas__villa-2:link::before, section#villas .villas__villa-2:visited::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+section#villas .villas__villa-2 :nth-child(2n)::before, a[class^=villas] section#villas .villas__villa-2:link::before, section#villas .villas__villa-2:visited::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 section#villas .villas__villa-2 a[class^=villas]:link, section#villas .villas__villa-2 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
   background-color: rgba(29, 211, 128, 0.5137254902);
   color: #0075a2;
+  z-index: 2;
+  overflow: hidden;
+}
+section#villas .villas__villa-2 a[class^=villas]:link::before, section#villas .villas__villa-2 a[class^=villas]:visited::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background-color: #d55672;
+  transition: height 0.3s ease-in-out;
+}
+section#villas .villas__villa-2 a[class^=villas]:link:hover, section#villas .villas__villa-2 a[class^=villas]:link:active, section#villas .villas__villa-2 a[class^=villas]:visited:hover, section#villas .villas__villa-2 a[class^=villas]:visited:active {
+  color: white;
+}
+section#villas .villas__villa-2 a[class^=villas]:link:hover::before, section#villas .villas__villa-2 a[class^=villas]:link:active::before, section#villas .villas__villa-2 a[class^=villas]:visited:hover::before, section#villas .villas__villa-2 a[class^=villas]:visited:active::before {
+  height: 400%;
 }
 section#villas .villas__villa-3 {
   padding: 2rem;
@@ -481,11 +533,36 @@ section#villas .villas__villa-3 p[class^=villas] {
   margin: 1.5rem 0 4rem 0;
   font-weight: 500;
 }
+section#villas .villas__villa-3 :nth-child(n)::before, a[class^=villas] section#villas .villas__villa-3:link::before, section#villas .villas__villa-3:visited::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+section#villas .villas__villa-3 :nth-child(2n)::before, a[class^=villas] section#villas .villas__villa-3:link::before, section#villas .villas__villa-3:visited::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 section#villas .villas__villa-3 a[class^=villas]:link, section#villas .villas__villa-3 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
   background-color: rgba(29, 211, 128, 0.5137254902);
   color: #0075a2;
+  z-index: 2;
+  overflow: hidden;
+}
+section#villas .villas__villa-3 a[class^=villas]:link::before, section#villas .villas__villa-3 a[class^=villas]:visited::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background-color: #d55672;
+  transition: height 0.3s ease-in-out;
+}
+section#villas .villas__villa-3 a[class^=villas]:link:hover, section#villas .villas__villa-3 a[class^=villas]:link:active, section#villas .villas__villa-3 a[class^=villas]:visited:hover, section#villas .villas__villa-3 a[class^=villas]:visited:active {
+  color: white;
+}
+section#villas .villas__villa-3 a[class^=villas]:link:hover::before, section#villas .villas__villa-3 a[class^=villas]:link:active::before, section#villas .villas__villa-3 a[class^=villas]:visited:hover::before, section#villas .villas__villa-3 a[class^=villas]:visited:active::before {
+  height: 400%;
 }
 section#villas .villas__villa-4 {
   padding: 2rem;
@@ -505,11 +582,36 @@ section#villas .villas__villa-4 p[class^=villas] {
   margin: 1.5rem 0 4rem 0;
   font-weight: 500;
 }
+section#villas .villas__villa-4 :nth-child(n)::before, a[class^=villas] section#villas .villas__villa-4:link::before, section#villas .villas__villa-4:visited::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+section#villas .villas__villa-4 :nth-child(2n)::before, a[class^=villas] section#villas .villas__villa-4:link::before, section#villas .villas__villa-4:visited::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 section#villas .villas__villa-4 a[class^=villas]:link, section#villas .villas__villa-4 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
   background-color: rgba(29, 211, 128, 0.5137254902);
   color: #0075a2;
+  z-index: 2;
+  overflow: hidden;
+}
+section#villas .villas__villa-4 a[class^=villas]:link::before, section#villas .villas__villa-4 a[class^=villas]:visited::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background-color: #d55672;
+  transition: height 0.3s ease-in-out;
+}
+section#villas .villas__villa-4 a[class^=villas]:link:hover, section#villas .villas__villa-4 a[class^=villas]:link:active, section#villas .villas__villa-4 a[class^=villas]:visited:hover, section#villas .villas__villa-4 a[class^=villas]:visited:active {
+  color: white;
+}
+section#villas .villas__villa-4 a[class^=villas]:link:hover::before, section#villas .villas__villa-4 a[class^=villas]:link:active::before, section#villas .villas__villa-4 a[class^=villas]:visited:hover::before, section#villas .villas__villa-4 a[class^=villas]:visited:active::before {
+  height: 400%;
 }
 section#villas .villas__villa-5 {
   padding: 2rem;
@@ -529,11 +631,36 @@ section#villas .villas__villa-5 p[class^=villas] {
   margin: 1.5rem 0 4rem 0;
   font-weight: 500;
 }
+section#villas .villas__villa-5 :nth-child(n)::before, a[class^=villas] section#villas .villas__villa-5:link::before, section#villas .villas__villa-5:visited::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+section#villas .villas__villa-5 :nth-child(2n)::before, a[class^=villas] section#villas .villas__villa-5:link::before, section#villas .villas__villa-5:visited::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 section#villas .villas__villa-5 a[class^=villas]:link, section#villas .villas__villa-5 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
   background-color: rgba(29, 211, 128, 0.5137254902);
   color: #0075a2;
+  z-index: 2;
+  overflow: hidden;
+}
+section#villas .villas__villa-5 a[class^=villas]:link::before, section#villas .villas__villa-5 a[class^=villas]:visited::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background-color: #d55672;
+  transition: height 0.3s ease-in-out;
+}
+section#villas .villas__villa-5 a[class^=villas]:link:hover, section#villas .villas__villa-5 a[class^=villas]:link:active, section#villas .villas__villa-5 a[class^=villas]:visited:hover, section#villas .villas__villa-5 a[class^=villas]:visited:active {
+  color: white;
+}
+section#villas .villas__villa-5 a[class^=villas]:link:hover::before, section#villas .villas__villa-5 a[class^=villas]:link:active::before, section#villas .villas__villa-5 a[class^=villas]:visited:hover::before, section#villas .villas__villa-5 a[class^=villas]:visited:active::before {
+  height: 400%;
 }
 section#villas .villas__villa-6 {
   padding: 2rem;
@@ -553,11 +680,36 @@ section#villas .villas__villa-6 p[class^=villas] {
   margin: 1.5rem 0 4rem 0;
   font-weight: 500;
 }
+section#villas .villas__villa-6 :nth-child(n)::before, a[class^=villas] section#villas .villas__villa-6:link::before, section#villas .villas__villa-6:visited::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+section#villas .villas__villa-6 :nth-child(2n)::before, a[class^=villas] section#villas .villas__villa-6:link::before, section#villas .villas__villa-6:visited::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 section#villas .villas__villa-6 a[class^=villas]:link, section#villas .villas__villa-6 a[class^=villas]:visited {
   display: inline-block;
   margin-bottom: 2rem;
   background-color: rgba(29, 211, 128, 0.5137254902);
   color: #0075a2;
+  z-index: 2;
+  overflow: hidden;
+}
+section#villas .villas__villa-6 a[class^=villas]:link::before, section#villas .villas__villa-6 a[class^=villas]:visited::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background-color: #d55672;
+  transition: height 0.3s ease-in-out;
+}
+section#villas .villas__villa-6 a[class^=villas]:link:hover, section#villas .villas__villa-6 a[class^=villas]:link:active, section#villas .villas__villa-6 a[class^=villas]:visited:hover, section#villas .villas__villa-6 a[class^=villas]:visited:active {
+  color: white;
+}
+section#villas .villas__villa-6 a[class^=villas]:link:hover::before, section#villas .villas__villa-6 a[class^=villas]:link:active::before, section#villas .villas__villa-6 a[class^=villas]:visited:hover::before, section#villas .villas__villa-6 a[class^=villas]:visited:active::before {
+  height: 400%;
 }
 section#motto {
   background-color: #d55672;

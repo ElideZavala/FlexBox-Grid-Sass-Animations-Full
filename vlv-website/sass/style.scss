@@ -472,12 +472,14 @@ section {
 /* Villas Section */
   &#villas {
     grid-column: container-start / container-end;
-
+    
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    background: color(color-quaternary-m-light);
+    place-items: end;
     // grid-gap: 2rem;
-  
-  .villas {
+    
+    .villas {
       @for $i from 1 through 6 {
         &__villa-#{0 + $i}  {
           padding: 2rem;
@@ -504,6 +506,24 @@ section {
             font-weight: 500;
           }
 
+          :nth-child(n), // Agarrada cada primer Hijo --Impar
+          a[class^=villas]
+              &:link,
+              &:visited {
+                &::before {
+                  transform: translate(-50%, -50%) rotate(45deg);
+              }
+          }
+
+          :nth-child(2n), // Agarrada cada primer Hijo --Par
+          a[class^=villas]
+              &:link,
+              &:visited {
+                &::before {
+                  transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+
           a[class^=villas] {
             &:link,
             &:visited {
@@ -511,6 +531,29 @@ section {
               margin-bottom: 2rem;
               background-color: color(color-tertiary-m-light);
               color: color(color-primary);
+              z-index: 2;
+              overflow: hidden;
+
+              &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: 0;
+                z-index: -1;
+                background-color: color(color-secondary);
+                transition: height property(transition-duration) ease-in-out;
+              } 
+              
+              &:hover,
+              &:active {
+                color: white;
+  
+                &::before {
+                  height: 400%;
+                }
+              }
             }
           }
         }
