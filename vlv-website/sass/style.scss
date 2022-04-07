@@ -22,7 +22,12 @@ $propertys: (
   /* Section Padding */ "padding-section": 8vh 3vw
 );
 
-
+/* Importaciones */
+@import "functions";
+@import "reset";
+@import "googleFonts";
+@import "utilityComponets";
+@import "variables";
 
 body {
   font-family: "Titillium Web", sans-serif;
@@ -75,12 +80,12 @@ body {
 header#header {
   background-color: color(color-primary);
   grid-column: container-start / container-end;
+  @include background;
   background: linear-gradient(
       color(color-primary-m-light),
       color(color-primary-m-light)
     ),
     url("/vlv-website/up/img/hero2.jpg");
-  @include background;
 }
 
 /* Nav */
@@ -589,10 +594,28 @@ section {
 
   /* Motto Section */
   &#motto {
-    background-color: color(color-secondary);
+    background-color: color(color-primary-m-dark);
     grid-column: container-start / container-end;
-    height: $height;
+    padding: 10vh 3vw;
+    
   }
+  
+  .motto__content {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    &--title {
+      font-size: property(font-size-title);
+      padding: 0 2rem 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+  }
+  
 
   /* Events Section */
   &#events-content {
@@ -651,10 +674,5 @@ section {
   }
 }
 
-/* Importaciones */
-@import "functions";
-@import "reset";
-@import "googleFonts";
-@import "utilityComponets";
-@import "variables";
+
 @import "breakpoints";

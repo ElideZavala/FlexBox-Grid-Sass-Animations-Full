@@ -64,10 +64,10 @@ body {
 header#header {
   background-color: #0075a2;
   grid-column: container-start/container-end;
-  background: linear-gradient(rgba(0, 117, 162, 0.5137254902), rgba(0, 117, 162, 0.5137254902)), url("/vlv-website/up/img/hero2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background: linear-gradient(rgba(0, 117, 162, 0.5137254902), rgba(0, 117, 162, 0.5137254902)), url("/vlv-website/up/img/hero2.jpg");
 }
 
 /* Nav */
@@ -765,9 +765,23 @@ section#villas .villas__villa-6 {
   background-position: center;
 }
 section#motto {
-  background-color: #d55672;
+  background-color: rgba(0, 117, 162, 0.8823529412);
   grid-column: container-start/container-end;
-  height: 400px;
+  padding: 10vh 3vw;
+}
+section .motto__content {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+section .motto__content--title {
+  font-size: calc(2rem + 2vw);
+  padding: 0 2rem 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  position: relative;
 }
 section#events-content {
   background-color: #1dd380;
@@ -916,34 +930,34 @@ a:visited {
     justify-self: center;
     padding: 0 2rem;
   }
-  section#villas .villas__villa-1 {
+  section .villas__villa-1 {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
   }
-  section#villas .villas__villa-2 {
+  section .villas__villa-2 {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
   }
-  section#villas .villas__villa-3 {
+  section .villas__villa-3 {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
   }
-  section#villas .villas__villa-4 {
+  section .villas__villa-4 {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
   }
-  section#villas .villas__villa-5 {
+  section .villas__villa-5 {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
   }
-  section#villas .villas__villa-6 {
+  section .villas__villa-6 {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
