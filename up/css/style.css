@@ -410,8 +410,8 @@ section .booking-date__contact--link:hover, section .booking-date__contact--link
   border: 0.1rem rgba(0, 117, 162, 0.8823529412) solid;
 }
 section#villas {
-  grid-column: container-start/container-end;
   display: grid;
+  grid-column: container-start/container-end;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   background: rgba(173, 245, 255, 0.5137254902);
   grid-gap: 2rem;
@@ -783,6 +783,15 @@ section .motto__content--title {
   margin-bottom: 2rem;
   position: relative;
 }
+section .motto__content--title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  height: 0.2rem;
+  width: 10%;
+  background-color: #fff;
+}
 section#events-content {
   background-color: #1dd380;
   grid-column: container-start/col-end 9;
@@ -912,6 +921,10 @@ a:visited {
     margin: 1rem 0 2rem 0;
   }
   section .booking-content__para {
+    font-size: 1.5rem;
+    color: red;
+  }
+  section .motto__content--para {
     font-size: 1.5rem;
   }
 }

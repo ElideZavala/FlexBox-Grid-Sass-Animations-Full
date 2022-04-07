@@ -467,9 +467,8 @@ section {
   }
   /* Villas Section */
   &#villas {
-    grid-column: container-start / container-end;
-
     display: grid;
+    grid-column: container-start / container-end;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     background: color(color-quaternary-m-light);
     grid-gap: 2rem;
@@ -490,7 +489,6 @@ section {
             font-size: property(font-size-title);
             padding: 0 2rem 1rem;
             font-weight: 400;
-            // color: white;
             text-transform: uppercase;
           }
 
@@ -613,6 +611,17 @@ section {
       text-transform: uppercase;
       margin-bottom: 2rem;
       position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        height: 0.2rem;
+        width: 10%;
+        background-color: #fff;
+
+      }
     }
   }
   

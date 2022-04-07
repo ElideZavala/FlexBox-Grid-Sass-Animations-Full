@@ -104,8 +104,16 @@ $desktop: 1000px;
     }
 
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+    
     .booking-content {
       &__para {
+        font-size: 1.5rem;
+        color: red;
+      }
+    }
+
+    .motto__content {
+      &--para{
         font-size: 1.5rem;
       }
     }
