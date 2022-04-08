@@ -3,7 +3,7 @@ $tablet: 600px;
 $tablet-samsung: 800px;
 $desktop: 1000px;
 
-/************************ 1000 px ************************/
+ /* green green green green* 1000 px *green green green green */
 @media screen and (max-width: $desktop) {
   /* all Links */
   a:link,
@@ -12,7 +12,7 @@ $desktop: 1000px;
   }
 }
 
-/************************ 800 px ************************/
+/* blue blue blue blue blue blue 800 px blue blue blue blue blue blue */
 @media screen and (max-width: $tablet-samsung) {
   section {
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
@@ -63,7 +63,7 @@ $desktop: 1000px;
   }
 }
 
-/************************ 600 px ************************/
+/* red red red red red red red 600 px red red red red red red red */
 @media screen and (max-width: $tablet) {
   /*@@@###$%%%#$%*** Header Section  ***@@@###$%%%#$%*/
   .header__logo__content--content__para {
@@ -89,16 +89,33 @@ $desktop: 1000px;
       }
     }
 
+    /*@@@###$%%%#$%*** Events Text Section  ***@@@###$%%%#$%*/
+    &#events-text {
+      display: none;
+    }
+
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
     &#villas {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       .villas {
         @for $i from 1 through 6 {
           &__villa-#{0 + $i} {
             p[class^="villas"] {
-              font-size: 1.5rem;
+              font-size: 1.3rem;
               margin: 1rem 0 2rem 0;
             }
           }
+        }
+      }
+    }
+
+    &#events-content {
+      grid-column: center-start / center-end;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+      & > div {
+        & p[class*=para] {
+          font-size: 1.3rem;
         }
       }
     }
@@ -112,6 +129,15 @@ $desktop: 1000px;
       }
     }
 
+    &#events-content {
+      & > div {
+        &:first-child,
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
     .motto__content {
       &--para{
         font-size: 1.5rem;
@@ -120,7 +146,7 @@ $desktop: 1000px;
   }
 }
 
-/************************ 400 px ************************/
+/* yellow yellow yellow yellow 400 px yellow yellow yellow yellow   */
 @media screen and (max-width: $phone) {
   /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
   section {
@@ -149,3 +175,4 @@ $desktop: 1000px;
     }
   }
 }
+

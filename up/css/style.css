@@ -64,10 +64,11 @@ body {
 header#header {
   background-color: #0075a2;
   grid-column: container-start/container-end;
+  background: linear-gradient(rgba(0, 117, 162, 0.5137254902), rgba(0, 117, 162, 0.5137254902)), url("/vlv-website/up/img/hero2.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background: linear-gradient(rgba(0, 117, 162, 0.5137254902), rgba(0, 117, 162, 0.5137254902)), url("/vlv-website/up/img/hero2.jpg");
 }
 
 /* Nav */
@@ -422,7 +423,6 @@ section#villas .villas__villa-1 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
-  display: grid;
 }
 section#villas .villas__villa-1:hover, section#villas .villas__villa-1:active {
   transform: scale(1.05);
@@ -475,7 +475,6 @@ section#villas .villas__villa-2 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
-  display: grid;
 }
 section#villas .villas__villa-2:hover, section#villas .villas__villa-2:active {
   transform: scale(1.05);
@@ -528,7 +527,6 @@ section#villas .villas__villa-3 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
-  display: grid;
 }
 section#villas .villas__villa-3:hover, section#villas .villas__villa-3:active {
   transform: scale(1.05);
@@ -581,7 +579,6 @@ section#villas .villas__villa-4 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
-  display: grid;
 }
 section#villas .villas__villa-4:hover, section#villas .villas__villa-4:active {
   transform: scale(1.05);
@@ -634,7 +631,6 @@ section#villas .villas__villa-5 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
-  display: grid;
 }
 section#villas .villas__villa-5:hover, section#villas .villas__villa-5:active {
   transform: scale(1.05);
@@ -687,7 +683,6 @@ section#villas .villas__villa-6 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
-  display: grid;
 }
 section#villas .villas__villa-6:hover, section#villas .villas__villa-6:active {
   transform: scale(1.05);
@@ -819,15 +814,36 @@ section#events-content > div h2[class*=title] {
 }
 section#events-content > div p[class*=para] {
   grid-area: para;
-  color: #0075a2;
+  color: #adf5ff;
 }
 section#events-content > div:first-child {
-  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(29, 211, 128, 0.8823529412)), url("/vlv-website/up/img/Events/beach-party.jpg");
+  background: linear-gradient(rgba(213, 86, 114, 0.8823529412), rgba(213, 86, 114, 0.5137254902)), url("/vlv-website/up/img/Events/beach-party.jpg");
+  border-right: solid 0.2rem #d55672;
+}
+section#events-content > div:last-child {
+  background: linear-gradient(rgba(213, 86, 114, 0.8823529412), rgba(213, 86, 114, 0.5137254902)), url("/vlv-website/up/img/Events/culture-discovery.jpg");
+  border-left: solid 0.2rem #d55672;
+}
+section#events-content > div:first-child, section#events-content > div:last-child {
+  background-size: cover;
+  background-position: center;
 }
 section#events-text {
-  background-color: #0075a2;
+  background-color: #d55672;
   grid-column: col-start 10/center-end;
-  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+section#events-text .events-text__content {
+  transform: rotate(0.25turn);
+}
+section#events-text .events-text__content--title {
+  font-size: calc(2rem + 2vw);
+  font-weight: 600;
+  color: #adf5ff;
+  letter-spacing: 0.2rem;
 }
 section#gallery-text {
   background-color: #d55672;
@@ -860,7 +876,7 @@ section#footer {
   height: 400px;
 }
 
-/************************ 1000 px ************************/
+/* green green green green* 1000 px *green green green green */
 @media screen and (max-width: 1000px) {
   /* all Links */
   a:link,
@@ -868,7 +884,7 @@ a:visited {
     font-size: calc(1rem + 1vw);
   }
 }
-/************************ 800 px ************************/
+/* blue blue blue blue blue blue 800 px blue blue blue blue blue blue */
 @media screen and (max-width: 800px) {
   section {
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
@@ -903,7 +919,7 @@ a:visited {
     grid-gap: 0;
   }
 }
-/************************ 600 px ************************/
+/* red red red red red red red 600 px red red red red red red red */
 @media screen and (max-width: 600px) {
   /*@@@###$%%%#$%*** Header Section  ***@@@###$%%%#$%*/
   .header__logo__content--content__para {
@@ -912,6 +928,7 @@ a:visited {
 
   section {
     /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Events Text Section  ***@@@###$%%%#$%*/
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
   }
@@ -923,39 +940,55 @@ a:visited {
     grid-template-columns: -webkit-min-content;
     grid-template-columns: min-content;
   }
+  section#events-text {
+    display: none;
+  }
+  section#villas {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
   section#villas .villas__villa-1 p[class^=villas] {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-2 p[class^=villas] {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-3 p[class^=villas] {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-4 p[class^=villas] {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-5 p[class^=villas] {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0 2rem 0;
   }
   section#villas .villas__villa-6 p[class^=villas] {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0 2rem 0;
+  }
+  section#events-content {
+    grid-column: center-start/center-end;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+  section#events-content > div p[class*=para] {
+    font-size: 1.3rem;
   }
   section .booking-content__para {
     font-size: 1.5rem;
     color: red;
   }
+  section#events-content > div:first-child, section#events-content > div:last-child {
+    border: none;
+  }
   section .motto__content--para {
     font-size: 1.5rem;
   }
 }
-/************************ 400 px ************************/
+/* yellow yellow yellow yellow 400 px yellow yellow yellow yellow   */
 @media screen and (max-width: 400px) {
   /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
   section {
