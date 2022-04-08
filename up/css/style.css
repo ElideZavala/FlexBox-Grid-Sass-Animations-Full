@@ -846,9 +846,21 @@ section#events-text .events-text__content--title {
   letter-spacing: 0.2rem;
 }
 section#gallery-text {
-  background-color: #d55672;
-  grid-column: center-start/center-end 1;
-  height: 400px;
+  background-color: #0075a2;
+  grid-column: center-start/col-end 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+section#gallery-text .gallery-text__content {
+  transform: rotate(-0.25turn);
+}
+section#gallery-text .gallery-text__content--title {
+  font-size: calc(2rem + 2vw);
+  font-weight: 600;
+  color: rgba(29, 211, 128, 0.8823529412);
+  letter-spacing: 0.2rem;
 }
 section#gallery-carrousel {
   background-color: #1dd380;
@@ -940,7 +952,7 @@ a:visited {
     grid-template-columns: -webkit-min-content;
     grid-template-columns: min-content;
   }
-  section#events-text {
+  section#gallery-text, section#events-text {
     display: none;
   }
   section#villas {

@@ -705,9 +705,26 @@ section {
 
   /* Gallery Text Section */
   &#gallery-text {
-    background-color: color(color-secondary);
-    grid-column: center-start / center-end 1;
-    height: $height;
+    background-color: color(color-primary);
+    grid-column: center-start / col-end 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    .gallery-text__content {
+      transform: rotate(-0.25turn);
+
+      &--title {
+        font-size: property(font-size-title);
+        font-weight: 600;
+
+        color: color(color-tertiary-m-dark);
+        letter-spacing: 0.2rem;
+
+      }
+    }
   }
 
   /* Gallery Carousel Section */
