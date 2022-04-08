@@ -479,6 +479,7 @@ section {
           padding: 2rem;
           @include background;
           transition: transform property(transition-duration) ease-in-out;
+          display: grid;
 
           &:hover,
           &:active {
@@ -628,9 +629,43 @@ section {
 
   /* Events Section */
   &#events-content {
-    background-color: color(color-tertiary);
+    display: grid;
     grid-column: container-start / col-end 9;
-    height: $height;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > div {
+      display: grid;
+      padding: property(padding-section);
+
+      grid-template-areas: 
+        "title "
+        "para ";
+      grid-row-gap: 4vh; 
+      align-items: center;
+      justify-items: start;
+
+      h2[class*=title] { // Seleccionar cualquiera que tenga un title en su clase.  
+        grid-area: title; // El area selecionada sera el title. 
+        font-size: property(font-size-title);
+        font-weight: 400;
+        color: #000;
+      }
+      
+      p[class*=para] { // Cualquiera que tenga para en su clase.
+        grid-area: para;
+        color: color(color-primary);
+      }
+
+      &:first-child {
+        background: linear-gradient(color(color-tertiary-m-light), color(color-tertiary-m-dark)),
+          url('/vlv-website/up/img/Events/beach-party.jpg');
+      }
+
+      &:first-child,
+      &
+    }
+
+
   }
 
   /* Events text Section */

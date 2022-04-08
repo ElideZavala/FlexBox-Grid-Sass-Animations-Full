@@ -422,6 +422,7 @@ section#villas .villas__villa-1 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
+  display: grid;
 }
 section#villas .villas__villa-1:hover, section#villas .villas__villa-1:active {
   transform: scale(1.05);
@@ -474,6 +475,7 @@ section#villas .villas__villa-2 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
+  display: grid;
 }
 section#villas .villas__villa-2:hover, section#villas .villas__villa-2:active {
   transform: scale(1.05);
@@ -526,6 +528,7 @@ section#villas .villas__villa-3 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
+  display: grid;
 }
 section#villas .villas__villa-3:hover, section#villas .villas__villa-3:active {
   transform: scale(1.05);
@@ -578,6 +581,7 @@ section#villas .villas__villa-4 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
+  display: grid;
 }
 section#villas .villas__villa-4:hover, section#villas .villas__villa-4:active {
   transform: scale(1.05);
@@ -630,6 +634,7 @@ section#villas .villas__villa-5 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
+  display: grid;
 }
 section#villas .villas__villa-5:hover, section#villas .villas__villa-5:active {
   transform: scale(1.05);
@@ -682,6 +687,7 @@ section#villas .villas__villa-6 {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease-in-out;
+  display: grid;
 }
 section#villas .villas__villa-6:hover, section#villas .villas__villa-6:active {
   transform: scale(1.05);
@@ -793,9 +799,30 @@ section .motto__content--title::after {
   background-color: #fff;
 }
 section#events-content {
-  background-color: #1dd380;
+  display: grid;
   grid-column: container-start/col-end 9;
-  height: 400px;
+  grid-template-columns: repeat(2, 1fr);
+}
+section#events-content > div {
+  display: grid;
+  padding: 8vh 3vw;
+  grid-template-areas: "title " "para ";
+  grid-row-gap: 4vh;
+  align-items: center;
+  justify-items: start;
+}
+section#events-content > div h2[class*=title] {
+  grid-area: title;
+  font-size: calc(2rem + 2vw);
+  font-weight: 400;
+  color: #000;
+}
+section#events-content > div p[class*=para] {
+  grid-area: para;
+  color: #0075a2;
+}
+section#events-content > div:first-child {
+  background: linear-gradient(rgba(29, 211, 128, 0.5137254902), rgba(29, 211, 128, 0.8823529412)), url("/vlv-website/up/img/Events/beach-party.jpg");
 }
 section#events-text {
   background-color: #0075a2;
