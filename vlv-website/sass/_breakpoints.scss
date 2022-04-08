@@ -91,11 +91,17 @@ $desktop: 1000px;
 
     /*@@@###$%%%#$%*** Events Text Section  ***@@@###$%%%#$%*/
     &#gallery-text,
-    &#events-text {
+    &#events-text,
+    &#feactures-text {
       display: none;
     }
 
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Villas Content Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Motto Content Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Events Content Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Gallery Content Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** Features Content Section  ***@@@###$%%%#$%*/
     &#villas {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       .villas {
@@ -111,14 +117,19 @@ $desktop: 1000px;
     }
 
     &#events-content {
-      grid-column: center-start / center-end;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-
       & > div {
         & p[class*=para] {
           font-size: 1.3rem;
         }
       }
+    }
+
+    &#events-content,
+    &#gallery-carrousel,
+    &#feactures-content {
+      grid-column: center-start / center-end;
+
     }
 
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
@@ -139,6 +150,16 @@ $desktop: 1000px;
       }
     }
 
+    &#feactures-content {
+      & > div {
+        &:first-child,
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+    &#Features-content > div p[class*="para"],
     .motto__content {
       &--para{
         font-size: 1.5rem;
