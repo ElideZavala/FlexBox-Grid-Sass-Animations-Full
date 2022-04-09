@@ -137,7 +137,6 @@ $desktop: 1000px;
     .booking-content {
       &__para {
         font-size: 1.5rem;
-        color: red;
       }
     }
 
@@ -166,6 +165,23 @@ $desktop: 1000px;
     .motto__content {
       &--para{
         font-size: 1.5rem;
+      }
+    }
+    
+    // Carousel Left/Right Buttons //
+    &#gallery-carrousel {
+      .gallery-carrousel {
+        &__btn i {
+          font-size: 5rem;
+        }
+      
+        &__nav {
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-row-gap: 3vh;
+          grid-column-gap: 10vw;
+          height: 12%;
+        }
       }
     }
   }

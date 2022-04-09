@@ -894,6 +894,8 @@ section#gallery-carrousel .gallery-carrousel__img--container--list__item img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section#gallery-carrousel .gallery-carrousel__btn {
   position: absolute;
@@ -1063,7 +1065,6 @@ a:visited {
   }
   section .booking-content__para {
     font-size: 1.5rem;
-    color: red;
   }
   section#events-content > div:first-child, section#events-content > div:last-child {
     border: none;
@@ -1076,6 +1077,16 @@ a:visited {
   }
   section .motto__content--para {
     font-size: 1.5rem;
+  }
+  section#gallery-carrousel .gallery-carrousel__btn i {
+    font-size: 5rem;
+  }
+  section#gallery-carrousel .gallery-carrousel__nav {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3vh;
+    grid-column-gap: 10vw;
+    height: 12%;
   }
 }
 /* yellow yellow yellow yellow 400 px yellow yellow yellow yellow   */

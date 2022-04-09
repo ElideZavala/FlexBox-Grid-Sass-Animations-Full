@@ -756,7 +756,7 @@ section {
             & img {
               @include widtheight;
               @include background;
-              // object-fit: cover;
+              object-fit: cover;
             }
           }
         }
@@ -770,7 +770,6 @@ section {
         background: transparent;
         border: none;
         outline: none;
-        // color: color(color-primary);
         cursor: pointer;
         z-index: 1;
 
@@ -808,7 +807,6 @@ section {
           border: none;
           outline: none;
           cursor: pointer;
-
         }
       }
     }
