@@ -756,12 +756,13 @@ section {
             & img {
               @include widtheight;
               @include background;
-              object-fit: cover;
+              // object-fit: cover;
             }
           }
         }
       }
 
+      // Carousel Buttons //  
       &__btn {
         position: absolute;
         top: 50%;
@@ -773,8 +774,41 @@ section {
         cursor: pointer;
         z-index: 1;
 
+        // Button Right //
         &--right {
           right: 0;
+        }
+        
+      }
+
+      // Carousel Nav //
+      &__nav {
+        // background-color: #c72323;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 5%;
+        transform: translateX(-50%);
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 3rem;
+        
+        .current--img {
+          background-color: color(color-primary);
+        }
+        
+        // Carousel Nav Buttons // 
+        &--btn {
+          background-color: color(color-secondary-m-dark);
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          border: none;
+          outline: none;
+          cursor: pointer;
+
         }
       }
     }
