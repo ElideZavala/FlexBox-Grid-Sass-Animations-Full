@@ -15,5 +15,10 @@ $backgroundVillas: linear-gradient(color(color-tertiary-m-light), color(color-qu
 	width: 5rem;
 }
 
+@mixin widtheight {
+	width: 100%;
+	height: 100%;
+}
+
 
 

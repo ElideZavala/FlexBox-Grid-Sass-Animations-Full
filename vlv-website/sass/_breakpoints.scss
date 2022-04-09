@@ -155,11 +155,14 @@ $desktop: 1000px;
         &:first-child,
         &:last-child {
           border: none;
-        }  
+        } 
+        
+        & p[class*="para"] {
+          font-size: 1.5rem;
+        }
       }
     }
-
-    &#Features-content > div p[class*="para"],
+    
     .motto__content {
       &--para{
         font-size: 1.5rem;

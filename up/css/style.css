@@ -360,6 +360,7 @@ section .booking-date__schedule {
 section .booking-date__schedule--arrival, section .booking-date__schedule--departure, section .booking-date__schedule--guests {
   display: grid;
   grid-row-gap: 3vh;
+  cursor: pointer;
 }
 section .booking-date__schedule--arrival h5, section .booking-date__schedule--departure h5, section .booking-date__schedule--guests h5 {
   font-size: calc(1rem + 1vh);
@@ -859,13 +860,55 @@ section#gallery-text .gallery-text__content {
 section#gallery-text .gallery-text__content--title {
   font-size: calc(2rem + 2vw);
   font-weight: 600;
-  color: rgba(29, 211, 128, 0.8823529412);
+  color: #1dd380;
   letter-spacing: 0.2rem;
 }
 section#gallery-carrousel {
-  background-color: #1dd380;
   grid-column: col-start 2/container-end;
-  height: 400px;
+  height: 90vh;
+  overflow: hidden;
+  border: solid 0.2rem #1dd380;
+  position: relative;
+}
+section#gallery-carrousel .gallery-carrousel__img--container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section#gallery-carrousel .gallery-carrousel__img--container--list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 2s ease-in-out;
+}
+section#gallery-carrousel .gallery-carrousel__img--container--list__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section#gallery-carrousel .gallery-carrousel__img--container--list__item img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#gallery-carrousel .gallery-carrousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+section#gallery-carrousel .gallery-carrousel__btn--right {
+  right: 0;
 }
 section#feactures-content {
   background-color: #0075a2;
@@ -1003,7 +1046,13 @@ a:visited {
   section#events-content > div:first-child, section#events-content > div:last-child {
     border: none;
   }
-  section#Features-content > div p[class*=para] .motto__content--para {
+  section#feactures-content > div:first-child, section#feactures-content > div:last-child {
+    border: none;
+  }
+  section#feactures-content > div p[class*=para] {
+    font-size: 1.5rem;
+  }
+  section .motto__content--para {
     font-size: 1.5rem;
   }
 }

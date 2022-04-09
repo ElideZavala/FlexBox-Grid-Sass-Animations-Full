@@ -399,6 +399,7 @@ section {
       &--guests {
         display: grid;
         grid-row-gap: 3vh;
+        cursor: pointer;
 
         h5 {
           font-size: calc(1rem + 1vh);
@@ -720,7 +721,7 @@ section {
         font-size: property(font-size-title);
         font-weight: 600;
 
-        color: color(color-tertiary-m-dark);
+        color: color(color-tertiary);
         letter-spacing: 0.2rem;
 
       }
@@ -729,9 +730,54 @@ section {
 
   /* Gallery Carousel Section */
   &#gallery-carrousel {
-    background-color: color(color-tertiary);
     grid-column: col-start 2 / container-end;
-    height: $height;
+    height: 90vh;
+    overflow: hidden;
+    border: solid 0.2rem color(color-tertiary);
+    position: relative;
+
+    .gallery-carrousel {
+      &__img--container {
+        @include widtheight;
+        position: relative;
+        
+        // Image Container list
+        &--list {
+          position: relative;
+          @include widtheight;
+          transition: transform 2s ease-in-out;
+
+          &__item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include widtheight;
+
+            & img {
+              @include widtheight;
+              @include background;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      &__btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        outline: none;
+        // color: color(color-primary);
+        cursor: pointer;
+        z-index: 1;
+
+        &--right {
+          right: 0;
+        }
+      }
+    }
   }
 
   /* Features Section */
