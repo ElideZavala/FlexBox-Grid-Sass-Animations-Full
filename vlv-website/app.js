@@ -8,8 +8,11 @@ const prevButton = document.querySelector('.gallery-carrousel__btn--left');
 const carouselNav =document.querySelector('.gallery-carrousel__nav');
 const dot = Array.from(carouselNav.children); // accedemos a todos los puntos y los convertimos en A.
 
-console.log(carouselNav);
+// console.log(carouselNav);
+// Getting the width of our images
+// const imgWidth = imgs[0].getBoundingClientRect().width; // Devolvera el tamaño de un elemento y su posiciòn
+const imgWidth = imgs[0].getBoundingClientRect().height; // Devolvera el tamaño de un elemento y su posiciòn
 
-
+console.log(imgWidth);
 
 
