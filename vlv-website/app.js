@@ -12,7 +12,17 @@ const dot = Array.from(carouselNav.children); // accedemos a todos los puntos y 
 // Getting the width of our images
 // const imgWidth = imgs[0].getBoundingClientRect().width; // Devolvera el tamaño de un elemento y su posiciòn
 const imgWidth = imgs[0].getBoundingClientRect().height; // Devolvera el tamaño de un elemento y su posiciòn
-
 console.log(imgWidth);
 
+// #150 Arranging the images next to one another.
+// function setImgPosition(img, index) {
+// 	img.style.left = imgWidth * index + "px"; // movemos al elemento a la izquierda. 
+// }
+
+// #fff Arrow Function. 
+const setImgPosition = (img, index) => {
+	img.style.left = imgWidth * index + "px";
+}
+
+imgs.forEach(setImgPosition);
 
