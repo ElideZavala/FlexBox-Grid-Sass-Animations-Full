@@ -27,29 +27,35 @@ const setImgPosition = (img, index) => {
 
 imgs.forEach(setImgPosition);
 
+// moveToImg Function. 
+const moveToImg = (list, currentImg, targetImg) => {
+	// *-*-*-*-*-*-*-*-*-*-*-*-*-* Move to the Next Image *-*-*-*-*-*-*-*-*-*-*-*-*-* // 
+	list.style.transform = "translateX(-" + targetImg.style.left + ")";
+	currentImg.classList.remove('current--img'); // Eliminamos la clase que tenia.
+	targetImg.classList.add('current--img'); // Le ponemos la clase a la siguiente imagen. 
+}
+
 
 /* --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------------------
 ------------------ When we click on the right button, move images to the left ------------------
 --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------------------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------*/
 
-
 // console.log(list)
 nextButton.addEventListener("click", (e) => {
 	const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
-	// console.log(currentImg);
-
 	const nextImg = currentImg.nextElementSibling; // Proximo elemento hermano.
-	// console.log(nextImg);
+	// const distToMove = nextImg.style.left; // La distancia al movimiento va ser igual a nuestra siguiente imagen. 
+	moveToImg(list, currentImg, nextImg);
 
-	const distToMove = nextImg.style.left; // La distancia al movimiento va ser igual a nuestra siguiente imagen. 
-	// console.log(distToMove);
-
-	// *-*-*-*-*-*-*-*-*-*-*-*-*-* Move to the Next Image *-*-*-*-*-*-*-*-*-*-*-*-*-* // 
-	list.style.transform = "translateX(-" + distToMove + ")";
-	// Removing the current--img class.
-	currentImg.classList.remove('current--img'); // Eliminamos la clase que tenia.
-
-	nextImg.classList.add('current--img'); // Le ponemos la clase a la siguiente imagen.
 });
 
-// prevButton.addEventListener()
+prevButton.addEventListener("click", (e) => {
+	const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
+	const previosImg = currentImg.previousElementSibling; // Proximo elemento hermano.
+	moveToImg(list, currentImg, previosImg);
+})
+
+/* --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------------------
+------------------ When we click on the left button, move images to the right ------------------
+--------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------------------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------*/
+
