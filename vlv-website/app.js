@@ -49,6 +49,11 @@ nextButton.addEventListener("click", (e) => {
 
 });
 
+
+/* --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------------------
+------------------ When we click on the left button, move images to the right ------------------
+--------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------------------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------*/
+
 prevButton.addEventListener("click", (e) => {
 	const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
 	const previosImg = currentImg.previousElementSibling; // Proximo elemento hermano.
@@ -56,6 +61,19 @@ prevButton.addEventListener("click", (e) => {
 })
 
 /* --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------------------
------------------- When we click on the left button, move images to the right ------------------
+------------------ When we click on the Carousel Nav, move switch the images ------------------
 --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------------------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------*/
 
+carouselNav.addEventListener('click', (e) => {
+	// What dot was clicked on 
+	// const targetDot = e;
+	// console.log(targetDot.target);
+	// // if (targetDot.explicitOriginalTarget.classList = 'current--img') {
+	// // 	console.log('Soy yo');
+	// // }
+
+	// El metodo closest atraviesa el elemento y son padres, significa que va a dirigirse hacia la ruta del documento.
+
+	const targetDot = e.target.closest('button'); // Nos traera al elemento mas cercano de button
+	console.log(targetDot)
+})

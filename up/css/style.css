@@ -911,6 +911,7 @@ section#gallery-carrousel .gallery-carrousel__btn--right {
   right: 0;
 }
 section#gallery-carrousel .gallery-carrousel__nav {
+  background-color: #c72323;
   position: absolute;
   bottom: 0;
   left: 50%;
