@@ -5,8 +5,8 @@ const list = document.querySelector('.gallery-carrousel__img--container--list');
 const imgs = Array.from(list.children); // accedemos a la lista y los convertimos en un array.
 const nextButton = document.querySelector('.gallery-carrousel__btn--right');
 const prevButton = document.querySelector('.gallery-carrousel__btn--left');
-const carouselNav =document.querySelector('.gallery-carrousel__nav');
-const dot = Array.from(carouselNav.children); // accedemos a todos los puntos y los convertimos en A.
+const carouselNav = document.querySelector('.gallery-carrousel__nav');
+const dots = Array.from(carouselNav.children); // accedemos a todos los puntos y los convertimos en Array.
 
 // console.log(carouselNav);
 // Getting the width of our images
@@ -66,14 +66,16 @@ prevButton.addEventListener("click", (e) => {
 
 carouselNav.addEventListener('click', (e) => {
 	// What dot was clicked on 
-	// const targetDot = e;
-	// console.log(targetDot.target);
-	// // if (targetDot.explicitOriginalTarget.classList = 'current--img') {
-	// // 	console.log('Soy yo');
-	// // }
-
-	// El metodo closest atraviesa el elemento y son padres, significa que va a dirigirse hacia la ruta del documento.
-
+	// El metodo closest atraviesa el elemento y sus padres, significa que va a dirigirse hacia la ruta del documento.
 	const targetDot = e.target.closest('button'); // Nos traera al elemento mas cercano de button
-	console.log(targetDot)
-})
+	// console.log(targetDot);
+	
+	if (!targetDot) return;
+
+	const currentImg = list.querySelector('.current--img');
+	const currentDot = carouselNav.querySelector('.current--img');
+	const targetIndex = dots.findIndex((dot) => dot === targetDot); // Asegurarnos que dot sea igual a targetDot
+ 	const targetImg = imgs[targetIndex]; // Esa imagen objetivo va a agarrar esa imagen que corresponde al punto que acemos clic.
+
+	moveToImg(list, currentImg, targetImg);
+ });
