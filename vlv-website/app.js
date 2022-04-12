@@ -7,6 +7,9 @@ const nextButton = document.querySelector('.gallery-carrousel__btn--right');
 const prevButton = document.querySelector('.gallery-carrousel__btn--left');
 const carouselNav = document.querySelector('.gallery-carrousel__nav');
 const dots = Array.from(carouselNav.children); // accedemos a todos los puntos y los convertimos en Array.
+const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
+const currentDot = carouselNav.querySelector('.current--img');
+
 
 // console.log(carouselNav);
 // Getting the width of our images
@@ -14,25 +17,31 @@ const imgWidth = imgs[0].getBoundingClientRect().width; // Devolvera el tamaño 
 // const imgWidth = imgs[0].getBoundingClientRect().height; // Devolvera el tamaño de un elemento y su posiciòn
 // console.log(imgWidth);
 
-// #150 Arranging the images next to one another.
-// function setImgPosition(img, index) {
-// 	img.style.left = imgWidth * index + "px"; // movemos al elemento a la izquierda. 
-// }
-
 // #fff Arrow Function. 
 const setImgPosition = (img, index) => {
 	img.style.left = imgWidth * index + "px";
-	// nextImg * 1 + px = 1209px 
-}
-
+};
 imgs.forEach(setImgPosition);
 
 // moveToImg Function. 
-const moveToImg = (list, currentImg, targetImg) => {
+const moveToImg = (list, currentImg , targetImg) => {
 	// *-*-*-*-*-*-*-*-*-*-*-*-*-* Move to the Next Image *-*-*-*-*-*-*-*-*-*-*-*-*-* // 
 	list.style.transform = "translateX(-" + targetImg.style.left + ")";
 	currentImg.classList.remove('current--img'); // Eliminamos la clase que tenia.
 	targetImg.classList.add('current--img'); // Le ponemos la clase a la siguiente imagen. 
+}
+
+// Updating the color of the dots on click
+const updateDots = (currentDot, targetDot) => {
+	currentDot.classList.remove('current--img');
+	targetDot.classList.add('current--img');
+}
+ 
+// Hide/Show Arrows .-Ocultar el button de previus si el indice es Cero-. 
+const hideShowArrows = () => {
+	if ( targetIndex === 0 ) {
+		prevButton.classList.add('hidden'); 
+	}
 }
 
 
@@ -42,12 +51,15 @@ const moveToImg = (list, currentImg, targetImg) => {
 
 // console.log(list)
 nextButton.addEventListener("click", (e) => {
-	const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
 	const nextImg = currentImg.nextElementSibling; // Proximo elemento hermano.
 	// const distToMove = nextImg.style.left; // La distancia al movimiento va ser igual a nuestra siguiente imagen. 
-	moveToImg(list, currentImg, nextImg);
-
+	const nextDot = currentDot.nextElementSibling;
+	
+	moveToImg( list, currentImg,  nextImg );
+	updateDots( currentDot, nextDot );
+	
 });
+
 
 
 /* --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------------------
@@ -55,9 +67,11 @@ nextButton.addEventListener("click", (e) => {
 --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------------------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------*/
 
 prevButton.addEventListener("click", (e) => {
-	const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
 	const previosImg = currentImg.previousElementSibling; // Proximo elemento hermano.
-	moveToImg(list, currentImg, previosImg);
+	const previosDot = currentDot.previousElementSibling;
+	moveToImg( list, currentImg,  previosImg );
+	updateDots(currentDot,  previosDot );
+
 })
 
 /* --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------------------
@@ -72,10 +86,9 @@ carouselNav.addEventListener('click', (e) => {
 	
 	if (!targetDot) return;
 
-	const currentImg = list.querySelector('.current--img');
-	const currentDot = carouselNav.querySelector('.current--img');
 	const targetIndex = dots.findIndex((dot) => dot === targetDot); // Asegurarnos que dot sea igual a targetDot
  	const targetImg = imgs[targetIndex]; // Esa imagen objetivo va a agarrar esa imagen que corresponde al punto que acemos clic.
 
-	moveToImg(list, currentImg, targetImg);
+	moveToImg( list, currentImg, targetImg );
+	updateDots(currentDot,  targetDot );
  });

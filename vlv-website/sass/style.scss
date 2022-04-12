@@ -782,7 +782,7 @@ section {
 
       // Carousel Nav //
       &__nav {
-        background-color: #c72323;
+        // background-color: #c72323;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -794,6 +794,7 @@ section {
         grid-template-columns: repeat(10, 1fr);
         grid-gap: 3rem;
         
+        // Current Button/image
         .current--img {
           background-color: color(color-primary);
         }
