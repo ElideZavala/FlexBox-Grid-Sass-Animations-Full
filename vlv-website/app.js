@@ -62,10 +62,11 @@ nextButton.addEventListener("click", (e) => {
 	const nextImg = currentImg.nextElementSibling; // Proximo elemento hermano.
 	const currentDot = carouselNav.querySelector('.current--img');
 	const nextDot = currentDot.nextElementSibling;
-	// const distToMove = nextImg.style.left; // La distancia al movimiento va ser igual a nuestra siguiente imagen. 
+	const nextIndex = imgs.findIndex((img) => img === nextImg); // Encontrar la imagen igual a nuesta imagen previa. 
 	
 	moveToImg( list, currentImg,  nextImg );
 	updateDots( currentDot, nextDot );
+	hideShowArrows(imgs, prevButton, nextButton, nextIndex);
 });
 
 
@@ -76,11 +77,14 @@ nextButton.addEventListener("click", (e) => {
 
 prevButton.addEventListener("click", (e) => {
 	const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
-	const prevImg = currentImg.previousElementSibling; // Proximo elemento hermano.
+	const prevImg = currentImg.previousElementSibling; // anterior elemento hermano.
 	const currentDot = carouselNav.querySelector('.current--img');
 	const prevDot = currentDot.previousElementSibling;
+	const prevIndex = imgs.findIndex((img) => img === prevImg); // Encontrar la imagen igual a nuesta imagen previa. 
+
 	moveToImg( list, currentImg,  prevImg );
 	updateDots(currentDot,  prevDot );
+	hideShowArrows(imgs, prevButton, nextButton, prevIndex);
 })
 
 /* --------*-*-*-*-*-*-*-*-*-*-*-*-*-*--------*-*-*-*-*-*-*-*-*-*-*-*-*-*------------------------
