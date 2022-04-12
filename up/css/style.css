@@ -934,6 +934,9 @@ section#gallery-carrousel .gallery-carrousel__nav--btn {
   outline: none;
   cursor: pointer;
 }
+section .hidden {
+  display: none;
+}
 section#feactures-content {
   background-color: #0075a2;
   grid-column: container-start/col-end 9;
