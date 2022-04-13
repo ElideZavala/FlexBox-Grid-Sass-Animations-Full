@@ -933,9 +933,6 @@ section#gallery-carrousel .gallery-carrousel__nav--btn {
   outline: none;
   cursor: pointer;
 }
-section .hidden {
-  display: none;
-}
 section#feactures-content {
   display: grid;
   grid-column: container-start/col-end 9;
@@ -988,14 +985,31 @@ section#feactures-text .feactures-text__content--title {
   letter-spacing: 0.2rem;
 }
 section#testimonials {
-  background-color: #1dd380;
   grid-column: center-start/center-end;
-  height: 400px;
+  padding: 8vh 3vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25rem);
+  grid-gap: 5rem;
+  place-content: center;
+}
+section#testimonials__card {
+  width: 28rem;
+  height: 50rem;
+  position: relative;
+}
+section#testimonials__card--front, section#testimonials__card--back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section#footer {
   background-color: #0075a2;
   grid-column: container-start/container-end;
   height: 400px;
+}
+
+.hidden {
+  display: none;
 }
 
 /* green green green green* 1000 px *green green green green */
@@ -1125,7 +1139,7 @@ a:visited {
     font-size: 1.5rem;
   }
   section#gallery-carrousel .gallery-carrousel__btn i {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   section#gallery-carrousel .gallery-carrousel__nav {
     grid-template-columns: repeat(5, 1fr);

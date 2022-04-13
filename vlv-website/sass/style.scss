@@ -811,10 +811,6 @@ section {
     }
   }
 
-  .hidden {
-    display: none;
-  }
-
   &#feactures-content {
     display: grid;
     grid-column: container-start / col-end 9;
@@ -888,9 +884,24 @@ section {
 
   /* Testimonials Section */ // a word not award
   &#testimonials {
-    background-color: color(color-tertiary);
     grid-column: center-start / center-end;
-    height: $height;
+    padding: property(padding-section);
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem); // respetara las medidas y se crearan.
+    grid-gap: 5rem;
+    place-content: center;
+
+    &__card{
+      width: 28rem;
+      height: 50rem;
+      position: relative;
+
+      &--front,
+      &--back {
+        @include background;
+      }
+    }
   }
 
   /* Footer Section */
@@ -901,5 +912,8 @@ section {
   }
 }
 
+.hidden {
+  display: none;
+}
 
 @import "breakpoints";
