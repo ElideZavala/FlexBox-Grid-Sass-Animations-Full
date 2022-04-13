@@ -628,7 +628,7 @@ section {
   }
   
 
-  /* Events Section */
+  /* Events Section && Features Section */ 
   &#events-content {
     display: grid;
     grid-column: container-start / col-end 9;
@@ -676,8 +676,6 @@ section {
         background-position: center;
       }
     }
-
-
   }
 
   /* Events text Section */
@@ -745,7 +743,7 @@ section {
         &--list {
           position: relative;
           @include widtheight;
-          transition: transform 2s ease-in-out;
+          transition: transform 1s ease-in-out;
 
           &__item {
             position: absolute;
@@ -817,18 +815,56 @@ section {
     display: none;
   }
 
-  /* Features Section */
   &#feactures-content {
-    background-color: color(color-primary);
+    display: grid;
     grid-column: container-start / col-end 9;
-    height: $height;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > div {
+      display: grid;
+      padding: property(padding-section);
+
+      grid-template-areas: 
+        "title "
+        "para ";
+      grid-row-gap: 4vh; 
+      align-items: center;
+      justify-items: start;
+
+      h2[class*=title] { // Seleccionar cualquiera que tenga un title en su clase.  
+        grid-area: title; // El area selecionada sera el title. 
+        font-size: property(font-size-title);
+        font-weight: 400;
+        color: #000;
+      }
+      
+      p[class*=para] { // Cualquiera que tenga para en su clase.
+        grid-area: para;
+        // color: #eee;
+      }
+
+      &:first-child {
+        background: linear-gradient(color(color-quaternary-m-light), color(color-quaternary-m-light)), url('/vlv-website/up/img/Features/cocktail.jpg');
+        border-right: solid 0.2rem color(color-quaternary);
+      }
+
+      &:last-child {
+        background: linear-gradient(color(color-quaternary-m-light), color(color-quaternary-m-light)), url('/vlv-website/up/img/Features/surfing.jpg');
+        border-left: solid 0.2rem color(color-quaternary);
+      }
+
+      &:first-child,
+      &:last-child {
+        background-size: cover;
+        background-position: left;
+      }
+    }
   }
+  
 
   /* Features text Section */
   &#feactures-text {
-    background-color: color(color-secondary);
     grid-column: col-start 10 / center-end;
-    height: $height;
   }
 
   /* Testimonials Section */ // a word not award

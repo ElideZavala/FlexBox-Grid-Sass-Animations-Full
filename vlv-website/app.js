@@ -60,8 +60,8 @@ const hideShowArrows = (imgs, prevButton, nextButton, targetIndex) => {
 nextButton.addEventListener("click", (e) => {
 	const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
 	const nextImg = currentImg.nextElementSibling; // Proximo elemento hermano.
-	const currentDot = carouselNav.querySelector('.current--img');
-	const nextDot = currentDot.nextElementSibling;
+	const currentDot = carouselNav.querySelector('.current--img'); // Seleccionamos el punto actual. 
+	const nextDot = currentDot.nextElementSibling; // Proximo punto hermano. 
 	const nextIndex = imgs.findIndex((img) => img === nextImg); // Encontrar la imagen igual a nuesta imagen previa. 
 	
 	moveToImg( list, currentImg,  nextImg );
@@ -100,9 +100,9 @@ carouselNav.addEventListener('click', (e) => {
 	if (!targetDot) return;
 
 	const currentImg = list.querySelector(".current--img") // Seleccionamos la imagen actual que tenga esta clase. 
-	const currentDot = carouselNav.querySelector('.current--img');
+	const currentDot = carouselNav.querySelector('.current--img'); // Punto actual seleccionado. 
 	const targetIndex = dots.findIndex((dot) => dot === targetDot); // Asegurarnos que dot sea igual a targetDot
- 	const targetImg = imgs[targetIndex]; // Esa imagen objetivo va a agarrar esa imagen que corresponde al punto que acemos clic.
+ 	const targetImg = imgs[targetIndex]; // Esa imagen objetivo a a agarrar esa imagen que corresponde al punto que acemos clic.
 
 	moveToImg( list, currentImg, targetImg );
 	updateDots(currentDot,  targetDot );

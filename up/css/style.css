@@ -294,11 +294,10 @@ section {
   /* Booking Date Section */
   /* Villas Section */
   /* Motto Section */
-  /* Events Section */
+  /* Events Section && Features Section */
   /* Events text Section */
   /* Gallery Text Section */
   /* Gallery Carousel Section */
-  /* Features Section */
   /* Features text Section */
   /* Testimonials Section */
   /* Footer Section */
@@ -879,7 +878,7 @@ section#gallery-carrousel .gallery-carrousel__img--container--list {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 2s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 section#gallery-carrousel .gallery-carrousel__img--container--list__item {
   position: absolute;
@@ -938,14 +937,41 @@ section .hidden {
   display: none;
 }
 section#feactures-content {
-  background-color: #0075a2;
+  display: grid;
   grid-column: container-start/col-end 9;
-  height: 400px;
+  grid-template-columns: repeat(2, 1fr);
+}
+section#feactures-content > div {
+  display: grid;
+  padding: 8vh 3vw;
+  grid-template-areas: "title " "para ";
+  grid-row-gap: 4vh;
+  align-items: center;
+  justify-items: start;
+}
+section#feactures-content > div h2[class*=title] {
+  grid-area: title;
+  font-size: calc(2rem + 2vw);
+  font-weight: 400;
+  color: #000;
+}
+section#feactures-content > div p[class*=para] {
+  grid-area: para;
+}
+section#feactures-content > div:first-child {
+  background: linear-gradient(rgba(173, 245, 255, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Features/cocktail.jpg");
+  border-right: solid 0.2rem #adf5ff;
+}
+section#feactures-content > div:last-child {
+  background: linear-gradient(rgba(173, 245, 255, 0.5137254902), rgba(173, 245, 255, 0.5137254902)), url("/vlv-website/up/img/Features/surfing.jpg");
+  border-left: solid 0.2rem #adf5ff;
+}
+section#feactures-content > div:first-child, section#feactures-content > div:last-child {
+  background-size: cover;
+  background-position: left;
 }
 section#feactures-text {
-  background-color: #d55672;
   grid-column: col-start 10/center-end;
-  height: 400px;
 }
 section#testimonials {
   background-color: #1dd380;
