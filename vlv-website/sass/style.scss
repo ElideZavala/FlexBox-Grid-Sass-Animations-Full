@@ -840,7 +840,6 @@ section {
       
       p[class*=para] { // Cualquiera que tenga para en su clase.
         grid-area: para;
-        // color: #eee;
       }
 
       &:first-child {
@@ -865,6 +864,26 @@ section {
   /* Features text Section */
   &#feactures-text {
     grid-column: col-start 10 / center-end;
+    background-color: color(color-quaternary);
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    .feactures-text__content {
+      transform: rotate(0.25turn);
+      
+      &--title {
+        font-size: property(font-size-title);
+        font-weight: 600;
+
+        color: color(color-secondary);
+        letter-spacing: 0.2rem;
+
+      }
+    }
+
   }
 
   /* Testimonials Section */ // a word not award

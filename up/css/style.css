@@ -972,6 +972,20 @@ section#feactures-content > div:first-child, section#feactures-content > div:las
 }
 section#feactures-text {
   grid-column: col-start 10/center-end;
+  background-color: #adf5ff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+section#feactures-text .feactures-text__content {
+  transform: rotate(0.25turn);
+}
+section#feactures-text .feactures-text__content--title {
+  font-size: calc(2rem + 2vw);
+  font-weight: 600;
+  color: #d55672;
+  letter-spacing: 0.2rem;
 }
 section#testimonials {
   background-color: #1dd380;
@@ -1097,6 +1111,9 @@ a:visited {
   }
   section#events-content > div:first-child, section#events-content > div:last-child {
     border: none;
+  }
+  section#feactures-content {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
   section#feactures-content > div:first-child, section#feactures-content > div:last-child {
     border: none;

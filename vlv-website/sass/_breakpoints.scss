@@ -150,6 +150,7 @@ $desktop: 1000px;
     }
 
     &#feactures-content {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       & > div {
         &:first-child,
         &:last-child {
