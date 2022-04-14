@@ -987,6 +987,7 @@ section#testimonials,
 section .testimonials {
   grid-column: center-start/center-end;
   padding: 8vh 3vw;
+  background-color: rgba(173, 245, 255, 0.5137254902);
   display: grid;
   grid-template-columns: repeat(auto-fit, 25rem);
   grid-gap: 5rem;
@@ -1010,9 +1011,10 @@ section .testimonials__card--back {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 4s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  transform: perspective(100rem);
   display: grid;
   justify-items: center;
   align-items: start;
@@ -1032,10 +1034,6 @@ section .testimonials__card--back p {
   font-size: 2rem;
   font-weight: 400;
 }
-section#testimonials .testimonials__card:first-child .testimonials__card--front,
-section .testimonials .testimonials__card:first-child .testimonials__card--front {
-  background-image: url("/vlv-website/up/img/Testimonials/testimonials-1.jpg");
-}
 section#testimonials .testimonials__card--back,
 section .testimonials .testimonials__card--back {
   transform: perspective(100rem) rotateY(0.5turn);
@@ -1049,8 +1047,31 @@ section#testimonials .testimonials__card:hover .testimonials__card--back,
 section .testimonials .testimonials__card:hover .testimonials__card--back {
   transform: perspective(100rem) rotateY(1turn);
 }
-section#testimonials#footer,
-section .testimonials#footer {
+section#testimonials .testimonials__card:first-child .testimonials__card--front,
+section .testimonials .testimonials__card:first-child .testimonials__card--front {
+  background-image: url("/vlv-website/up/img/Testimonials/testimonials-1.jpg");
+}
+section#testimonials .testimonials__card:nth-child(2) .testimonials__card--front,
+section .testimonials .testimonials__card:nth-child(2) .testimonials__card--front {
+  background-image: url("/vlv-website/up/img/Testimonials/testimonials-2.jpg");
+}
+section#testimonials .testimonials__card:nth-child(3) .testimonials__card--front,
+section .testimonials .testimonials__card:nth-child(3) .testimonials__card--front {
+  background-image: url("/vlv-website/up/img/Testimonials/testimonials-3.jpg");
+}
+section#testimonials .testimonials__card:nth-child(4) .testimonials__card--front,
+section .testimonials .testimonials__card:nth-child(4) .testimonials__card--front {
+  background-image: url("/vlv-website/up/img/Testimonials/testimonials-4.jpg");
+}
+section#testimonials .testimonials__card:nth-child(5) .testimonials__card--front,
+section .testimonials .testimonials__card:nth-child(5) .testimonials__card--front {
+  background-image: url("/vlv-website/up/img/Testimonials/testimonials-5.jpg");
+}
+section#testimonials .testimonials__card:nth-child(6) .testimonials__card--front,
+section .testimonials .testimonials__card:nth-child(6) .testimonials__card--front {
+  background-image: url("/vlv-website/up/img/Testimonials/testimonials-6.jpg");
+}
+section#footer {
   background-color: #0075a2;
   grid-column: container-start/container-end;
   height: 400px;

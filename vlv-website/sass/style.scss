@@ -885,8 +885,10 @@ section {
   /* Testimonials Section */ // a word not award
   &#testimonials,
   .testimonials {
+    // grid-column: container-start / container-end;
     grid-column: center-start / center-end;
     padding: property(padding-section);
+    background-color: color(color-quaternary-m-light);
     
     display: grid;
     grid-template-columns: repeat(auto-fit, 25rem); // respetara las medidas y se crearan.
@@ -924,11 +926,12 @@ section {
     @import "front&back";
 
     /* Footer Section */
-    &#footer {
-      background-color: color(color-primary);
-      grid-column: container-start / container-end;
-      height: $height;
-    }
+  }
+  
+  &#footer {
+    background-color: color(color-primary);
+    grid-column: container-start / container-end;
+    height: $height;
   }
 }
 
