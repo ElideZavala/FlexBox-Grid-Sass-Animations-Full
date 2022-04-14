@@ -984,7 +984,8 @@ section#feactures-text .feactures-text__content--title {
   color: #d55672;
   letter-spacing: 0.2rem;
 }
-section#testimonials {
+section#testimonials,
+section .testimonials {
   grid-column: center-start/center-end;
   padding: 8vh 3vw;
   display: grid;
@@ -992,15 +993,75 @@ section#testimonials {
   grid-gap: 5rem;
   place-content: center;
 }
-section#testimonials__card {
+section#testimonials__card,
+section .testimonials__card {
   width: 28rem;
   height: 50rem;
   position: relative;
 }
-section#testimonials__card--front, section#testimonials__card--back {
+section#testimonials__card--front,
+section .testimonials__card--front {
+  position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  padding: 3rem;
+}
+section#testimonials__card--front:first-child,
+section .testimonials__card--front:first-child {
+  background-image: url("/vlv-website/up/img/Testimonials/testimonials-1.jpg");
+}
+section#testimonials__card--front:hover,
+section .testimonials__card--front:hover {
+  transform: perspective(100rem) rotateY(0.5turn);
+}
+section#testimonials__card--front h2,
+section .testimonials__card--front h2 {
+  background-color: #adf5ff;
+  padding: 1rem;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  color: #d55672;
+}
+section#testimonials__card--back,
+section .testimonials__card--back {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  padding: 3rem;
+  transform: perspective(100rem) rotateY(0.5turn);
+  background-color: red;
+}
+section#testimonials__card--back p,
+section .testimonials__card--back p {
+  place-self: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+section#testimonials__card--back:hover,
+section .testimonials__card--back:hover {
+  transform: perspective(100rem) rotateY(1turn);
 }
 section#footer {
   background-color: #0075a2;
