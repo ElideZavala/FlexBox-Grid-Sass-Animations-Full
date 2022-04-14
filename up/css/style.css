@@ -300,6 +300,7 @@ section {
   /* Gallery Carousel Section */
   /* Features text Section */
   /* Testimonials Section */
+  /* Footer Section */
 }
 section#booking-content {
   grid-column: center-start/col-end 6;
@@ -992,7 +993,6 @@ section .testimonials {
   grid-template-columns: repeat(auto-fit, 25rem);
   grid-gap: 5rem;
   place-content: center;
-  /* Footer Section */
 }
 section#testimonials__card,
 section .testimonials__card {
@@ -1074,7 +1074,53 @@ section .testimonials .testimonials__card:nth-child(6) .testimonials__card--fron
 section#footer {
   background-color: #0075a2;
   grid-column: container-start/container-end;
-  height: 400px;
+  padding: 6vh 4vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+section#footer .footer__social--link {
+  display: inline-block;
+  background-color: #adf5ff;
+  border-radius: 4rem;
+  margin-right: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem 1rem #adf5ff, -0.5rem -0.5rem 2rem 1rem rgba(173, 245, 255, 0.8823529412);
+  transform: scale(0.8);
+  -webkit-animation-name: social-u4fnwl8;
+          animation-name: social-u4fnwl8;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes social-u4fnwl8 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes social-u4fnwl8 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+section#footer .footer__social i {
+  font-size: 2rem;
 }
 
 .hidden {

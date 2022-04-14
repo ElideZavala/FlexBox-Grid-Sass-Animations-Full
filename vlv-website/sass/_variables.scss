@@ -35,7 +35,35 @@ $backgroundVillas: linear-gradient(color(color-tertiary-m-light), color(color-qu
 	justify-items: center;
 	align-items: start;
 	padding: 3rem;
-   }
+}
+
+@mixin social($duration) {
+	$name: social-#{unique-id()};
+
+	@keyframes #{$name} {
+
+		0% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+			transform: scale(1.2);
+		}
+
+		100% {
+			opacity: 0;
+		}
+
+		@content;
+	}
+
+	animation-name: $name;
+	animation-duration: $duration;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
 
 
 

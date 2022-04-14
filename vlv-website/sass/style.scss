@@ -924,14 +924,33 @@ section {
       }
     }
     @import "front&back";
-
-    /* Footer Section */
   }
   
+  /* Footer Section */
   &#footer {
     background-color: color(color-primary);
     grid-column: container-start / container-end;
-    height: $height;
+    padding: 6vh 4vw;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+    .footer__social {
+      &--link {
+        display: inline-block;
+        background-color: color(color-quaternary);
+        border-radius: 4rem;;
+        margin-right: 1rem;
+        box-shadow: 0.5rem 0.5rem 2rem 1rem color(color-quaternary), -0.5rem -0.5rem 2rem 1rem color(color-quaternary-m-dark);
+        transform: scale(0.8);
+        @include social(3s);
+        
+      }
+      & i {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
