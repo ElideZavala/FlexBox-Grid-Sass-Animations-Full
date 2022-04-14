@@ -1,0 +1,16 @@
+.testimonials__card:first-child .testimonials__card--front {
+	background-image: url("/vlv-website/up/img/Testimonials/testimonials-1.jpg");	  
+}
+
+.testimonials__card--back {
+	transform: perspective(100rem) rotateY(0.5turn);
+	background-color: color(color-secondary);
+}
+
+.testimonials__card:hover .testimonials__card--front {
+	transform: perspective(100rem) rotateY(0.5turn);
+}
+
+.testimonials__card:hover .testimonials__card--back {
+	transform: perspective(100rem) rotateY(1turn);
+}

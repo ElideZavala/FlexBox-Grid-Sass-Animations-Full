@@ -897,18 +897,13 @@ section {
       width: 28rem;
       height: 50rem;
       position: relative;
-      
-      &--front {
+
+      &--front,
+      &--back {
         @include displayCard;
+      }
         
-        &:first-child {
-          background-image: url("/vlv-website/up/img/Testimonials/testimonials-1.jpg");
-        }
-
-        &:hover {
-          transform: perspective(100rem) rotateY(0.5turn);
-        }
-
+      &--front {
         & h2 {
           background-color: color(color-quaternary);
           padding: 1rem;
@@ -917,32 +912,23 @@ section {
           color: color(color-secondary)
         }
       }
-
+        
       &--back {
-        // One turn => 360deg => meaning 0.5turn => 180deg //
-        @include displayCard; 
-        transform: perspective(100rem) rotateY(0.5turn);
-        // background-color: color(color-tertiary);
-        background-color: red;
-
         & p {
           place-self: center; // Tomara este articulo especifico para ordenarlo. 
           font-size: 2rem;
           font-weight: 400;
         }
-
-        &:hover {
-          transform: perspective(100rem) rotateY(1turn);
-        }
       }
     }
-  }
+    @import "front&back";
 
-  /* Footer Section */
-  &#footer {
-    background-color: color(color-primary);
-    grid-column: container-start / container-end;
-    height: $height;
+    /* Footer Section */
+    &#footer {
+      background-color: color(color-primary);
+      grid-column: container-start / container-end;
+      height: $height;
+    }
   }
 }
 
