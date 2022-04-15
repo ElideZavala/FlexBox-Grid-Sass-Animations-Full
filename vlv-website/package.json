@@ -1,0 +1,15 @@
+{
+  "name": "vlv-website",
+  "version": "1.0.0",
+  "description": "WebSite Hotel",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch ./sass/style.scss ./sass/style.css"
+  },
+  "author": "Elide Zavala Vinagre",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.50.0"
+  }
+}
