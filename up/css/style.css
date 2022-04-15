@@ -1079,15 +1079,15 @@ section#footer {
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
 }
-section#footer .footer__social--link {
+section#footer .footer__social--link:link, section#footer .footer__social--link:visited {
   display: inline-block;
-  background-color: #adf5ff;
+  background-color: #1dd380;
   border-radius: 4rem;
   margin-right: 1rem;
-  box-shadow: 0.5rem 0.5rem 2rem 1rem #adf5ff, -0.5rem -0.5rem 2rem 1rem rgba(173, 245, 255, 0.8823529412);
+  box-shadow: 0.5rem 0.5rem 2rem 1rem #1dd380, -0.5rem -0.5rem 2rem 1rem #1dd380;
   transform: scale(0.8);
-  -webkit-animation-name: social-u4fnwl8;
-          animation-name: social-u4fnwl8;
+  -webkit-animation-name: social-u4fnyir;
+          animation-name: social-u4fnyir;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -1095,7 +1095,7 @@ section#footer .footer__social--link {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-@-webkit-keyframes social-u4fnwl8 {
+@-webkit-keyframes social-u4fnyir {
   0% {
     opacity: 0;
   }
@@ -1107,7 +1107,7 @@ section#footer .footer__social--link {
     opacity: 0;
   }
 }
-@keyframes social-u4fnwl8 {
+@keyframes social-u4fnyir {
   0% {
     opacity: 0;
   }
@@ -1118,9 +1118,33 @@ section#footer .footer__social--link {
   100% {
     opacity: 0;
   }
+}
+section#footer .footer__social--link:link:first-child, section#footer .footer__social--link:visited:first-child {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+section#footer .footer__social--link:link:nth-child(2), section#footer .footer__social--link:visited:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+section#footer .footer__social--link:link:nth-child(3), section#footer .footer__social--link:visited:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+section#footer .footer__social--link:link:last-child, section#footer .footer__social--link:visited:last-child {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 section#footer .footer__social i {
   font-size: 2rem;
+}
+section#footer p {
+  color: #d55672;
+  font-weight: 500;
+}
+section#footer p span {
+  color: #1dd380;
+  font-weight: 450;
 }
 
 .hidden {
@@ -1141,6 +1165,7 @@ a:visited {
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
     /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
     /*@@@###$%%%#$%*** Villas Section  ***@@@###$%%%#$%*/
+    /*@@@###$%%%#$%*** footer  ***@@@###$%%%#$%*/
   }
   section#booking-content {
     grid-column: col-start/center-end;
@@ -1168,6 +1193,12 @@ a:visited {
   }
   section#villas {
     grid-gap: 0;
+  }
+  section#footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3rem;
+    padding: 3vh 3vw;
   }
 }
 /* red red red red red red red 600 px red red red red red red red */
