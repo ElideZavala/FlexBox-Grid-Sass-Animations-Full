@@ -3,7 +3,7 @@ $tablet: 600px;
 $tablet-samsung: 800px;
 $desktop: 1000px;
 
- /* green green green green* 1000 px *green green green green */
+/* green green green green* 1000 px *green green green green */
 @media screen and (max-width: $desktop) {
   /* all Links */
   a:link,
@@ -62,10 +62,10 @@ $desktop: 1000px;
 
     /*@@@###$%%%#$%*** footer  ***@@@###$%%%#$%*/
     &#footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-row-gap: 3rem;
-        padding: 3vh 3vw;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-gap: 3rem;
+      padding: 3vh 3vw;
     }
   }
 }
@@ -126,7 +126,7 @@ $desktop: 1000px;
     &#events-content {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       & > div {
-        & p[class*=para] {
+        & p[class*="para"] {
           font-size: 1.3rem;
         }
       }
@@ -136,11 +136,10 @@ $desktop: 1000px;
     &#gallery-carrousel,
     &#feactures-content {
       grid-column: center-start / center-end;
-
     }
 
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
-    
+
     .booking-content {
       &__para {
         font-size: 1.5rem;
@@ -162,27 +161,27 @@ $desktop: 1000px;
         &:first-child,
         &:last-child {
           border: none;
-        } 
-        
+        }
+
         & p[class*="para"] {
           font-size: 1.5rem;
         }
       }
     }
-    
+
     .motto__content {
-      &--para{
+      &--para {
         font-size: 1.5rem;
       }
     }
-    
+
     // Carousel Left/Right Buttons //
     &#gallery-carrousel {
       .gallery-carrousel {
         &__btn i {
           font-size: 3rem;
         }
-      
+
         &__nav {
           grid-template-columns: repeat(5, 1fr);
           grid-template-rows: repeat(2, 1fr);
@@ -205,14 +204,13 @@ $desktop: 1000px;
         width: 19rem;
         height: 30rem;
         position: relative;
-        
+
         &--front {
           & h2 {
             padding: 0.5rem;
             font-size: 1rem;
           }
-      }
-
+        }
       }
     }
 
@@ -249,21 +247,45 @@ $desktop: 1000px;
       @for $i from 1 through 6 {
         &__villa-#{0 + $i} {
           grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-          padding: .5rem;
+          padding: 0.5rem;
           font-size: 1rem;
         }
       }
     }
 
-    // Footer Section //
-    &#footer {
-      padding: 0.5vh 0.5vw;
-      font-size: 1rem;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 2rem;
-      text-align: center;
+    // Testimonials //
+    &#testimonials,
+    .testimonials {
+      grid-gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+      &__card {
+        width: 17rem;
+        height: 25rem;
+
+        &--front,
+        &--back {
+          padding: 1rem;
+          align-items: center;
+        }
+
+        &--front {
+          & h2 {
+            padding: 0.5rem;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      // Footer Section //
+      &#footer {
+        padding: 0.5vh 0.5vw;
+        font-size: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        text-align: center;
+      }
     }
   }
 }
-
