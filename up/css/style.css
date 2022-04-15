@@ -1086,8 +1086,8 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
   margin-right: 1rem;
   box-shadow: 0.5rem 0.5rem 2rem 1rem #1dd380, -0.5rem -0.5rem 2rem 1rem #1dd380;
   transform: scale(0.8);
-  -webkit-animation-name: social-u4fo0om;
-          animation-name: social-u4fo0om;
+  -webkit-animation-name: social-u4fo2ar;
+          animation-name: social-u4fo2ar;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -1095,7 +1095,7 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-@-webkit-keyframes social-u4fo0om {
+@-webkit-keyframes social-u4fo2ar {
   0% {
     opacity: 0;
   }
@@ -1107,7 +1107,7 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
     opacity: 0;
   }
 }
-@keyframes social-u4fo0om {
+@keyframes social-u4fo2ar {
   0% {
     opacity: 0;
   }
@@ -1293,6 +1293,23 @@ a:visited {
     grid-row-gap: 3vh;
     grid-column-gap: 10vw;
     height: 12%;
+  }
+  section#testimonials,
+section .testimonials {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+    place-items: center;
+  }
+  section#testimonials__card,
+section .testimonials__card {
+    width: 19rem;
+    height: 30rem;
+    position: relative;
+  }
+  section#testimonials__card--front h2,
+section .testimonials__card--front h2 {
+    padding: 0.5rem;
+    font-size: 1rem;
   }
   section#footer {
     padding: 3vh 2vw;

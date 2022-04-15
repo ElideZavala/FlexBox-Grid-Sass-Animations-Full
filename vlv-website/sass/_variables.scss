@@ -28,7 +28,7 @@ $backgroundVillas: linear-gradient(color(color-tertiary-m-light), color(color-qu
 	width: 100%;
 	height: 100%;
 	transition: all 1s ease-in-out;
-	backface-visibility: hidden; // Visivilidad de la caja negra
+	backface-visibility: hidden; // Visibilidad de la caja negra
 	transform: perspective(100rem);
 
 	display: grid;

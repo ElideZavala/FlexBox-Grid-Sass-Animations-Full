@@ -193,6 +193,29 @@ $desktop: 1000px;
       }
     }
 
+    // Testimonials //
+    &#testimonials,
+    .testimonials {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 3rem;
+      place-items: center;
+      // margin: 0 auto;
+
+      &__card {
+        width: 19rem;
+        height: 30rem;
+        position: relative;
+        
+        &--front {
+          & h2 {
+            padding: 0.5rem;
+            font-size: 1rem;
+          }
+      }
+
+      }
+    }
+
     // Footer Section //
     &#footer {
       padding: 3vh 2vw;
