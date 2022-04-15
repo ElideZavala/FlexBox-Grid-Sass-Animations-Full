@@ -1086,8 +1086,8 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
   margin-right: 1rem;
   box-shadow: 0.5rem 0.5rem 2rem 1rem #1dd380, -0.5rem -0.5rem 2rem 1rem #1dd380;
   transform: scale(0.8);
-  -webkit-animation-name: social-u4fnyir;
-          animation-name: social-u4fnyir;
+  -webkit-animation-name: social-u4fo0om;
+          animation-name: social-u4fo0om;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -1095,7 +1095,7 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-@-webkit-keyframes social-u4fnyir {
+@-webkit-keyframes social-u4fo0om {
   0% {
     opacity: 0;
   }
@@ -1107,7 +1107,7 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
     opacity: 0;
   }
 }
-@keyframes social-u4fnyir {
+@keyframes social-u4fo0om {
   0% {
     opacity: 0;
   }
@@ -1294,6 +1294,12 @@ a:visited {
     grid-column-gap: 10vw;
     height: 12%;
   }
+  section#footer {
+    padding: 3vh 2vw;
+  }
+  section#footerp {
+    font-size: 1.5rem;
+  }
 }
 /* yellow yellow yellow yellow 400 px yellow yellow yellow yellow   */
 @media screen and (max-width: 400px) {
@@ -1339,5 +1345,13 @@ a:visited {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     padding: 0.5rem;
     font-size: 1rem;
+  }
+  section#footer {
+    padding: 0.5vh 0.5vw;
+    font-size: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

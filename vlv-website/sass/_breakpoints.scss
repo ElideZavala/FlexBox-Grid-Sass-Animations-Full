@@ -192,6 +192,15 @@ $desktop: 1000px;
         }
       }
     }
+
+    // Footer Section //
+    &#footer {
+      padding: 3vh 2vw;
+
+      &p {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 
@@ -221,6 +230,16 @@ $desktop: 1000px;
           font-size: 1rem;
         }
       }
+    }
+
+    // Footer Section //
+    &#footer {
+      padding: 0.5vh 0.5vw;
+      font-size: 1rem;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+      text-align: center;
     }
   }
 }
