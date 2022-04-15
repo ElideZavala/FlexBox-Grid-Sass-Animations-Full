@@ -228,6 +228,17 @@ $desktop: 1000px;
 /* yellow yellow yellow yellow 400 px yellow yellow yellow yellow   */
 @media screen and (max-width: $phone) {
   /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+
+  .header__logo__content {
+    grid-template-columns: 1fr minmax(10rem, 1fr) 1fr;
+    place-content: center;
+  }
+  .header__logo__content { 
+    &--content {
+      grid-column: 1 / -2; 
+    }
+  }
+
   section {
     .booking-date {
       &__schedule {

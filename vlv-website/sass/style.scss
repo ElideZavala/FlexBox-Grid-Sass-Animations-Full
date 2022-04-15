@@ -292,6 +292,7 @@ header#header {
       font-weight: 300;
       text-transform: uppercase;
       padding: 0 2rem 0 property(font-size-title);
+      color: #fff;
     }
 
     &__para {
@@ -780,7 +781,6 @@ section {
 
       // Carousel Nav //
       &__nav {
-        // background-color: #c72323;
         position: absolute;
         bottom: 0;
         left: 50%;

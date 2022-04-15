@@ -262,6 +262,7 @@ header#header {
   font-weight: 300;
   text-transform: uppercase;
   padding: 0 2rem 0 calc(2rem + 2vw);
+  color: #fff;
 }
 .header__logo__content--content__para {
   font-size: calc(1rem + 2vw);
@@ -1086,8 +1087,8 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
   margin-right: 1rem;
   box-shadow: 0.5rem 0.5rem 2rem 1rem #1dd380, -0.5rem -0.5rem 2rem 1rem #1dd380;
   transform: scale(0.8);
-  -webkit-animation-name: social-u4fo3og;
-          animation-name: social-u4fo3og;
+  -webkit-animation-name: social-u4fo54h;
+          animation-name: social-u4fo54h;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -1095,7 +1096,7 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-@-webkit-keyframes social-u4fo3og {
+@-webkit-keyframes social-u4fo54h {
   0% {
     opacity: 0;
   }
@@ -1107,7 +1108,7 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
     opacity: 0;
   }
 }
-@keyframes social-u4fo3og {
+@keyframes social-u4fo54h {
   0% {
     opacity: 0;
   }
@@ -1321,6 +1322,15 @@ section .testimonials__card--front h2 {
 /* yellow yellow yellow yellow 400 px yellow yellow yellow yellow   */
 @media screen and (max-width: 400px) {
   /*@@@###$%%%#$%*** Booking Date Section  ***@@@###$%%%#$%*/
+  .header__logo__content {
+    grid-template-columns: 1fr minmax(10rem, 1fr) 1fr;
+    place-content: center;
+  }
+
+  .header__logo__content--content {
+    grid-column: 1/-2;
+  }
+
   section {
     /*@@@###$%%%#$%*** Booking Content Section  ***@@@###$%%%#$%*/
   }
