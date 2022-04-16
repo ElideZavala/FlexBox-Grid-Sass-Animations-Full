@@ -84,7 +84,7 @@ header#header {
     color(color-primary-m-light),
     color(color-primary-m-light)
     ),
-    url("/vlv-website/up/img/hero2.jpg");
+    url("../img/hero2.jpg");
     background-attachment: fixed;
     @include background;
 }
@@ -557,37 +557,37 @@ section {
 
       &__villa-1 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-1.jpg");
+          url("../img/Villas/villa-1.jpg");
           @include background;
       }
 
       &__villa-2 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-2.jpg");
+          url("../img/Villas/villa-2.jpg");
           @include background;
       }
 
       &__villa-3 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-3.jpg");
+          url("../img/Villas/villa-3.jpg");
           @include background;
       }
 
       &__villa-4 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-4.jpg");
+          url("../img/Villas/villa-4.jpg");
           @include background;
       }
 
       &__villa-5 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-5.jpg");
+          url("../img/Villas/villa-5.jpg");
           @include background;
       }
 
       &__villa-6 {
         background: $backgroundVillas,
-          url("/vlv-website/up/img/Villas/villa-6.jpg");
+          url("../img/Villas/villa-6.jpg");
           @include background;
       }
     }
@@ -661,13 +661,13 @@ section {
 
       &:first-child {
         background: linear-gradient(color(color-secondary-m-dark), color(color-secondary-m-light)),
-          url('/vlv-website/up/img/Events/beach-party.jpg');
+          url('../img/Events/beach-party.jpg');
         border-right: solid 0.2rem color(color-secondary);
       }
 
       &:last-child {
         background: linear-gradient(color(color-secondary-m-dark), color(color-secondary-m-light)),
-          url('/vlv-website/up/img/Events/culture-discovery.jpg');
+          url('../img/Events/culture-discovery.jpg');
           border-left: solid 0.2rem color(color-secondary);
       }
 
@@ -840,12 +840,12 @@ section {
       }
 
       &:first-child {
-        background: linear-gradient(color(color-quaternary-m-light), color(color-quaternary-m-light)), url('/vlv-website/up/img/Features/cocktail.jpg');
+        background: linear-gradient(color(color-quaternary-m-light), color(color-quaternary-m-light)), url('../img/Features/cocktail.jpg');
         border-right: solid 0.2rem color(color-quaternary);
       }
 
       &:last-child {
-        background: linear-gradient(color(color-quaternary-m-light), color(color-quaternary-m-light)), url('/vlv-website/up/img/Features/surfing.jpg');
+        background: linear-gradient(color(color-quaternary-m-light), color(color-quaternary-m-light)), url('../img/Features/surfing.jpg');
         border-left: solid 0.2rem color(color-quaternary);
       }
 

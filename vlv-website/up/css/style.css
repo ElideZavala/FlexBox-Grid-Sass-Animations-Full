@@ -1070,12 +1070,12 @@ section#footer .footer__social--link:link, section#footer .footer__social--link:
   margin-right: 1rem;
   box-shadow: 0.5rem 0.5rem 2rem 1rem #1dd380, -0.5rem -0.5rem 2rem 1rem #1dd380;
   transform: scale(0.8);
-  animation-name: social-u4fo65s;
+  animation-name: social-u72ol2f;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-@keyframes social-u4fo65s {
+@keyframes social-u72ol2f {
   0% {
     opacity: 0;
   }
@@ -1363,4 +1363,6 @@ section .testimonials#footer {
     grid-column-gap: 2rem;
     text-align: center;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

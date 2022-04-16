@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --watch ./sass/style.scss ./sass/style.css"
+    "scss": "sass --watch ./sass/style.scss ./up/css/style.css"
   },
   "author": "Elide Zavala Vinagre",
   "license": "ISC",
